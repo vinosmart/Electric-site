@@ -90,21 +90,9 @@
     bottom: 0;
     pointer-events: none;
     z-index: 1;
-    background-image:
-        /* Dense vertical lines */
-        repeating-linear-gradient(
-            90deg,
-            rgba(59, 130, 246, 0.15) 0px,
-            rgba(59, 130, 246, 0.15) 1px,
-            transparent 1px,
-            transparent 20px
-        ),
-        /* Dense horizontal lines */
-        repeating-linear-gradient(
-            0deg,
-            rgba(59, 130, 246, 0.15) 0px,
-            rgba(59, 130, 246, 0.15) 1px,
-            transparent 1px,
-            transparent 20px
-        );
+    background-image: url('/unnamed.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 400px auto;
+    opacity: 0.06;
 }
