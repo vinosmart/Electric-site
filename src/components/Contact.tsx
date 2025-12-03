@@ -61,7 +61,7 @@ export function Contact() {
       if (contactCardsRef.current?.children) {
         gsap.from(contactCardsRef.current.children, {
           opacity: 0,
-          y: 30,
+        
           duration: 0.6,
           stagger: 0.1,
           ease: 'power2.out',
@@ -241,18 +241,18 @@ export function Contact() {
             </Card>
           </div>
 
-          <div ref={contactCardsRef} className="space-y-4 w-full max-w-full" style={{ opacity: 1 }}>
+          <div ref={contactCardsRef} className="space-y-4 w-full" style={{ opacity: 1 }}>
             {contactInfo.map((info, index) => (
-              <Card key={info.title} className={`p-4 sm:p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden w-full`} style={{ opacity: 1 }}>
+              <Card key={info.title} className={`p-4 sm:p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group w-full`} style={{ opacity: 1 }}>
                 <div className="flex items-start gap-2 sm:gap-4 w-full">
                   <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <info.icon size={18} className="text-white sm:hidden" weight="duotone" />
                     <info.icon size={20} className="text-white hidden sm:block" weight="duotone" />
                   </div>
-                  <div className="flex-1 min-w-0 overflow-hidden">
+                  <div className="flex-1 min-w-0">
                     <h4 className="font-semibold text-white mb-1 text-sm sm:text-base">{info.title}</h4>
                     {info.details.map((detail) => (
-                      <p key={detail} className="text-xs sm:text-sm text-white/80 break-words overflow-wrap-anywhere truncate sm:whitespace-normal">
+                      <p key={detail} className="text-xs sm:text-sm text-white/80">
                         {detail}
                       </p>
                     ))}

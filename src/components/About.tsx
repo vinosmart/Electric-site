@@ -100,7 +100,7 @@ export function About() {
       if (contentRightRef.current?.children) {
         gsap.from(contentRightRef.current.children, {
           opacity: 0,
-          y: 30,
+         
           duration: 0.6,
           stagger: 0.12,
           ease: 'power2.out',
@@ -191,11 +191,11 @@ export function About() {
             </div>
           </div>
 
-          <div ref={contentRightRef} className="grid gap-4 sm:gap-5 w-full max-w-full" style={{ opacity: 1 }}>
+          <div ref={contentRightRef} className="grid gap-4 sm:gap-5 w-full" style={{ opacity: 1 }}>
             {valuePropositions.map((item, index) => (
               <Card
                 key={item.title}
-                className={`p-3 sm:p-4 md:p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border-0 bg-gradient-to-r ${item.color} group overflow-hidden w-full`}
+                className={`p-3 sm:p-4 md:p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border-0 bg-gradient-to-r ${item.color} group w-full`}
                 style={{ opacity: 1 }}
               >
                 <div className="flex items-start gap-2 sm:gap-3 w-full">
@@ -204,9 +204,9 @@ export function About() {
                     <item.icon size={22} className="text-white hidden sm:block md:hidden" weight="duotone" />
                     <item.icon size={24} className="text-white hidden md:block" weight="duotone" />
                   </div>
-                  <div className="flex-1 min-w-0 overflow-hidden">
-                    <h4 className="font-bold text-sm sm:text-base md:text-lg text-white mb-0.5 sm:mb-1 truncate sm:whitespace-normal">{item.title}</h4>
-                    <p className="text-white/80 text-xs sm:text-sm leading-relaxed break-words overflow-wrap-anywhere">{item.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-bold text-sm sm:text-base md:text-lg text-white mb-0.5 sm:mb-1">{item.title}</h4>
+                    <p className="text-white/80 text-xs sm:text-sm leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </Card>
