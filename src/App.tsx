@@ -15,10 +15,10 @@ import { Footer } from '@/components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background smooth-scroll power-grid-pattern overflow-x-hidden max-w-full">
+    <div className="min-h-screen bg-background smooth-scroll power-grid-pattern">
       <Toaster position="top-right" richColors />
       <Header />
-      <main className="overflow-x-hidden">
+      <main>
         <Hero />
         <About />
         <WhyChooseUs />
