@@ -136,14 +136,14 @@ export function Contact() {
       icon: Clock,
       title: 'Business Hours',
       details: ['Monday - Saturday', '9:00 AM - 6:00 PM', 'Sunday: Closed'],
-      color: 'from-[#F97316] to-[#EA580C]',
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
   ]
 
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white/70 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-8 sm:mb-10">
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">Contact Us</span>
@@ -158,7 +158,7 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8 overflow-hidden">
           <div ref={formRef}>
-            <Card className="p-6 border-0 bg-gradient-to-br from-[#F8FAFC] to-white shadow-xl">
+            <Card className="p-6 border-0 bg-gradient-to-br from-[#F8FAFC]/60 to-white/70 shadow-xl">
               <h3 className="text-xl font-semibold text-[#0F172A] mb-5">Send us a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -266,7 +266,7 @@ export function Contact() {
         <div ref={ctaRef}>
           <Card className="p-5 lg:p-6 bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] border-none shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#F97316]/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
             <div className="text-center relative z-10">
               <h3 className="text-xl font-semibold text-white mb-3">Ready to Power Your Next Project?</h3>
               <p className="text-white/70 mb-5 max-w-2xl mx-auto text-sm">
@@ -277,7 +277,7 @@ export function Contact() {
               <div className="flex flex-wrap justify-center gap-3">
                 <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">Free Project Consultation</span>
                 <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full shadow">TNEB Class I Certified</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#F97316] to-[#EA580C] rounded-full shadow">Turnkey Solutions</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">Turnkey Solutions</span>
                 <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#0F172A] to-[#334155] rounded-full shadow border border-white/20">30 Years Experience</span>
               </div>
             </div>

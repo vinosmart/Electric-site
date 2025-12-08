@@ -5,11 +5,21 @@
         @apply border-border;
         box-sizing: border-box;
     }
+    html {
+        background-color: #f8fafc;
+    }
     body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
+        background-color: #f8fafc !important;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('/electric.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
     }
     h1,
     h2,
@@ -44,9 +54,9 @@
     /* Secondary: Electric Blue (#3B82F6) - energy, innovation */
     --secondary: #3B82F6;
     --secondary-foreground: #FFFFFF;
-    /* Muted: Grays */
-    --muted: #F8FAFC;
-    --muted-foreground: #64748B;
+    /* Muted: Light Blue Tints */
+    --muted: #F0F9FF;
+    --muted-foreground: #1E3A5A;
     /* Accent: Orange (#F97316) - power, action */
     --accent: #F97316;
     --accent-foreground: #FFFFFF;
@@ -55,8 +65,8 @@
     --success-foreground: #FFFFFF;
     --destructive: #EF4444;
     --destructive-foreground: #FFFFFF;
-    --border: #E2E8F0;
-    --input: #E2E8F0;
+    --border: #BFDBFE;
+    --input: #BFDBFE;
     --ring: #3B82F6;
     --radius: 0.5rem;
 }

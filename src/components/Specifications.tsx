@@ -77,7 +77,7 @@ export function Specifications() {
       icon: HardHat,
       title: 'Safety Compliance',
       description: 'Zero-accident safety culture with strict adherence to safety regulations',
-      color: 'from-[#F97316] to-[#EA580C]',
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
   ]
 
@@ -174,9 +174,9 @@ export function Specifications() {
   }
 
   return (
-    <section id="specifications" className="py-16 lg:py-20 bg-[#F8FAFC] relative overflow-hidden">
+    <section id="specifications" className="py-16 lg:py-20 bg-[#F8FAFC]/60 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#10B981]/25">Execution Excellence</span>
@@ -209,7 +209,7 @@ export function Specifications() {
 
         <div ref={bottomCtaRef} className="bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] rounded-2xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#F97316]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#3B82F6]/20 rounded-full blur-3xl"></div>
           <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold mb-4">
@@ -227,7 +227,7 @@ export function Specifications() {
                 <span className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full shadow">
                   ESA:530 License
                 </span>
-                <span className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-[#F97316] to-[#EA580C] rounded-full shadow">
+                <span className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">
                   CMWSSB Class A&B
                 </span>
               </div>
@@ -242,7 +242,7 @@ export function Specifications() {
                 <div className="text-white/80 text-sm">Delivery Focus</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#F97316] group-hover:scale-110 transition-transform">300+</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">300+</div>
                 <div className="text-white/80 text-sm">Team Members</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center border border-white/10 hover:bg-white/15 transition-colors group">

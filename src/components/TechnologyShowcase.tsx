@@ -6,6 +6,14 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { CaretLeft, CaretRight, Cpu, Lightning, ShieldStar, Power, Gauge, Broadcast } from '@phosphor-icons/react'
 
+// Import local images
+import transformerImage from '@/assets/transformer.jpg'
+import heroBgImage from '@/assets/hero-bg.jpg'
+import teamImage from '@/assets/team.jpg'
+import gridImage from '@/assets/grid.jpg'
+import installationImage from '@/assets/installation.jpg'
+import officeImage from '@/assets/office.jpg'
+
 gsap.registerPlugin(ScrollTrigger)
 
 export function TechnologyShowcase() {
@@ -28,7 +36,7 @@ export function TechnologyShowcase() {
       ],
       voltageRange: '66kV to 400kV',
       applications: 'Urban substations, Industrial power systems',
-      image: 'https://images.unsplash.com/photo-1548337138-e87d889cc369?w=800&h=600&fit=crop',
+      image: transformerImage,
       color: 'from-[#3B82F6] to-[#2563EB]',
     },
     {
@@ -44,7 +52,7 @@ export function TechnologyShowcase() {
       ],
       voltageRange: '66kV to 400kV',
       applications: 'Transmission substations, Power plants',
-      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop',
+      image: heroBgImage,
       color: 'from-[#10B981] to-[#059669]',
     },
     {
@@ -60,7 +68,7 @@ export function TechnologyShowcase() {
       ],
       voltageRange: '33kV to 400kV',
       applications: 'Substations, Distribution networks',
-      image: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&h=600&fit=crop',
+      image: teamImage,
       color: 'from-[#0F172A] to-[#1E293B]',
     },
     {
@@ -76,8 +84,8 @@ export function TechnologyShowcase() {
       ],
       voltageRange: 'All Voltage Levels',
       applications: 'Substations, Control centers',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-      color: 'from-[#F97316] to-[#EA580C]',
+      image: gridImage,
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
     {
       icon: Cpu,
@@ -92,7 +100,7 @@ export function TechnologyShowcase() {
       ],
       voltageRange: 'All Voltage Levels',
       applications: 'Smart substations, Grid modernization',
-      image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop',
+      image: installationImage,
       color: 'from-[#3B82F6] to-[#2563EB]',
     },
     {
@@ -108,7 +116,7 @@ export function TechnologyShowcase() {
       ],
       voltageRange: 'Up to 400kV',
       applications: 'T&C services, Maintenance',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop',
+      image: officeImage,
       color: 'from-[#10B981] to-[#059669]',
     },
   ]
@@ -181,9 +189,9 @@ export function TechnologyShowcase() {
   const currentTech = technologies[currentIndex]
 
   return (
-    <section id="technology" className="py-16 lg:py-20 bg-[#F8FAFC] relative overflow-hidden">
+    <section id="technology" className="py-16 lg:py-20 bg-[#F8FAFC]/60 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
@@ -199,7 +207,7 @@ export function TechnologyShowcase() {
 
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
           <div ref={carouselRef} key={currentIndex}>
-            <Card className="overflow-hidden shadow-2xl border-0 bg-white rounded-2xl">
+            <Card className="overflow-hidden shadow-2xl border-0 bg-white/70 rounded-2xl">
               <div className={`relative h-64 bg-gradient-to-br ${currentTech.color}`}>
                 <div className="absolute inset-0 opacity-40">
                   <img
@@ -216,7 +224,7 @@ export function TechnologyShowcase() {
                   </span>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 rounded-2xl bg-white/95 backdrop-blur-sm flex items-center justify-center shadow-2xl">
+                  <div className="w-20 h-20 rounded-2xl bg-white/70 backdrop-blur-sm flex items-center justify-center shadow-2xl">
                     <currentTech.icon size={40} className="text-[#3B82F6]" weight="duotone" />
                   </div>
                 </div>
@@ -229,11 +237,11 @@ export function TechnologyShowcase() {
                   {currentTech.description}
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-4">
-                  <div className="bg-[#F8FAFC] rounded-lg p-3 border border-[#E2E8F0]">
+                  <div className="bg-[#F8FAFC]/60 rounded-lg p-3 border border-[#E2E8F0]">
                     <div className="text-xs text-[#64748B] mb-1">Voltage Range</div>
                     <div className="font-semibold text-sm text-[#0F172A]">{currentTech.voltageRange}</div>
                   </div>
-                  <div className="bg-[#F8FAFC] rounded-lg p-3 border border-[#E2E8F0]">
+                  <div className="bg-[#F8FAFC]/60 rounded-lg p-3 border border-[#E2E8F0]">
                     <div className="text-xs text-[#64748B] mb-1">Applications</div>
                     <div className="font-semibold text-sm text-[#0F172A]">{currentTech.applications}</div>
                   </div>
@@ -273,7 +281,7 @@ export function TechnologyShowcase() {
                   variant="outline"
                   size="icon"
                   onClick={prevSlide}
-                  className="rounded-full border-[#E2E8F0] hover:bg-[#F8FAFC]"
+                  className="rounded-full border-[#E2E8F0] hover:bg-[#F8FAFC]/60"
                 >
                   <CaretLeft size={20} />
                 </Button>
@@ -281,7 +289,7 @@ export function TechnologyShowcase() {
                   variant="outline"
                   size="icon"
                   onClick={nextSlide}
-                  className="rounded-full border-[#E2E8F0] hover:bg-[#F8FAFC]"
+                  className="rounded-full border-[#E2E8F0] hover:bg-[#F8FAFC]/60"
                 >
                   <CaretRight size={20} />
                 </Button>
@@ -293,7 +301,7 @@ export function TechnologyShowcase() {
             <div>
               <h3 className="text-xl font-semibold text-[#0F172A] mb-3">Equipment Expertise</h3>
               <p className="text-[#64748B] leading-relaxed mb-5 text-sm">
-                MASS POWER SOLUTIONS has extensive experience in handling and installing diverse 
+                Mass Power Infra has extensive experience in handling and installing diverse 
                 power infrastructure equipment across all voltage levels. Our technical team is 
                 proficient in the latest technologies and international standards.
               </p>
@@ -306,7 +314,7 @@ export function TechnologyShowcase() {
                   className={`p-3 cursor-pointer transition-all duration-300 ${
                     index === currentIndex
                       ? 'bg-[#3B82F6]/5 border-[#3B82F6] shadow-md'
-                      : 'border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#3B82F6]/30'
+                      : 'border-[#E2E8F0] hover:bg-[#F8FAFC]/60 hover:border-[#3B82F6]/30'
                   }`}
                   onClick={() => goToSlide(index)}
                 >
@@ -332,7 +340,7 @@ export function TechnologyShowcase() {
           </div>
         </div>
 
-        <Card className="p-4 sm:p-6 lg:p-10 bg-[#F8FAFC] border border-[#E2E8F0]">
+        <Card className="p-4 sm:p-6 lg:p-10 bg-[#F8FAFC]/60 border border-[#E2E8F0]">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
             <div className="text-center">
               <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
@@ -345,9 +353,9 @@ export function TechnologyShowcase() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F97316]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <ShieldStar size={24} className="text-[#F97316] sm:hidden" weight="duotone" />
-                <ShieldStar size={28} className="text-[#F97316] hidden sm:block" weight="duotone" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <ShieldStar size={24} className="text-[#3B82F6] sm:hidden" weight="duotone" />
+                <ShieldStar size={28} className="text-[#3B82F6] hidden sm:block" weight="duotone" />
               </div>
               <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">Quality Assurance</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">

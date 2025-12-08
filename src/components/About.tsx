@@ -31,7 +31,7 @@ export function About() {
       icon: ShieldCheck,
       title: 'Quality & Safety Standards',
       description: 'Strict adherence to quality protocols and safety regulations on every project site',
-      color: 'from-[#F97316] to-[#EA580C]',
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
     {
       icon: Network,
@@ -127,12 +127,12 @@ export function About() {
   }, [])
 
   return (
-    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-[#F8FAFC] relative overflow-hidden">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-[#F8FAFC]/60 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-8 sm:mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#F97316] to-[#EA580C] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#F97316]/25">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">
             About Us
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#0F172A]">
@@ -223,7 +223,7 @@ export function About() {
             />
           </div>
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#F97316]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#3B82F6]/20 rounded-full blur-3xl"></div>
           <div className="relative z-10">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">
               Value of Association with MASS POWER SOLUTIONS
@@ -234,7 +234,7 @@ export function About() {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2 text-[#F97316] group-hover:scale-110 transition-transform">30+</div>
+                <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">30+</div>
                 <div className="text-white/70 text-xs sm:text-sm">Years of Experience</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10 hover:bg-white/15 transition-colors group">
@@ -246,7 +246,7 @@ export function About() {
                 <div className="text-white/70 text-xs sm:text-sm">Quality Compliance</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2 text-[#F97316] group-hover:scale-110 transition-transform">24/7</div>
+                <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2 text-[#3B82F6] group-hover:scale-110 transition-transform">24/7</div>
                 <div className="text-white/70 text-xs sm:text-sm">Project Support</div>
               </div>
             </div>

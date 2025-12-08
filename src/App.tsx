@@ -8,14 +8,19 @@ import { TechnologyShowcase } from '@/components/TechnologyShowcase'
 import { Specifications } from '@/components/Specifications'
 import { Certifications } from '@/components/Certifications'
 import { Gallery } from '@/components/Gallery'
+import { Clients } from '@/components/Clients'
 import { Services } from '@/components/Services'
+import { Team } from '@/components/Team'
+import { FeaturedProject } from '@/components/FeaturedProject'
+import { DetailedServices } from '@/components/DetailedServices'
+import { CompanyValues } from '@/components/CompanyValues'
 import { Testimonials } from '@/components/Testimonials'
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background smooth-scroll power-grid-pattern">
+    <div className="min-h-screen smooth-scroll relative">
       <Toaster position="top-right" richColors />
       <Header />
       <main>
@@ -27,7 +32,12 @@ function App() {
         <Specifications />
         <Certifications />
         <Gallery />
+        <CompanyValues />
+        <Clients />
         <Services />
+        <FeaturedProject />
+        <DetailedServices />
+        <Team />
         <Testimonials />
         <Contact />
       </main>

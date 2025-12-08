@@ -35,18 +35,18 @@ export function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-sm border-b border-[#E2E8F0]' : 'bg-white/80 backdrop-blur-sm'
+          isScrolled ? 'bg-white/70 shadow-sm border-b border-[#BFDBFE]' : 'bg-white/80 backdrop-blur-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-18">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-[#0F172A] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">MPS</span>
+                <span className="text-white font-bold text-lg">MPI</span>
               </div>
               <div>
-                <h1 className="font-bold text-base leading-tight text-[#0F172A]">MASS POWER SOLUTIONS</h1>
-                <p className="text-xs text-[#64748B]">EHV Infrastructure Specialists</p>
+                <h1 className="font-bold text-base leading-tight text-[#0F172A]">Mass Power Infra</h1>
+                <p className="text-xs text-[#1E3A5A]">Power Infrastructure Experts Since 2009</p>
               </div>
             </div>
 
@@ -55,7 +55,7 @@ export function Header() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-sm font-medium text-[#64748B] hover:text-[#0F172A] transition-colors"
+                  className="text-sm font-medium text-[#1E3A5A] hover:text-[#0F172A] transition-colors"
                 >
                   {item.label}
                 </button>
@@ -63,9 +63,9 @@ export function Header() {
             </nav>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+919876543210" className="flex items-center gap-2 text-sm font-medium text-[#0F172A]">
+              <a href="tel:+919442152528" className="flex items-center gap-2 text-sm font-medium text-[#0F172A]">
                 <Phone size={16} weight="bold" className="text-[#3B82F6]" />
-                +91 98765 43210
+                +91 94421 52528
               </a>
               <Button
                 size="sm"
@@ -90,7 +90,7 @@ export function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-white lg:hidden animate-in slide-in-from-right duration-300"
+          className="fixed inset-0 z-40 bg-white/70 lg:hidden animate-in slide-in-from-right duration-300"
           style={{ top: '64px' }}
         >
           <nav className="flex flex-col gap-1 p-4">
@@ -98,12 +98,12 @@ export function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-left py-3 px-4 text-base font-medium text-[#0F172A] hover:bg-[#F8FAFC] rounded-lg transition-colors"
+                className="text-left py-3 px-4 text-base font-medium text-[#0F172A] hover:bg-[#E0F2FE] rounded-lg transition-colors"
               >
                 {item.label}
               </button>
             ))}
-            <div className="mt-4 pt-4 border-t border-[#E2E8F0]">
+            <div className="mt-4 pt-4 border-t border-[#BFDBFE]">
               <Button
                 className="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold"
                 onClick={() => scrollToSection('contact')}
@@ -117,3 +117,4 @@ export function Header() {
     </>
   )
 }
+

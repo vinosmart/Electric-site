@@ -38,26 +38,26 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white text-[#0F172A] rounded-lg flex items-center justify-center">
-                <span className="font-bold text-lg">MPS</span>
+              <div className="w-10 h-10 bg-white/70 text-[#0F172A] rounded-lg flex items-center justify-center">
+                <span className="font-bold text-lg">MPI</span>
               </div>
               <div>
-                <h3 className="font-bold text-base leading-tight">MASS POWER SOLUTIONS</h3>
-                <p className="text-xs text-white/60">EHV Infrastructure Specialists</p>
+                <h3 className="font-bold text-base leading-tight">Mass Power Infra</h3>
+                <p className="text-xs text-white/60">Power Infrastructure Experts Since 2009</p>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-4">
-              Trusted EHV substation and transmission line contractor with 30 years of expertise. 
-              TNEB Class I certified.
+              Trusted EHV substation and transmission line contractor. TNEB Class I certified. 
+              Founded by <strong className="text-white">Ayyapan</strong>.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <Phone size={14} className="text-[#3B82F6]" />
-                <span>+91 98765 43210</span>
+                <span>+91 94421 52528</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <Envelope size={14} className="text-[#3B82F6]" />
-                <span>info@masspowersolutions.com</span>
+                <span>info@masspowerinfra.com</span>
               </div>
               <div className="flex items-start gap-2 text-sm text-white/70">
                 <MapPin size={14} className="text-[#3B82F6] mt-0.5 flex-shrink-0" />
@@ -113,7 +113,7 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/50">
-            © {currentYear} MASS POWER SOLUTIONS. All rights reserved.
+            © {currentYear} Mass Power Infra. All rights reserved.
           </p>
           <div className="flex gap-6">
             <button className="text-sm text-white/50 hover:text-white transition-colors">
@@ -128,3 +128,4 @@ export function Footer() {
     </footer>
   )
 }
+

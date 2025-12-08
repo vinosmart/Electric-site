@@ -67,10 +67,10 @@ export function Hero() {
   // Services are now rendered directly in JSX with gradient backgrounds
 
   return (
-    <section id="home" className="relative bg-white overflow-hidden pt-20">
+    <section id="home" className="relative bg-white/70 overflow-hidden pt-20">
       {/* Gradient accents */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#3B82F6]/5 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#F97316]/5 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#3B82F6]/5 to-transparent rounded-full blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="pt-16 pb-12 lg:pt-20 lg:pb-16">
@@ -79,9 +79,9 @@ export function Hero() {
             <div className="space-y-8">
               {/* Badge */}
               <div ref={badgeRef}>
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#F97316]/10 text-[#F97316] font-semibold rounded-full text-sm border border-[#F97316]/20">
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#3B82F6]/10 text-[#3B82F6] font-semibold rounded-full text-sm border border-[#3B82F6]/20">
                   <Lightning size={16} weight="fill" />
-                  30+ Years of Excellence
+                  Engineering India's Power Infrastructure Since 2009
                 </span>
               </div>
               
@@ -94,9 +94,11 @@ export function Hero() {
                 </h1>
                 
                 <p className="text-base sm:text-lg text-[#64748B] leading-relaxed max-w-xl">
-                  MASS POWER SOLUTIONS - Your trusted partner for complete Design, Engineering, Procurement, 
-                  Construction, Testing & Commissioning of EHV substations and transmission lines. TNEB Class I 
-                  certified contractor with ESA Grade License (ESA:530).
+                  Mass Power Infra - Ayyappan & Co. Your trusted partner for complete EPC solutions 
+                  including Design, Engineering, Procurement, Construction, Testing & Commissioning 
+                  of EHV substations and transmission lines. Founded by 
+                  <strong className="text-[#0F172A]"> Ayyapan</strong>, TNEB Class I certified contractor 
+                  with ESA Grade License (ESA:530).
                 </p>
 
                 {/* CTA Buttons */}
@@ -113,7 +115,7 @@ export function Hero() {
                     variant="outline"
                     size="lg"
                     onClick={() => scrollToSection('contact')}
-                    className="border-2 border-[#0F172A] bg-white text-[#0F172A] h-12 px-8 text-base font-semibold transition-all hover:!bg-[#0F172A] hover:!text-white"
+                    className="border-2 border-[#0F172A] bg-white/70 text-[#0F172A] h-12 px-8 text-base font-semibold transition-all hover:!bg-[#0F172A] hover:!text-white"
                   >
                     Get Quote
                   </Button>
@@ -123,20 +125,20 @@ export function Hero() {
               {/* Stats */}
               <div ref={statsRef} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-[#E2E8F0]">
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#0F172A]">30+</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">Years Experience</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#0F172A]">14+</div>
+                  <div className="text-xs sm:text-sm text-[#64748B]">Years of EPC Excellence</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">300+</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">Team Members</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">1500+</div>
+                  <div className="text-xs sm:text-sm text-[#64748B]">km Lines Executed</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#10B981]">100%</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">On-Time Delivery</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#10B981]">150+</div>
+                  <div className="text-xs sm:text-sm text-[#64748B]">Substations Commissioned</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#F97316]">TNEB</div>
-                  <div className="text-xs sm:text-sm text-[#64748B]">Class I Certified</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">600MW</div>
+                  <div className="text-xs sm:text-sm text-[#64748B]">Solar O&M Assets</div>
                 </div>
               </div>
             </div>
@@ -145,10 +147,10 @@ export function Hero() {
             <div className="hidden lg:block">
               <div className="relative">
                 {/* Background glow */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#F97316]/10 rounded-3xl blur-2xl"></div>
+                <div className="absolute -inset-4 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#3B82F6]/10 rounded-3xl blur-2xl"></div>
                 
                 {/* Card container */}
-                <div className="relative bg-white rounded-2xl shadow-xl border border-[#E2E8F0] p-6">
+                <div className="relative bg-white/70 rounded-2xl shadow-xl border border-[#E2E8F0] p-6">
                   {/* Header */}
                   <div className="text-center mb-6">
                     <h3 className="text-lg font-bold text-[#0F172A] mb-1">Our Core Services</h3>
@@ -184,7 +186,7 @@ export function Hero() {
                         <span className="text-xs text-white/70">Complete Testing</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-gradient-to-br from-[#F97316] to-[#EA580C] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="group p-4 rounded-xl bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <div className="flex flex-col items-center text-center gap-2">
                         <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                           <Wrench size={22} className="text-white" weight="duotone" />

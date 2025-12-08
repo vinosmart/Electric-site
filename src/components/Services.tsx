@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Cube, Gear, Wrench, Flask, TrendUp, Headset } from '@phosphor-icons/react'
+import { Cube, Gear, Wrench, Flask, TrendUp, Headset, FileText, ShieldCheck, Sun } from '@phosphor-icons/react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,45 +11,66 @@ export function Services() {
   const services = [
     {
       icon: Cube,
-      title: 'Design & Engineering',
-      description: 'Comprehensive design and engineering services for EHV substations and transmission lines',
-      features: ['Detailed engineering drawings', 'Load flow analysis', 'Equipment selection', 'Technical specifications'],
+      title: 'Substation Construction Works',
+      description: 'Turnkey execution of EHV substations including civil and electrical works.',
+      features: ['Air Insulated Substations', 'Gas Insulated Substations', 'Control Rooms', 'Switchyards'],
       color: 'from-[#0F172A] to-[#334155]',
     },
     {
       icon: Gear,
-      title: 'Procurement Services',
-      description: 'End-to-end procurement of electrical equipment, materials, and components from certified vendors',
-      features: ['Vendor evaluation', 'Quality assurance', 'Timely delivery', 'Cost optimization'],
+      title: 'Structure Erection Works',
+      description: 'Erection of steel structures for transmission lines and substation gantries.',
+      features: ['Tower erection', 'Gantry structures', 'Equipment support', 'Structural alignment'],
       color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
     {
       icon: Wrench,
-      title: 'Construction (Civil & Electrical)',
-      description: 'Complete civil and electrical construction works for substations and transmission line projects',
-      features: ['Foundation & structures', 'Cable laying & termination', 'Equipment installation', 'Site management'],
+      title: 'Substation Civil & Foundation Works',
+      description: 'Specialized civil works including equipment foundations, control buildings, and cable trenches.',
+      features: ['Transformer plinths', 'Equipment foundations', 'Cable trenches', 'Control buildings'],
       color: 'from-[#10B981] to-[#059669]',
     },
     {
-      icon: Flask,
-      title: 'Testing & Commissioning',
-      description: 'Comprehensive testing and commissioning services ensuring operational readiness and safety compliance',
-      features: ['Pre-commissioning tests', 'Equipment calibration', 'System integration', 'Performance validation'],
-      color: 'from-[#F97316] to-[#EA580C]',
+      icon: TrendUp,
+      title: 'Transmission Line Towers Erection',
+      description: 'Complete transmission line construction including tower erection and stringing works.',
+      features: ['Tower footing', 'Erection', 'Stringing', 'Sagging'],
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
     {
-      icon: TrendUp,
-      title: 'Operation & Maintenance',
-      description: 'Ongoing O&M services to ensure optimal performance and longevity of power infrastructure',
-      features: ['Preventive maintenance', 'Breakdown support', 'Performance monitoring', 'Upgrade services'],
+      icon: Flask,
+      title: 'HT & LT Cable Laying Works',
+      description: 'Underground cable laying, jointing, and termination for HT and LT networks.',
+      features: ['Cable trenching', 'Cable laying', 'Jointing kits', 'Termination'],
       color: 'from-[#0F172A] to-[#1E293B]',
     },
     {
       icon: Headset,
-      title: 'Turnkey Project Execution',
-      description: 'Complete end-to-end turnkey solutions from concept to commissioning and handover',
-      features: ['Single-point responsibility', 'Integrated approach', 'Budget adherence', 'Timeline commitment'],
+      title: 'Testing & Commissioning',
+      description: 'Pre-commissioning tests for substations, transformers, and protection systems.',
+      features: ['Relay testing', 'Transformer testing', 'Switchgear testing', 'System charging'],
       color: 'from-[#3B82F6] to-[#2563EB]',
+    },
+    {
+      icon: FileText, // Need to import FileText if not present, checking imports...
+      title: 'Liaisoning Works (CEIG/TANGEDCO)',
+      description: 'Statutory approvals and clearances from CEIG and TANGEDCO.',
+      features: ['Safety certificates', 'Drawings approval', 'Charging clearance', 'Regulatory compliance'],
+      color: 'from-[#10B981] to-[#059669]',
+    },
+    {
+      icon: ShieldCheck, // Need to import ShieldCheck
+      title: 'Operation & Maintenance Works',
+      description: 'Comprehensive O&M services for substations and transmission assets.',
+      features: ['Preventive maintenance', 'Breakdown services', '24/7 monitoring', 'Asset management'],
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
+    },
+    {
+      icon: Sun, // Need to import Sun
+      title: 'Solar Power Plant Works',
+      description: 'EPC services for solar power evacuation and grid interconnection.',
+      features: ['Pooling substations', 'Inverter duty transformers', 'Grid synchronization', 'Evacuation lines'],
+      color: 'from-[#3B82F6] to-[#1D4ED8]',
     },
   ]
 
@@ -141,9 +162,9 @@ export function Services() {
   }
 
   return (
-    <section id="services" className="py-16 lg:py-20 bg-white relative overflow-hidden">
+    <section id="services" className="py-16 lg:py-20 bg-white/70 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">
@@ -165,8 +186,8 @@ export function Services() {
         </div>
 
         <div ref={bottomCardsRef} className="grid md:grid-cols-2 gap-8">
-          <Card className="p-10 bg-white border border-[#E2E8F0] hover:shadow-lg transition-all">
-            <h3 className="text-2xl font-bold mb-6 text-[#0F172A]">Why Choose MASS POWER SOLUTIONS?</h3>
+          <Card className="p-10 bg-white/70 border border-[#E2E8F0] hover:shadow-lg transition-all">
+            <h3 className="text-2xl font-bold mb-6 text-[#0F172A]">Why Choose Mass Power Infra?</h3>
             <ul className="space-y-5">
               <li className="flex items-start gap-4">
                 <div className="w-7 h-7 rounded-full bg-[#10B981] flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -207,7 +228,7 @@ export function Services() {
             </ul>
           </Card>
 
-          <Card className="p-10 bg-white border border-[#E2E8F0] hover:shadow-lg transition-all">
+          <Card className="p-10 bg-white/70 border border-[#E2E8F0] hover:shadow-lg transition-all">
             <h3 className="text-2xl font-bold mb-6 text-[#0F172A]">Sectors We Serve</h3>
             <div className="grid grid-cols-2 gap-5">
               {[
@@ -221,7 +242,7 @@ export function Services() {
                 'Transmission Infrastructure',
               ].map((sector) => (
                 <div key={sector} className="flex items-center gap-3">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#F97316]"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]"></div>
                   <span className="text-lg text-[#0F172A]">{sector}</span>
                 </div>
               ))}
