@@ -33,7 +33,7 @@ export function Swiper() {
 
   return (
     <section className="py-16 overflow-hidden bg-gradient-to-b from-white to-gray-50">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
         

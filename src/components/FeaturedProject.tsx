@@ -42,7 +42,7 @@ export function FeaturedProject() {
 
   return (
     <section ref={sectionRef} className="py-20 bg-[#F0F9FF] overflow-hidden">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-20">
           
           <div ref={imageRef} className="w-full lg:w-1/2">

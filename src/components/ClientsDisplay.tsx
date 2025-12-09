@@ -53,7 +53,7 @@ export function ClientsDisplay() {
 
   return (
     <section className="py-20 bg-white/70 border-t border-[#E2E8F0]">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
           <span className="inline-block px-5 py-2 bg-[#06d6a0] text-white font-semibold rounded-full text-sm mb-6">

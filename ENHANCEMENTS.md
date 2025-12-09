@@ -5,6 +5,7 @@
 ### 1. Enhanced GSAP Animations
 
 #### Hero Section
+
 - Multi-layered entrance animation sequence
 - Badge slides from left (0.6s duration)
 - Content fades up with y-translation (0.8s)
@@ -13,6 +14,7 @@
 - Animated gradient backgrounds with blur effects
 
 #### About Section
+
 - Title fade-up animation on scroll trigger
 - Content splits: left slides from left, right staggers from right
 - Stats CTA section animates with dedicated trigger
@@ -20,6 +22,7 @@
 - Capabilities grid with checkmark icons
 
 #### Products Section
+
 - Section title animation on viewport entry
 - Tab-based product categorization (TMT, MS Products, Special)
 - Individual product cards with staggered animation (0.1s increments)
@@ -28,6 +31,7 @@
 - 15+ detailed product listings
 
 #### Specifications Section
+
 - Animated spec cards with individual scroll triggers
 - Quality testing procedure cards with stagger animation
 - Bottom CTA with scale animation and back easing
@@ -35,6 +39,7 @@
 - Comprehensive material specifications
 
 #### Gallery Section
+
 - Tab-based categorization (Facilities/Projects)
 - 6 detailed facility descriptions
 - 8 major project showcases
@@ -43,6 +48,7 @@
 - Animated info cards at bottom
 
 #### Services Section
+
 - 6 comprehensive service offerings
 - Individual service cards with stagger animation
 - Bottom split cards with dedicated animations
@@ -50,6 +56,7 @@
 - Feature lists with visual indicators
 
 #### Certifications Section
+
 - Auto-rotating certification showcase (5s interval)
 - Scale and fade transitions
 - Interactive certification selector
@@ -57,6 +64,7 @@
 - Grid pattern background overlay
 
 #### Testimonials Section
+
 - Auto-rotating testimonial carousel (7s interval)
 - 6 detailed client testimonials
 - Manual navigation controls
@@ -64,6 +72,7 @@
 - Smooth slide transitions
 
 #### Contact Section
+
 - Split animation: form left, cards right
 - Contact info cards with stagger (0.1s)
 - Bottom CTA card animation
@@ -73,12 +82,15 @@
 ### 2. Expanded Content & Data
 
 #### Products
+
 **TMT Bars:**
+
 - Fe 500 with full specifications
 - Fe 550 with enhanced specs
 - Fe 550D for seismic zones
 
 **MS Products (9 categories):**
+
 - MS Angles (equal & unequal)
 - MS Channels (ISMC/ISMCP)
 - MS Plates & Sheets
@@ -90,6 +102,7 @@
 - Structural Bolts & Fasteners
 
 #### Facilities (6 detailed)
+
 1. TMT Bar Rolling Mill - 30,000 MT capacity
 2. Quality Testing Laboratory - Fully equipped
 3. MS Products Warehouse - 25,000 sq.ft
@@ -98,6 +111,7 @@
 6. Dispatch & Loading Bay - 50+ vehicles/day
 
 #### Projects (8 major)
+
 1. Prestige Lakeside Habitat - 2,500 MT
 2. Bangalore Metro Phase 2 - Infrastructure
 3. Wipro SEZ IT Campus - 3,800 MT
@@ -108,6 +122,7 @@
 8. Toyota Kirloskar Expansion
 
 #### Services (6 comprehensive)
+
 1. Steel Trading & Distribution
 2. Custom Cutting Services
 3. Material Supply for Projects
@@ -116,18 +131,21 @@
 6. Warehouse & Inventory
 
 #### Quality Tests (4 detailed)
+
 1. Tensile Strength Test - Every batch
 2. Chemical Composition - Each heat
 3. Bend & Rebend Test - Sample testing
 4. Dimensional Accuracy - Continuous monitoring
 
 #### Certifications (4 major)
+
 1. BIS License - CM/L-XXXXXXXX
 2. ISO 9001:2015 - Quality Management
 3. IS 1786:2008 - TMT Bar Standard
 4. IS 2062 - MS Products Standard
 
 #### Testimonials (6 detailed)
+
 1. Rajesh Kumar - Prestige Group
 2. Srinivas Reddy - SR Consultants
 3. Arun Prakash - Sobha Developers
@@ -136,6 +154,7 @@
 6. Mohan Kumar - Biocon Limited
 
 #### Client Roster (12 organizations)
+
 - Prestige Group
 - Sobha Developers
 - Brigade Enterprises
@@ -152,6 +171,7 @@
 ### 3. Visual Enhancements
 
 #### Background Improvements
+
 - Subtle color tints added to backgrounds
 - Gradient overlays (primary/accent combinations)
 - Grid pattern overlays with opacity
@@ -159,6 +179,7 @@
 - Multi-layered gradient backgrounds
 
 #### Color Refinements
+
 - Primary: Enhanced saturation (oklch(0.38 0.12 250))
 - Background: Warm tint (oklch(0.985 0.002 260))
 - Card: Bright with subtle tint (oklch(0.99 0.001 260))
@@ -166,6 +187,7 @@
 - Consistent color palette usage
 
 #### Interactive Elements
+
 - Hover transforms on all cards (-translate-y-1)
 - Shadow transitions (shadow-sm to shadow-lg)
 - Scale effects on images (110%)
@@ -175,6 +197,7 @@
 ### 4. Professional Polish
 
 #### Typography
+
 - Consistent hierarchy across sections
 - Proper font weights (400, 500, 600, 700)
 - Inter font family throughout
@@ -182,13 +205,15 @@
 - Letter spacing adjustments
 
 #### Spacing & Layout
+
 - Consistent section padding (py-20 lg:py-28)
 - Proper grid gaps (gap-6 lg:gap-8)
 - Card padding standardized (p-6 lg:p-8)
 - Responsive breakpoints
-- Max-width containers (max-w-7xl)
+- Max-width containers (max-w-[1440px])
 
 #### Component Usage
+
 - shadcn UI components throughout
 - Tabs for content organization
 - Badges for categorization
@@ -199,6 +224,7 @@
 ### 5. User Experience
 
 #### Navigation
+
 - Smooth scroll behavior
 - Active section highlighting
 - Mobile menu with slide animation
@@ -206,6 +232,7 @@
 - Section-based routing
 
 #### Information Architecture
+
 - Logical content flow
 - Tab-based categorization
 - Progressive disclosure
@@ -213,6 +240,7 @@
 - Easy access to contact
 
 #### Accessibility
+
 - WCAG AA contrast ratios
 - Semantic HTML structure
 - Proper ARIA labels
@@ -222,6 +250,7 @@
 ## Technical Implementation
 
 ### GSAP Integration
+
 - ScrollTrigger plugin registered
 - Context-based animation cleanup
 - Viewport-based triggers (80% entry)
@@ -230,6 +259,7 @@
 - Back.out easing for emphasis
 
 ### Performance Optimizations
+
 - Lazy animation initialization
 - Context cleanup on unmount
 - Optimized image loading
@@ -237,6 +267,7 @@
 - Proper dependency arrays
 
 ### Code Quality
+
 - TypeScript throughout
 - Proper type definitions
 - Reusable components

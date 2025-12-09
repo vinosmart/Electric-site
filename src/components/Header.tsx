@@ -38,7 +38,7 @@ export function Header() {
           isScrolled ? 'bg-white/70 shadow-sm border-b border-[#BFDBFE]' : 'bg-white/80 backdrop-blur-sm'
         }`}
       >
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-18">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-[#154D71] rounded-lg flex items-center justify-center">

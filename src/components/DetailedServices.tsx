@@ -92,7 +92,7 @@ export function DetailedServices() {
     <section ref={sectionRef} className="py-0 bg-[#F0F9FF] overflow-hidden">
       {services.map((service, index) => (
         <div key={service.id} id={`service-${service.id}`} className={`py-20 ${index % 2 === 1 ? 'bg-white/70' : 'bg-[#F0F9FF]'}`}>
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
             <div className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${service.imagePosition === 'right' ? '' : 'lg:flex-row-reverse'}`}>
               
               <div id={`service-${service.id}-content`} className="w-full lg:w-1/2">

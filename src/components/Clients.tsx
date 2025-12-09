@@ -70,7 +70,7 @@ export function Clients() {
 
   return (
     <section id="clients" className="py-20 lg:py-28 bg-[#FFF9AF]/40 relative overflow-hidden">
-      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         {/* Header */}
         <div ref={titleRef} className="mb-16 text-center">
 

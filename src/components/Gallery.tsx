@@ -207,7 +207,7 @@ export function Gallery() {
 
   return (
     <section id="gallery" className="py-20 lg:py-28 bg-[#F8FAFC]/60 relative">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-12 text-center">
           <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
             Project Gallery

@@ -25,8 +25,8 @@ export function Certifications() {
       number: 'State Power Utility',
       description: 'Certified Class I contractor for executing EHV substation and transmission line works for Tamil Nadu Electricity Board',
       year: 'Active',
-      color: 'bg-[#154D71]',
-      iconBg: 'bg-[#06d6a0]',
+       color: 'bg-[#154D71]',
+      iconBg: 'bg-[#154D71]', 
       image: transformerImage,
     },
     {
@@ -35,8 +35,8 @@ export function Certifications() {
       number: 'ESA:530',
       description: 'Electrical Supervisor Authorization Grade License issued by Electrical Licensing Board of Tamil Nadu',
       year: 'Active',
-      color: 'bg-[#10B981]',
-      iconBg: 'bg-[#10B981]',
+          color: 'bg-[#154D71]',
+      iconBg: 'bg-[#154D71]',
       image: officeImage,
     },
     {
@@ -45,7 +45,7 @@ export function Certifications() {
       number: 'Class A & B',
       description: 'Certified contractor for Chennai Metropolitan Water Supply and Sewerage Board infrastructure projects',
       year: 'Active',
-      color: 'bg-[#06d6a0]',
+           color: 'bg-[#154D71]',
       iconBg: 'bg-[#154D71]',
       image: installationImage,
     },
@@ -55,8 +55,8 @@ export function Certifications() {
       number: 'Quality Management',
       description: 'International certification for quality management systems ensuring consistent project delivery excellence',
       year: '2012',
-      color: 'bg-[#06d6a0]',
-      iconBg: 'bg-[#06d6a0]',
+      color: 'bg-[#154D71]',
+      iconBg: 'bg-[#154D71]',
       image: certificationImage,
     },
   ]
@@ -124,7 +124,7 @@ export function Certifications() {
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#33A1E0]/5 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#1C6EA4]/5 rounded-full blur-[100px]"></div>
       
-      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
       <div ref={titleRef} className="mb-10 text-center">
         <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">Certifications & Licenses</span>
        

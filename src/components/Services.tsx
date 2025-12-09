@@ -163,7 +163,7 @@ export function Services() {
     <section id="services" className="relative py-16 overflow-hidden lg:py-20 bg-white/70">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#33A1E0]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1C6EA4]/5 rounded-full blur-3xl"></div>
-      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-10 text-center">
           <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
             Our Services

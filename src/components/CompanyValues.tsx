@@ -114,7 +114,7 @@ export function CompanyValues() {
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full bg-[#FFF9AF]/80"></div>
       
-      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         
         {/* Tabs Navigation */}
         <div className="flex flex-wrap justify-center gap-3 mb-12 sm:gap-4 sm:mb-16">

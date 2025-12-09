@@ -144,7 +144,7 @@ export function Contact() {
     <section id="contact" className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-white/70">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#33A1E0]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FFF9AF]/20 rounded-full blur-3xl"></div>
-      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-8 text-center sm:mb-10">
           <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">Contact Us</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#154D71] mb-3 sm:mb-4">

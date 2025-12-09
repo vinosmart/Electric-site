@@ -34,7 +34,7 @@ export function Footer() {
 
   return (
     <footer className="bg-[#154D71] text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
