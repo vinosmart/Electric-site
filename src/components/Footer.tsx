@@ -33,47 +33,35 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-[#154D71] text-white py-8">
+    <footer className="bg-[#154D71] text-white py-12">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid gap-8 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-white/70 text-[#154D71] rounded-lg flex items-center justify-center">
-                <span className="font-bold text-lg">MPI</span>
+                <span className="text-lg font-bold">MPI</span>
               </div>
               <div>
-                <h3 className="font-bold text-base leading-tight">Mass Power Infra</h3>
+                <h3 className="text-base font-bold leading-tight">Mass Power Infra</h3>
                 <p className="text-xs text-white/60">Power Infrastructure Experts Since 2009</p>
               </div>
             </div>
-            <p className="text-sm text-white/70 leading-relaxed mb-4">
+            <p className="mb-4 text-sm leading-relaxed text-white/70">
               Trusted EHV substation and transmission line contractor. TNEB Class I certified. 
               Founded by <strong className="text-white">Ayyapan</strong>.
             </p>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <Phone size={14} className="text-[#06d6a0]" />
-                <span>+91 94421 52528</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <Envelope size={14} className="text-[#06d6a0]" />
-                <span>info@masspowerinfra.com</span>
-              </div>
-              <div className="flex items-start gap-2 text-sm text-white/70">
-                <MapPin size={14} className="text-[#06d6a0] mt-0.5 flex-shrink-0" />
-                <span>Chennai, Tamil Nadu, India</span>
-              </div>
-            </div>
           </div>
 
+          {/* Company Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Company</h4>
+            <h4 className="mb-4 font-semibold text-white">Company</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-sm text-white/60 hover:text-white transition-colors"
+                    className="text-sm transition-colors text-white/60 hover:text-white"
                   >
                     {link.label}
                   </button>
@@ -82,14 +70,15 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Capabilities */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Capabilities</h4>
+            <h4 className="mb-4 font-semibold text-white">Capabilities</h4>
             <ul className="space-y-2">
               {footerLinks.capabilities.map((link) => (
                 <li key={link.label}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-sm text-white/60 hover:text-white transition-colors"
+                    className="text-sm transition-colors text-white/60 hover:text-white"
                   >
                     {link.label}
                   </button>
@@ -98,8 +87,9 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Certifications */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Certifications</h4>
+            <h4 className="mb-4 font-semibold text-white">Certifications</h4>
             <ul className="space-y-2">
               <li className="text-sm text-white/60">TNEB Class I Contractor</li>
               <li className="text-sm text-white/60">ESA Grade License (ESA:530)</li>
@@ -109,17 +99,78 @@ export function Footer() {
           </div>
         </div>
 
-        <Separator className="bg-white/10 mb-6" />
+        <Separator className="mb-8 bg-white/10" />
 
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        {/* Contact Information Section */}
+        <div className="mb-8">
+          <h4 className="mb-6 text-lg font-semibold text-white">Contact Us</h4>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Phone & Email */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 text-sm">
+                <Phone size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0" />
+                <a href="tel:04632242528" className="transition-colors text-white/80 hover:text-white">
+                  04632-242528
+                </a>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <Envelope size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0" />
+                <a href="mailto:info@masstechnopower.com" className="break-all transition-colors text-white/80 hover:text-white">
+                  info@masstechnopower.com
+                </a>
+              </div>
+            </div>
+
+            {/* Head Office */}
+            <div className="flex items-start gap-3">
+              <MapPin size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0 mt-0.5" />
+              <div>
+                <h5 className="mb-1 text-sm font-semibold text-white">Head Office</h5>
+                <p className="text-sm leading-relaxed text-white/80">
+                  No:5/107-D1, Meenakshi Nagar,<br />
+                  A.Salaipudur, Kovilpatti - 628502
+                </p>
+              </div>
+            </div>
+
+            {/* Chennai Office */}
+            <div className="flex items-start gap-3">
+              <MapPin size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0 mt-0.5" />
+              <div>
+                <h5 className="mb-1 text-sm font-semibold text-white">Chennai Office</h5>
+                <p className="text-sm leading-relaxed text-white/80">
+                  Old No.45, New No.95, Poes Main Road,<br />
+                  Teynampet, Chennai - 600018
+                </p>
+              </div>
+            </div>
+
+            {/* Saudi Arabia Office */}
+            <div className="flex items-start gap-3">
+              <MapPin size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0 mt-0.5" />
+              <div>
+                <h5 className="mb-1 text-sm font-semibold text-white">Saudi Arabia Office</h5>
+                <p className="text-sm leading-relaxed text-white/80">
+                  Noor Plaza, 3rd Floor,<br />
+                  Al Khobar - 34448, Saudi Arabia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Separator className="mb-6 bg-white/10" />
+
+        {/* Footer Bottom */}
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-white/50">
             © {currentYear} Mass Power Infra. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <button className="text-sm text-white/50 hover:text-white transition-colors">
+            <button className="text-sm transition-colors text-white/50 hover:text-white">
               Privacy Policy
             </button>
-            <button className="text-sm text-white/50 hover:text-white transition-colors">
+            <button className="text-sm transition-colors text-white/50 hover:text-white">
               Terms of Service
             </button>
           </div>
@@ -128,4 +179,3 @@ export function Footer() {
     </footer>
   )
 }
-

@@ -113,32 +113,45 @@ export function Contact() {
     })
   }
 
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: 'Visit Us',
-      details: ['MASS POWER SOLUTIONS', 'Tamil Nadu', 'India'],
-      color: 'bg-[#154D71]',
-    },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      details: ['+91 XXXXX XXXXX', '+91 XXXXX XXXXX', 'Mon-Sat: 9:00 AM - 6:00 PM'],
-      color: 'bg-[#1C6EA4]',
-    },
-    {
-      icon: Envelope,
-      title: 'Email Us',
-      details: ['info@masspowersolutions.co.in', 'projects@masspowersolutions.co.in', 'support@masspowersolutions.co.in'],
-      color: 'bg-[#33A1E0]',
-    },
-    {
-      icon: Clock,
-      title: 'Business Hours',
-      details: ['Monday - Saturday', '9:00 AM - 6:00 PM', 'Sunday: Closed'],
-      color: 'bg-[#1C6EA4]',
-    },
-  ]
+const contactInfo = [
+  {
+    icon: MapPin,
+    title: 'Head Office',
+    details: [
+      'No:5/107-D1, Meenakshi Nagar,',
+      'A.Salaipudur, Kovilpatti - 628502',
+      'Tamil Nadu, India',
+    ],
+    color: 'bg-[#154D71]',
+  },
+ 
+  
+  {
+    icon: Phone,
+    title: 'Call Us',
+    details: [
+      '04632-242528',
+      '+91 94421 52528',
+      'Mon–Sat: 9:00 AM - 6:00 PM',
+    ],
+    color: 'bg-[#1C6EA4]',
+  },
+  {
+    icon: Envelope,
+    title: 'Email Us',
+    details: [
+      'info@masstechnopower.com',
+    ],
+    color: 'bg-[#33A1E0]',
+  },
+  {
+    icon: Clock,
+    title: 'Business Hours',
+    details: ['Monday - Saturday', '9:00 AM - 6:00 PM', 'Sunday: Closed'],
+    color: 'bg-[#1C6EA4]',
+  },
+]
+
 
   return (
     <section id="contact" className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-white/70">
@@ -148,7 +161,9 @@ export function Contact() {
         <div ref={titleRef} className="mb-8 text-center sm:mb-10">
           <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">Contact Us</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#154D71] mb-3 sm:mb-4">
-            Get in Touch with Us
+            Get in Touch <span className='text-[#33A1E0]'>
+              with Us
+            </span>
           </h2>
           <p className="text-sm sm:text-base text-[#64748B] max-w-3xl mx-auto">
             Have a project inquiry or need technical consultation? Our team of experts is ready  

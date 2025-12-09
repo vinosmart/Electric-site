@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
-import { List, X, Phone } from '@phosphor-icons/react'
+import { List as ListIcon, X as XIcon, Phone as PhoneIcon } from '@phosphor-icons/react'
+import Logo from '@/assets/logo.png'
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -41,13 +42,8 @@ export function Header() {
         <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-18">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#154D71] rounded-lg flex items-center justify-center">
-                <span className="text-lg font-bold text-white">MPI</span>
-              </div>
               <div>
-                <h1 className="font-bold text-base leading-tight text-[#154D71]">Mass Power Infra</h1>
-                <p className="text-xs text-[#1E3A5A] leading-tight">Power Infrastructure Experts Since 2009</p>
-                <p className="text-[11px] text-[#1E3A5A] leading-tight">Ayyappan &amp; Co</p>
+                <img src={Logo} alt="Logo" className="w-auto h-10" />
               </div>
             </div>
 
@@ -65,7 +61,7 @@ export function Header() {
 
             <div className="items-center hidden gap-4 lg:flex">
               <a href="tel:+919442152528" className="flex items-center gap-2 text-sm font-medium text-[#154D71]">
-                <Phone size={16} weight="bold" className="text-[#154D71] font-bold" />
+                <PhoneIcon size={16} weight="bold" className="text-[#154D71] font-bold" />
                 +91 94421 52528
               </a>
               <Button
@@ -83,7 +79,7 @@ export function Header() {
               className="lg:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X size={24} /> : <List size={24} />}
+              {isMobileMenuOpen ? <XIcon size={24} /> : <ListIcon size={24} />}
             </Button>
           </div>
         </div>
