@@ -14,13 +14,15 @@ import { Team } from '@/components/Team'
 import { FeaturedProject } from '@/components/FeaturedProject'
 import { DetailedServices } from '@/components/DetailedServices'
 import { CompanyValues } from '@/components/CompanyValues'
+import {Swiper} from '@/components/Swiper'
 import { Testimonials } from '@/components/Testimonials'
+
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen smooth-scroll relative">
+    <div className="relative min-h-screen smooth-scroll">
       <Toaster position="top-right" richColors />
       <Header />
       <main>
@@ -38,7 +40,9 @@ function App() {
         <FeaturedProject />
         <DetailedServices />
         <Team />
+        <Swiper />
         <Testimonials />
+
         <Contact />
       </main>
       <Footer />

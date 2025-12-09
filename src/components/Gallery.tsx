@@ -45,7 +45,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2022',
       image: substation1,
-      color: 'bg-[#03045e]',
+      color: 'bg-[#154D71]',
     },
     {
       id: 'substation-2',
@@ -88,7 +88,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2022',
       image: transmission1,
-      color: 'bg-[#03045e]',
+      color: 'bg-[#154D71]',
     },
     {
       id: 'transmission-2',
@@ -128,7 +128,7 @@ export function Gallery() {
       title: 'Substations Completed',
       value: '50+',
       description: 'Successfully commissioned',
-      color: 'bg-[#03045e]',
+      color: 'bg-[#154D71]',
     },
     {
       icon: Broadcast,
@@ -194,11 +194,11 @@ export function Gallery() {
         className="overflow-hidden cursor-pointer rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white/70"
         onClick={() => setSelectedImage(item)}
       >
-        <div className="relative aspect-square overflow-hidden">
+        <div className="relative overflow-hidden aspect-square">
           <img 
             src={item.image} 
             alt={item.title}
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
       </div>
@@ -207,14 +207,20 @@ export function Gallery() {
 
   return (
     <section id="gallery" className="py-20 lg:py-28 bg-[#F8FAFC]/60 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div ref={titleRef} className="text-center mb-12">
-          <span className="inline-block px-5 py-2 bg-[#06d6a0] text-white font-semibold rounded-full text-sm mb-6">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div ref={titleRef} className="mb-12 text-center">
+          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
             Project Gallery
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#03045e]">
-            Our Projects & Infrastructure
-          </h2>
+     
+          
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+             Our Projects & 
+   <span className="text-[#33A1E0] ml-2">
+            Infrastructure
+
+        </span>
+        </h2>
           <p className="text-base lg:text-lg text-[#64748B] max-w-2xl mx-auto">
             Showcasing our expertise in EHV substation and transmission line projects across Tamil Nadu.
           </p>
@@ -225,27 +231,27 @@ export function Gallery() {
             <button 
               onClick={() => setActiveTab('civil')}
               style={{
-                backgroundColor: activeTab === 'civil' ? '#06d6a0' : '#ffffff',
-                color: activeTab === 'civil' ? '#ffffff' : '#03045e',
+                backgroundColor: activeTab === 'civil' ? '#FFF9AF' : '#ffffff',
+                color: activeTab === 'civil' ? '#154D71' : '#154D71',
               }}
-              className="px-6 py-3 text-sm font-semibold rounded-full shadow-md transition-all"
+              className="px-6 py-3 text-sm font-semibold transition-all rounded-full shadow-md"
             >
               Substation Civil Works
             </button>
             <button 
               onClick={() => setActiveTab('pile')}
               style={{
-                backgroundColor: activeTab === 'pile' ? '#10B981' : '#ffffff',
-                color: activeTab === 'pile' ? '#ffffff' : '#03045e',
+                backgroundColor: activeTab === 'pile' ? '#154D71' : '#ffffff',
+                color: activeTab === 'pile' ? '#ffffff' : '#154D71',
               }}
-              className="px-6 py-3 text-sm font-semibold rounded-full shadow-md transition-all"
+              className="px-6 py-3 text-sm font-semibold transition-all rounded-full shadow-md"
             >
               Pile Foundation
             </button>
           </TabsList>
 
           <TabsContent value="civil" forceMount className="data-[state=inactive]:hidden">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
               {substationProjects.map((item, index) => (
                 <GalleryCard key={item.id} item={item} index={index} />
               ))}
@@ -253,7 +259,7 @@ export function Gallery() {
           </TabsContent>
 
           <TabsContent value="pile" forceMount className="data-[state=inactive]:hidden">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
               {transmissionProjects.map((item, index) => (
                 <GalleryCard key={item.id} item={item} index={index} />
               ))}
@@ -270,13 +276,13 @@ export function Gallery() {
                 onClick={() => setSelectedImage(null)}
                 className="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-white/70 flex items-center justify-center hover:bg-[#F8FAFC]/60 transition-colors shadow-md"
               >
-                <X size={16} className="text-[#03045e]" />
+                <X size={16} className="text-[#154D71]" />
               </button>
               <div className="relative h-64 sm:h-80">
                 <img 
                   src={selectedImage.image} 
                   alt={selectedImage.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 object-cover w-full h-full"
                 />
                 <div className={`absolute inset-0 ${selectedImage.color} opacity-60`}></div>
                 <div className="absolute inset-0 bg-white/30"></div>
@@ -286,12 +292,12 @@ export function Gallery() {
                   <span className="inline-block px-3 py-1 bg-[#06d6a0]/10 text-[#06d6a0] text-sm font-semibold rounded-full">
                     {selectedImage.category}
                   </span>
-                  <div className="flex items-center gap-3 text-sm text-[#03045e] font-medium">
+                  <div className="flex items-center gap-3 text-sm text-[#154D71] font-medium">
                     {selectedImage.location && <span>{selectedImage.location}</span>}
                     {selectedImage.year && <span>• {selectedImage.year}</span>}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-[#03045e]">{selectedImage.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#154D71]">{selectedImage.title}</h3>
                 <p className="text-[#64748B] leading-relaxed text-sm">{selectedImage.description}</p>
               </div>
             </div>

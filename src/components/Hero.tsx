@@ -67,19 +67,19 @@ export function Hero() {
   // Services are now rendered directly in JSX with solid backgrounds
 
   return (
-    <section id="home" className="relative bg-white/70 overflow-hidden pt-20">
+    <section id="home" className="relative pt-20 overflow-hidden bg-white/70">
       {/* Accent shapes */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1C6EA4]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1C6EA4]/10 rounded-full blur-3xl"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div className="pt-16 pb-12 lg:pt-20 lg:pb-16">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
             {/* Left Content */}
             <div className="space-y-8">
               {/* Badge */}
               <div ref={badgeRef}>
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#3B82F6]/10 text-[#3B82F6] font-semibold rounded-full text-sm border border-[#3B82F6]/20">
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#154D71] text-white font-semibold rounded-full text-sm border border-[#1C6EA4]/20">
                   <Lightning size={16} weight="fill" />
                   Engineering India's Power Infrastructure Since 2009
                 </span>
@@ -87,9 +87,9 @@ export function Hero() {
               
               {/* Main content */}
               <div ref={contentRef} className="space-y-4 sm:space-y-6">
-                <h1 className="font-bold text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.15] tracking-tight text-[#03045e]">
+                <h1 className="font-bold text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.15] tracking-tight text-[#154D71]">
                   EHV Substation &{' '}
-                  <span className="text-[#3B82F6]">Transmission Line</span>{' '}
+                  <span className="text-[#33A1E0]">Transmission Line</span>{' '}
                   Specialists
                 </h1>
                 
@@ -97,27 +97,27 @@ export function Hero() {
                   Mass Power Infra - Ayyappan & Co. Your trusted partner for complete EPC solutions 
                   including Design, Engineering, Procurement, Construction, Testing & Commissioning 
                   of EHV substations and transmission lines. Founded by 
-                  <strong className="text-[#03045e]"> Ayyapan</strong>, TNEB Class I certified contractor 
+                  <strong className="text-[#33A1E0]"> Ayyapan</strong>, TNEB Class I certified contractor 
                   with ESA Grade License (ESA:530).
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                <div className="flex flex-col gap-4 pt-2 sm:flex-row">
                   <Button
                     size="lg"
-                    className="bg-[#3B82F6] hover:bg-[#2563EB] text-white shadow-lg shadow-[#3B82F6]/25 hover:shadow-xl hover:shadow-[#3B82F6]/30 transition-all h-12 px-8 text-base font-semibold"
+                    className="bg-[#33A1E0] hover:bg-[#2563EB] text-white shadow-lg shadow-[#1C6EA4]/25 hover:shadow-xl hover:shadow-[#1C6EA4]/30 transition-all h-12 px-8 text-base font-semibold"
                     onClick={() => scrollToSection('services')}
                   >
                     Our Services
                     <ArrowRight className="ml-2" size={18} />
                   </Button>
                   <Button
-                    variant="outline"
                     size="lg"
                     onClick={() => scrollToSection('contact')}
-                    className="border-2 border-[#03045e] bg-white/70 text-[#03045e] h-12 px-8 text-base font-semibold transition-all hover:!bg-[#03045e] hover:!text-white"
+                                       className="bg-[#FFF9AF] hover:bg-[#2563EB] text- shadow-lg shadow-[#1C6EA4]/25 hover:shadow-xl hover:shadow-[#1C6EA4]/30 transition-all h-12 px-8 text-base font-semibold"
+
                   >
-                    Get Quote
+                    Contact Us
                   </Button>
                 </div>
               </div>
@@ -125,19 +125,19 @@ export function Hero() {
               {/* Stats */}
               <div ref={statsRef} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-[#E2E8F0]">
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#03045e]">14+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#154D71]">14+</div>
                   <div className="text-xs sm:text-sm text-[#64748B]">Years of EPC Excellence</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">1500+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#1C6EA4]">1500+</div>
                   <div className="text-xs sm:text-sm text-[#64748B]">km Lines Executed</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#10B981]">150+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#33A1E0]">150+</div>
                   <div className="text-xs sm:text-sm text-[#64748B]">Substations Commissioned</div>
                 </div>
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#3B82F6]">600MW</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#1C6EA4]">600MW</div>
                   <div className="text-xs sm:text-sm text-[#64748B]">Solar O&M Assets</div>
                 </div>
               </div>
@@ -147,48 +147,48 @@ export function Hero() {
             <div className="hidden lg:block">
               <div className="relative">
                 {/* Background glow */}
-                <div className="absolute -inset-4 bg-[#3B82F6]/10 rounded-3xl blur-2xl"></div>
+                <div className="absolute -inset-4 bg-[#1C6EA4]/10 rounded-3xl blur-2xl"></div>
                 
                 {/* Card container */}
                 <div className="relative bg-white/70 rounded-2xl shadow-xl border border-[#E2E8F0] p-6">
                   {/* Header */}
-                  <div className="text-center mb-6">
-                    <h3 className="text-lg font-bold text-[#03045e] mb-1">Our Core Services</h3>
+                  <div className="mb-6 text-center">
+                    <h3 className="text-lg font-bold text-[#154D71] mb-1">Our Core Services</h3>
                     <p className="text-sm text-[#64748B]">Complete EPC solutions for power infrastructure</p>
                   </div>
                   
                   {/* Service Grid */}
                   <div ref={servicesRef} className="grid grid-cols-2 gap-3" style={{ opacity: 1 }}>
-                    <div className="group p-4 rounded-xl bg-[#03045e] hover:shadow-lg transition-all duration-300 cursor-pointer">
-                      <div className="flex flex-col items-center text-center gap-2">
-                        <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="group p-4 rounded-xl bg-[#154D71] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                      <div className="flex flex-col items-center gap-2 text-center">
+                        <div className="flex items-center justify-center transition-transform rounded-lg w-11 h-11 bg-white/10 group-hover:scale-110">
                           <Buildings size={22} className="text-white" weight="duotone" />
                         </div>
                         <span className="text-sm font-semibold text-white">EHV Substations</span>
                         <span className="text-xs text-white/70">66kV - 400kV</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-[#3B82F6] hover:shadow-lg transition-all duration-300 cursor-pointer">
-                      <div className="flex flex-col items-center text-center gap-2">
-                        <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                          <Broadcast size={22} className="text-white" weight="duotone" />
+                    <div className="group p-4 rounded-xl bg-[#FFF9AF]  hover:shadow-lg transition-all duration-300 cursor-pointer">
+                      <div className="flex flex-col items-center gap-2 text-center">
+                        <div className="flex items-center justify-center transition-transform rounded-lg w-11 h-11 bg-white/10 group-hover:scale-110">
+                          <Broadcast size={22} className="text-[#154D71]" weight="duotone" />
                         </div>
-                        <span className="text-sm font-semibold text-white">T&D Lines</span>
-                        <span className="text-xs text-white/70">Up to 400kV</span>
+                            <span className="text-sm font-semibold text-[#154D71]">T&D Lines</span>
+                            <span className="text-xs text-[#154D71]/70">Up to 400kV</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-[#10B981] hover:shadow-lg transition-all duration-300 cursor-pointer">
-                      <div className="flex flex-col items-center text-center gap-2">
-                        <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="group p-4 rounded-xl  bg-[#1C6EA4] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                      <div className="flex flex-col items-center gap-2 text-center">
+                        <div className="flex items-center justify-center transition-transform rounded-lg w-11 h-11 bg-white/10 group-hover:scale-110">
                           <Gear size={22} className="text-white" weight="duotone" />
                         </div>
                         <span className="text-sm font-semibold text-white">T&C Services</span>
                         <span className="text-xs text-white/70">Complete Testing</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-[#3B82F6] hover:shadow-lg transition-all duration-300 cursor-pointer">
-                      <div className="flex flex-col items-center text-center gap-2">
-                        <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="group p-4 rounded-xl bg-[#33A1E0] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                      <div className="flex flex-col items-center gap-2 text-center">
+                        <div className="flex items-center justify-center transition-transform rounded-lg w-11 h-11 bg-white/10 group-hover:scale-110">
                           <Wrench size={22} className="text-white" weight="duotone" />
                         </div>
                         <span className="text-sm font-semibold text-white">O&M Support</span>
@@ -205,7 +205,7 @@ export function Hero() {
                         <span className="text-[#64748B]">ISO 9001:2015 Certified</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#1C6EA4]"></div>
                         <span className="text-[#64748B]">TNEB Approved</span>
                       </div>
                     </div>

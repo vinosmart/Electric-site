@@ -22,7 +22,7 @@ export function CompanyValues() {
 
   const tabs = [
     { id: 'mission', label: 'Company Mission', icon: Target },
-    { id: 'objectives', label: 'Company Objectives', icon: Globe }, // Use Globe as nearest fit for 'Objectives' icon in screenshot
+    { id: 'objectives', label: 'Company Objectives', icon: Globe },
     { id: 'process', label: 'Work Process', icon: Gear },
     { id: 'vision', label: 'Company Vision', icon: Eye },
     { id: 'terms', label: 'Terms & Conditions', icon: FileText },
@@ -33,7 +33,7 @@ export function CompanyValues() {
       title: 'Company Mission',
       image: missionImage,
       items: [
-        'Strengthening India’s power backbone through reliable EPC delivery',
+        'Strengthening India\'s power backbone through reliable EPC delivery',
         'Executing precision-driven engineering backed by 14+ years of proven expertise',
         'Excellence in EHV/HV substations, transmission lines, T&D and O&M services',
         'Ensuring timely, risk-free completion of multi-crore infrastructure projects',
@@ -70,7 +70,7 @@ export function CompanyValues() {
       title: 'Company Vision',
       image: visionImage,
       items: [
-        'Achieving engineering excellence across India’s integrated transmission ecosystem',
+        'Achieving engineering excellence across India\'s integrated transmission ecosystem',
         'Becoming a global EPC leader in substations and high-voltage corridor development',
         'Advancing innovation through sustainable, future-ready engineering solutions',
         'Delivering a full project lifecycle—from EPC to T&C to long-term O&M stewardship',
@@ -110,22 +110,22 @@ export function CompanyValues() {
   const activeContent = content[activeTab as keyof typeof content]
 
   return (
-    <section ref={sectionRef} className="py-16 lg:py-24 bg-[#F0F9FF] relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 lg:py-24 bg-[#33A1E0] relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[#E0F2FE]/60"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[#FFF9AF]/80"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         
         {/* Tabs Navigation */}
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-12 sm:mb-16">
+        <div className="flex flex-wrap justify-center gap-3 mb-12 sm:gap-4 sm:mb-16">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 shadow-sm ${
                 activeTab === tab.id
-                  ? 'bg-[#06d6a0] text-white shadow-[#93C5FD] shadow-lg scale-105'
-                  : 'bg-white/70 text-[#1E3A5A] hover:bg-[#E0F2FE] border border-[#BFDBFE]'
+                  ? 'bg-[#1C6EA4] text-white shadow-[#33A1E0] shadow-lg scale-105'
+                  : 'bg-white/70 text-[#154D71] hover:bg-[#33A1E0]/20 border border-[#33A1E0]'
               }`}
             >
               <tab.icon size={20} weight={activeTab === tab.id ? "fill" : "regular"} />
@@ -135,20 +135,20 @@ export function CompanyValues() {
         </div>
 
         {/* Content Area */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           
           {/* Image Side */}
           <div className="relative group">
-            <div className="absolute -inset-4 bg-[#E0F2FE] rounded-[2rem] transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+            <div className="absolute -inset-4 bg-[#33A1E0]/30 rounded-[2rem] transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] transform transition-transform duration-500">
               <img
                 ref={imageRef}
                 src={activeContent.image}
                 alt={activeContent.title}
-                className="w-full h-full object-cover"
+                className="object-cover w-full h-full"
               />
               <div className="absolute bottom-6 left-6">
-                <div className="bg-[#06d6a0] text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg">
+                <div className="bg-[#1C6EA4] text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg">
                   <Target size={24} weight="fill" />
                   {activeContent.title}
                 </div>
@@ -157,18 +157,18 @@ export function CompanyValues() {
           </div>
 
           {/* Text Content Side */}
-          <div ref={contentRef} className="bg-white/70 rounded-3xl p-8 sm:p-10 shadow-xl border border-[#E0F2FE] ring-1 ring-[#E0F2FE]/50">
-            <h3 className="text-3xl font-bold text-[#03045e] mb-8 border-l-4 border-[#06d6a0] pl-4">
+          <div ref={contentRef} className="bg-white/90 rounded-3xl p-8 sm:p-10 shadow-xl border border-[#33A1E0] ring-1 ring-[#33A1E0]/50">
+            <h3 className="text-3xl font-bold text-[#154D71] mb-8 border-l-4 border-[#1C6EA4] pl-4">
               {activeContent.title}
             </h3>
             
             <div className="space-y-6">
               {activeContent.items.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4 group">
-                  <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#E0F2FE] flex items-center justify-center group-hover:bg-[#BFDBFE] transition-colors">
-                    <CheckCircle size={18} className="text-[#06d6a0]" weight="bold" />
+                  <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#33A1E0]/20 flex items-center justify-center group-hover:bg-[#33A1E0]/40 transition-colors">
+                    <CheckCircle size={18} className="text-[#1C6EA4]" weight="bold" />
                   </div>
-                  <p className="text-[#1E3A5A] leading-relaxed font-medium">
+                  <p className="text-[#154D71] leading-relaxed font-medium">
                     {item}
                   </p>
                 </div>
@@ -181,4 +181,3 @@ export function CompanyValues() {
     </section>
   )
 }
-

@@ -42,19 +42,19 @@ export function FeaturedProject() {
 
   return (
     <section ref={sectionRef} className="py-20 bg-[#F0F9FF] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-20">
           
           <div ref={imageRef} className="w-full lg:w-1/2">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-[#03045e]/10 mix-blend-multiply"></div>
+            <div className="relative overflow-hidden shadow-2xl rounded-2xl">
+              <div className="absolute inset-0 bg-[#154D71]/10 mix-blend-multiply"></div>
               <img 
                 src={substationImage} 
                 alt="Substation Project" 
-                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                className="object-cover w-full h-full transition-transform duration-700 transform hover:scale-105"
               />
               <div className="absolute bottom-6 left-6">
-                 <div className="bg-[#06d6a0] text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+                 <div className="bg-[#FFF9AF] text-[#154D71] px-4 py-2 rounded-lg font-bold shadow-lg">
                     Turnkey Solutions
                  </div>
               </div>
@@ -62,14 +62,14 @@ export function FeaturedProject() {
           </div>
 
           <div ref={contentRef} className="w-full lg:w-1/2">
-            <h2 className="text-4xl font-bold text-[#03045e] mb-6">
+            <h2 className="text-4xl font-bold text-[#154D71] mb-6">
               Substation Projects
             </h2>
             <p className="text-[#1E3A5A] text-lg leading-relaxed mb-8">
               Mass Techno Power Infrastructure delivers turnkey electrical substation solutions from design to commissioning, providing equipment supply, civil works, installation, and testing — all with strict quality and safety standards.
             </p>
 
-            <div className="space-y-4 mb-10">
+            <div className="mb-10 space-y-4">
                {[
                  'Initial project assessment and detailed engineering design',
                  'Supply and installation of electrical equipment and materials',
@@ -78,17 +78,17 @@ export function FeaturedProject() {
                  'Approvals up to commissioning'
                ].map((item, idx) => (
                  <div key={idx} className="flex items-start gap-3">
-                   <div className="mt-1 w-5 h-5 rounded-full bg-[#E0F2FE] flex items-center justify-center flex-shrink-0">
-                     <div className="w-2.5 h-2.5 rounded-full bg-[#06d6a0]"></div>
+                   <div className="mt-1 w-5 h-5 rounded-full bg-[#154D71] flex items-center justify-center flex-shrink-0">
+                     <div className="w-2.5 h-2.5 rounded-full bg-[#FFF9AF]"></div>
                    </div>
-                   <span className="text-[#03045e] font-medium">{item}</span>
+                   <span className="text-[#154D71] font-medium">{item}</span>
                  </div>
                ))}
             </div>
 
-            <Button className="bg-white/70 text-[#06d6a0] border-2 border-[#06d6a0] hover:bg-[#E0F2FE] text-base font-bold px-8 py-6 rounded-none uppercase tracking-wide group">
+            <Button className="bg-white/70 text-[#154D71] border-2 border-[#FFF9AF] hover:bg-[#E0F2FE] text-base font-bold px-8 py-6 rounded-none uppercase tracking-wide group">
               Learn More
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
 

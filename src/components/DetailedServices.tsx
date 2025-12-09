@@ -92,39 +92,39 @@ export function DetailedServices() {
     <section ref={sectionRef} className="py-0 bg-[#F0F9FF] overflow-hidden">
       {services.map((service, index) => (
         <div key={service.id} id={`service-${service.id}`} className={`py-20 ${index % 2 === 1 ? 'bg-white/70' : 'bg-[#F0F9FF]'}`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${service.imagePosition === 'right' ? '' : 'lg:flex-row-reverse'}`}>
               
               <div id={`service-${service.id}-content`} className="w-full lg:w-1/2">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-6">
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#154D71] mb-6">
                   {service.title}
                 </h2>
                 <p className="text-[#1E3A5A] text-lg leading-relaxed mb-8">
                   {service.description}
                 </p>
 
-                <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mb-10">
+                <div className="grid mb-10 sm:grid-cols-2 gap-x-8 gap-y-4">
                    {service.points.map((point, idx) => (
                      <div key={idx} className="flex items-start gap-3">
-                       <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#06d6a0] flex-shrink-0"></div>
-                       <span className="text-[#03045e] text-sm font-medium leading-relaxed">{point}</span>
+                       <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#154D71] flex-shrink-0"></div>
+                       <span className="text-[#154D71] text-sm font-medium leading-relaxed">{point}</span>
                      </div>
                    ))}
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-[#06d6a0] hover:bg-[#06d6a0] text-white font-bold py-6 px-8 rounded shadow-lg shadow-[#06d6a0]/20">
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Button className="bg-[#FFF9AF] hover:bg-[#06d6a0] text-[#154D71] font-bold py-6 px-8 rounded shadow-lg shadow-[#06d6a0]/20">
                     {service.buttonText}
                   </Button>
-                  <Button variant="outline" className="border-[#BFDBFE] text-[#03045e] hover:bg-[#E0F2FE] font-semibold py-6 px-8 rounded">
-                    LEARN MORE <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button className="border-[#FFF9AF] bg-[#154D71] text-white hover:bg-[#E0F2FE] font-semibold py-6 px-8 rounded">
+                    LEARN MORE <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </div>
               </div>
 
               <div id={`service-${service.id}-image`} className="w-full lg:w-1/2">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
-                  <div className="absolute inset-0 bg-[#03045e]/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                <div className="relative overflow-hidden shadow-2xl rounded-2xl group">
+                  <div className="absolute inset-0 bg-[#154D71]/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   <img 
                     src={service.image} 
                     alt={service.title} 

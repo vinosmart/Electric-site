@@ -118,36 +118,36 @@ export function Contact() {
       icon: MapPin,
       title: 'Visit Us',
       details: ['MASS POWER SOLUTIONS', 'Tamil Nadu', 'India'],
-      color: 'bg-[#03045e]',
+      color: 'bg-[#154D71]',
     },
     {
       icon: Phone,
       title: 'Call Us',
       details: ['+91 XXXXX XXXXX', '+91 XXXXX XXXXX', 'Mon-Sat: 9:00 AM - 6:00 PM'],
-      color: 'bg-[#06d6a0]',
+      color: 'bg-[#1C6EA4]',
     },
     {
       icon: Envelope,
       title: 'Email Us',
       details: ['info@masspowersolutions.co.in', 'projects@masspowersolutions.co.in', 'support@masspowersolutions.co.in'],
-      color: 'bg-[#10B981]',
+      color: 'bg-[#33A1E0]',
     },
     {
       icon: Clock,
       title: 'Business Hours',
       details: ['Monday - Saturday', '9:00 AM - 6:00 PM', 'Sunday: Closed'],
-      color: 'bg-[#06d6a0]',
+      color: 'bg-[#1C6EA4]',
     },
   ]
 
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white/70 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div ref={titleRef} className="text-center mb-8 sm:mb-10">
-          <span className="inline-block px-4 py-2 bg-[#06d6a0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#06d6a0]/25">Contact Us</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#03045e] mb-3 sm:mb-4">
+    <section id="contact" className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-white/70">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#33A1E0]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FFF9AF]/20 rounded-full blur-3xl"></div>
+      <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div ref={titleRef} className="mb-8 text-center sm:mb-10">
+          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">Contact Us</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#154D71] mb-3 sm:mb-4">
             Get in Touch with Us
           </h2>
           <p className="text-sm sm:text-base text-[#64748B] max-w-3xl mx-auto">
@@ -156,14 +156,14 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-8 overflow-hidden">
+        <div className="grid gap-8 mb-8 overflow-hidden lg:grid-cols-2">
           <div ref={formRef}>
-            <Card className="p-6 border-0 bg-white/70 shadow-xl">
-              <h3 className="text-xl font-semibold text-[#03045e] mb-5">Send us a Message</h3>
+            <Card className="p-6 border-0 shadow-xl bg-white/70">
+              <h3 className="text-xl font-semibold text-[#154D71] mb-5">Send us a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-[#03045e]">Full Name *</Label>
+                    <Label htmlFor="name" className="text-[#154D71]">Full Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -171,11 +171,11 @@ export function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
+                      className="border-[#E2E8F0]  focus:border-[#33A1E0]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-[#03045e]">Email Address *</Label>
+                    <Label htmlFor="email" className="text-[#154D71]">Email Address *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -184,14 +184,14 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
+                      className="border-[#E2E8F0] focus:border-[#33A1E0]"
                     />
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-[#03045e]">Phone Number</Label>
+                    <Label htmlFor="phone" className="text-[#154D71]">Phone Number</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -199,24 +199,24 @@ export function Contact() {
                       placeholder="+91 1234567890"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
+                      className="border-[#E2E8F0] focus:border-[#33A1E0]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="company" className="text-[#03045e]">Company Name</Label>
+                    <Label htmlFor="company" className="text-[#154D71]">Company Name</Label>
                     <Input
                       id="company"
                       name="company"
                       placeholder="Your Company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
+                      className="border-[#E2E8F0] focus:border-[#33A1E0]"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-[#03045e]">Message *</Label>
+                  <Label htmlFor="message" className="text-[#154D71]">Message *</Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -225,14 +225,14 @@ export function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="border-[#E2E8F0] focus:border-[#06d6a0]"
+                    className="border-[#E2E8F0] focus:border-[#33A1E0]"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-[#06d6a0] hover:bg-[#059669] text-white shadow-lg shadow-[#06d6a0]/30"
+                  className="w-full bg-[#33A1E0] hover:bg-[#1C6EA4] text-white shadow-lg shadow-[#33A1E0]/30"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -241,16 +241,16 @@ export function Contact() {
             </Card>
           </div>
 
-          <div ref={contactCardsRef} className="space-y-4 w-full" style={{ opacity: 1 }}>
+          <div ref={contactCardsRef} className="w-full space-y-4" style={{ opacity: 1 }}>
             {contactInfo.map((info, index) => (
               <Card key={info.title} className={`p-4 sm:p-5 border-0 ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group w-full`} style={{ opacity: 1 }}>
-                <div className="flex items-start gap-2 sm:gap-4 w-full">
-                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <div className="flex items-start w-full gap-2 sm:gap-4">
+                  <div className="flex items-center justify-center flex-shrink-0 transition-transform rounded-lg w-9 h-9 sm:w-11 sm:h-11 bg-white/15 group-hover:scale-110">
                     <info.icon size={18} className="text-white sm:hidden" weight="duotone" />
-                    <info.icon size={20} className="text-white hidden sm:block" weight="duotone" />
+                    <info.icon size={20} className="hidden text-white sm:block" weight="duotone" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h4 className="font-semibold text-white mb-1 text-sm sm:text-base">{info.title}</h4>
+                    <h4 className="mb-1 text-sm font-semibold text-white sm:text-base">{info.title}</h4>
                     {info.details.map((detail) => (
                       <p key={detail} className="text-xs sm:text-sm text-white/80">
                         {detail}
@@ -264,21 +264,21 @@ export function Contact() {
         </div>
 
         <div ref={ctaRef}>
-          <Card className="p-5 lg:p-6 bg-[#03045e] border-none shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
-            <div className="text-center relative z-10">
-              <h3 className="text-xl font-semibold text-white mb-3">Ready to Power Your Next Project?</h3>
-              <p className="text-white/70 mb-5 max-w-2xl mx-auto text-sm">
+          <Card className="p-5 lg:p-6 bg-[#154D71] border-none shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFF9AF]/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#33A1E0]/10 rounded-full blur-3xl"></div>
+            <div className="relative z-10 text-center">
+              <h3 className="mb-3 text-xl font-semibold text-white">Ready to Power Your Next Project?</h3>
+              <p className="max-w-2xl mx-auto mb-5 text-sm text-white/70">
                 Whether you're a power utility, independent power producer, or industrial facility, we provide complete 
                 EHV infrastructure solutions. Our team is ready to help you with technical consultation, project estimation, 
                 and turnkey execution.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#06d6a0] rounded-full shadow">Free Project Consultation</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#10B981] rounded-full shadow">TNEB Class I Certified</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#06d6a0] rounded-full shadow">Turnkey Solutions</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#03045e] rounded-full shadow border border-white/20">30 Years Experience</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-[#154D71] bg-[#FFF9AF] rounded-full shadow">Free Project Consultation</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#1C6EA4] rounded-full shadow">TNEB Class I Certified</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#33A1E0] rounded-full shadow">Turnkey Solutions</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#154D71] rounded-full shadow border border-white/20">30 Years Experience</span>
               </div>
             </div>
           </Card>
@@ -287,3 +287,4 @@ export function Contact() {
     </section>
   )
 }
+
