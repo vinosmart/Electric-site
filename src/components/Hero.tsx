@@ -64,13 +64,13 @@ export function Hero() {
     }
   }
 
-  // Services are now rendered directly in JSX with gradient backgrounds
+  // Services are now rendered directly in JSX with solid backgrounds
 
   return (
     <section id="home" className="relative bg-white/70 overflow-hidden pt-20">
-      {/* Gradient accents */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#3B82F6]/5 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#3B82F6]/5 to-transparent rounded-full blur-3xl"></div>
+      {/* Accent shapes */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="pt-16 pb-12 lg:pt-20 lg:pb-16">
@@ -87,7 +87,7 @@ export function Hero() {
               
               {/* Main content */}
               <div ref={contentRef} className="space-y-4 sm:space-y-6">
-                <h1 className="font-bold text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.15] tracking-tight text-[#0F172A]">
+                <h1 className="font-bold text-3xl sm:text-4xl lg:text-[3.5rem] leading-[1.15] tracking-tight text-[#03045e]">
                   EHV Substation &{' '}
                   <span className="text-[#3B82F6]">Transmission Line</span>{' '}
                   Specialists
@@ -97,7 +97,7 @@ export function Hero() {
                   Mass Power Infra - Ayyappan & Co. Your trusted partner for complete EPC solutions 
                   including Design, Engineering, Procurement, Construction, Testing & Commissioning 
                   of EHV substations and transmission lines. Founded by 
-                  <strong className="text-[#0F172A]"> Ayyapan</strong>, TNEB Class I certified contractor 
+                  <strong className="text-[#03045e]"> Ayyapan</strong>, TNEB Class I certified contractor 
                   with ESA Grade License (ESA:530).
                 </p>
 
@@ -115,7 +115,7 @@ export function Hero() {
                     variant="outline"
                     size="lg"
                     onClick={() => scrollToSection('contact')}
-                    className="border-2 border-[#0F172A] bg-white/70 text-[#0F172A] h-12 px-8 text-base font-semibold transition-all hover:!bg-[#0F172A] hover:!text-white"
+                    className="border-2 border-[#03045e] bg-white/70 text-[#03045e] h-12 px-8 text-base font-semibold transition-all hover:!bg-[#03045e] hover:!text-white"
                   >
                     Get Quote
                   </Button>
@@ -125,7 +125,7 @@ export function Hero() {
               {/* Stats */}
               <div ref={statsRef} className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-[#E2E8F0]">
                 <div className="space-y-1">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#0F172A]">14+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-[#03045e]">14+</div>
                   <div className="text-xs sm:text-sm text-[#64748B]">Years of EPC Excellence</div>
                 </div>
                 <div className="space-y-1">
@@ -147,19 +147,19 @@ export function Hero() {
             <div className="hidden lg:block">
               <div className="relative">
                 {/* Background glow */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-[#3B82F6]/10 via-transparent to-[#3B82F6]/10 rounded-3xl blur-2xl"></div>
+                <div className="absolute -inset-4 bg-[#3B82F6]/10 rounded-3xl blur-2xl"></div>
                 
                 {/* Card container */}
                 <div className="relative bg-white/70 rounded-2xl shadow-xl border border-[#E2E8F0] p-6">
                   {/* Header */}
                   <div className="text-center mb-6">
-                    <h3 className="text-lg font-bold text-[#0F172A] mb-1">Our Core Services</h3>
+                    <h3 className="text-lg font-bold text-[#03045e] mb-1">Our Core Services</h3>
                     <p className="text-sm text-[#64748B]">Complete EPC solutions for power infrastructure</p>
                   </div>
                   
                   {/* Service Grid */}
                   <div ref={servicesRef} className="grid grid-cols-2 gap-3" style={{ opacity: 1 }}>
-                    <div className="group p-4 rounded-xl bg-gradient-to-br from-[#0F172A] to-[#1E293B] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="group p-4 rounded-xl bg-[#03045e] hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <div className="flex flex-col items-center text-center gap-2">
                         <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                           <Buildings size={22} className="text-white" weight="duotone" />
@@ -168,7 +168,7 @@ export function Hero() {
                         <span className="text-xs text-white/70">66kV - 400kV</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="group p-4 rounded-xl bg-[#3B82F6] hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <div className="flex flex-col items-center text-center gap-2">
                         <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                           <Broadcast size={22} className="text-white" weight="duotone" />
@@ -177,7 +177,7 @@ export function Hero() {
                         <span className="text-xs text-white/70">Up to 400kV</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-gradient-to-br from-[#10B981] to-[#059669] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="group p-4 rounded-xl bg-[#10B981] hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <div className="flex flex-col items-center text-center gap-2">
                         <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                           <Gear size={22} className="text-white" weight="duotone" />
@@ -186,7 +186,7 @@ export function Hero() {
                         <span className="text-xs text-white/70">Complete Testing</span>
                       </div>
                     </div>
-                    <div className="group p-4 rounded-xl bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="group p-4 rounded-xl bg-[#3B82F6] hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <div className="flex flex-col items-center text-center gap-2">
                         <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                           <Wrench size={22} className="text-white" weight="duotone" />

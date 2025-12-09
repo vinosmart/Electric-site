@@ -10,12 +10,12 @@ export function Clients() {
   const clientsRef = useRef<HTMLDivElement>(null)
 
   const clients = [
-    { name: 'Mahabala', icon: Buildings, color: 'from-[#0F172A] to-[#334155]' },
-    { name: 'TNEB', icon: Lightning, color: 'from-[#3B82F6] to-[#1D4ED8]' },
-    { name: 'NLC India', icon: SunHorizon, color: 'from-[#10B981] to-[#059669]' },
-    { name: 'Green Sparrow', icon: Broadcast, color: 'from-[#3B82F6] to-[#1D4ED8]' },
-    { name: 'Kalpa-Taru', icon: Gear, color: 'from-[#0F172A] to-[#334155]' },
-    { name: 'TNSB', icon: Factory, color: 'from-[#3B82F6] to-[#1D4ED8]' },
+    { name: 'Mahabala', icon: Buildings, color: 'bg-[#3B82F6]' },
+    { name: 'TNEB', icon: Lightning, color: 'bg-[#39726F]' },
+    { name: 'NLC India', icon: SunHorizon, color: 'bg-[#3B82F6]' },
+    { name: 'Green Sparrow', icon: Broadcast, color: 'bg-[#39726F]' },
+    { name: 'Kalpa-Taru', icon: Gear, color: 'bg-[#3B82F6]' },
+    { name: 'TNSB', icon: Factory, color: 'bg-[#39726F]' },
   ]
 
   // Updated revenue data based on screenshot
@@ -69,17 +69,17 @@ export function Clients() {
   }, [])
 
   return (
-    <section id="clients" className="py-20 lg:py-28 bg-gradient-to-b from-[#F8FAFC]/60 to-white/70 relative overflow-hidden">
+    <section id="clients" className="py-20 lg:py-28 bg-[#EEE8A9]/40 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div ref={titleRef} className="text-center mb-16">
-          <span className="inline-block px-5 py-2 bg-[#10B981] text-white font-semibold rounded-full text-sm mb-6">
+          <span className="inline-block px-5 py-2 bg-[#3B82F6] text-white font-semibold rounded-full text-sm mb-6">
             Our Valued Partners
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#39726F] mb-4">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-base lg:text-lg text-[#64748B] max-w-2xl mx-auto">
+          <p className="text-base lg:text-lg text-[#39726F] max-w-2xl mx-auto">
             Partnering with leading power utilities, infrastructure companies, and independent power producers 
             across Tamil Nadu and neighboring states.
           </p>
@@ -92,34 +92,34 @@ export function Clients() {
               key={client.name}
               className="group flex flex-col items-center gap-3 p-6 bg-white/70 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 min-w-[140px]"
             >
-              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${client.color} flex items-center justify-center group-hover:scale-105 transition-transform`}>
+              <div className={`w-14 h-14 rounded-2xl ${client.color} flex items-center justify-center group-hover:scale-105 transition-transform`}>
                 <client.icon size={28} className="text-white" weight="duotone" />
               </div>
-              <span className="text-sm font-semibold text-[#0F172A]">{client.name}</span>
+              <span className="text-sm font-semibold text-[#39726F]">{client.name}</span>
             </div>
           ))}
         </div>
 
         {/* Stats - Clean card style */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-          <div className="text-center p-6 bg-white/70 rounded-2xl shadow-md">
+          <div className="text-center p-6 bg-white/80 rounded-2xl shadow-md">
             <div className="text-3xl sm:text-4xl font-bold text-[#3B82F6] mb-2">₹22.12 Cr</div>
-            <div className="text-sm text-[#64748B] font-medium">Latest Revenue</div>
+            <div className="text-sm text-[#39726F] font-medium">Latest Revenue</div>
           </div>
-          <div className="text-center p-6 bg-white/70 rounded-2xl shadow-md">
-            <div className="text-3xl sm:text-4xl font-bold text-[#10B981] mb-2">₹26.56 Cr</div>
-            <div className="text-sm text-[#64748B] font-medium">Peak Revenue</div>
+          <div className="text-center p-6 bg-white/80 rounded-2xl shadow-md">
+            <div className="text-3xl sm:text-4xl font-bold text-[#3B82F6] mb-2">₹26.56 Cr</div>
+            <div className="text-sm text-[#39726F] font-medium">Peak Revenue</div>
           </div>
-          <div className="text-center p-6 bg-white/70 rounded-2xl shadow-md">
-            <div className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-2">9+ Years</div>
-            <div className="text-sm text-[#64748B] font-medium">Track Record</div>
+          <div className="text-center p-6 bg-white/80 rounded-2xl shadow-md">
+            <div className="text-3xl sm:text-4xl font-bold text-[#39726F] mb-2">9+ Years</div>
+            <div className="text-sm text-[#39726F] font-medium">Track Record</div>
           </div>
         </div>
 
         {/* Growth Timeline */}
-        <div className="bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] rounded-3xl p-6 lg:p-10 relative overflow-hidden shadow-2xl">
+        <div className="bg-[#39726F] rounded-3xl p-6 lg:p-10 relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#10B981]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#EEE8A9]/40 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
             <h3 className="text-2xl font-bold text-white text-center mb-8">Our Growth Journey</h3>
@@ -132,7 +132,7 @@ export function Clients() {
                       className="w-full bg-white/20 rounded-t-lg group-hover:bg-white/30 transition-all duration-300 relative"
                       style={{ height: `${(data.amount / 30) * 100}%` }}
                     >
-                      <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-white font-bold text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-[#0F172A] px-2 py-1 rounded">
+                      <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-white font-bold text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-[#03045e] px-2 py-1 rounded">
                         {data.label}
                       </div>
                     </div>

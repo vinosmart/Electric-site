@@ -25,8 +25,8 @@ export function Certifications() {
       number: 'State Power Utility',
       description: 'Certified Class I contractor for executing EHV substation and transmission line works for Tamil Nadu Electricity Board',
       year: 'Active',
-      color: 'from-[#0F172A] to-[#334155]',
-      iconBg: 'bg-[#3B82F6]',
+      color: 'bg-[#03045e]',
+      iconBg: 'bg-[#06d6a0]',
       image: transformerImage,
     },
     {
@@ -35,7 +35,7 @@ export function Certifications() {
       number: 'ESA:530',
       description: 'Electrical Supervisor Authorization Grade License issued by Electrical Licensing Board of Tamil Nadu',
       year: 'Active',
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
       iconBg: 'bg-[#10B981]',
       image: officeImage,
     },
@@ -45,8 +45,8 @@ export function Certifications() {
       number: 'Class A & B',
       description: 'Certified contractor for Chennai Metropolitan Water Supply and Sewerage Board infrastructure projects',
       year: 'Active',
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
-      iconBg: 'bg-[#0F172A]',
+      color: 'bg-[#06d6a0]',
+      iconBg: 'bg-[#03045e]',
       image: installationImage,
     },
     {
@@ -55,8 +55,8 @@ export function Certifications() {
       number: 'Quality Management',
       description: 'International certification for quality management systems ensuring consistent project delivery excellence',
       year: '2012',
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
-      iconBg: 'bg-[#3B82F6]',
+      color: 'bg-[#06d6a0]',
+      iconBg: 'bg-[#06d6a0]',
       image: certificationImage,
     },
   ]
@@ -121,13 +121,13 @@ export function Certifications() {
 
   return (
     <section id="certifications" className="py-16 lg:py-20 bg-white/70 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#3B82F6]/5 rounded-full blur-[100px]"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#3B82F6]/5 rounded-full blur-[100px]"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#06d6a0]/5 rounded-full blur-[100px]"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#06d6a0]/5 rounded-full blur-[100px]"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">Certifications & Licenses</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
+          <span className="inline-block px-4 py-2 bg-[#06d6a0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#06d6a0]/25">Certifications & Licenses</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-4">
             Certified Excellence
           </h2>
           <p className="text-[#1E3A5A] max-w-2xl mx-auto">
@@ -138,7 +138,7 @@ export function Certifications() {
         {/* Certification Cards Carousel */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
           <div ref={slideRef} className="relative">
-            <Card className={`p-8 bg-gradient-to-br ${activeCert.color} text-white rounded-2xl shadow-2xl overflow-hidden`}>
+            <Card className={`p-8 ${activeCert.color} text-white rounded-2xl shadow-2xl overflow-hidden`}>
               <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full blur-3xl"></div>
               <div className="relative z-10">
                 <div className={`w-16 h-16 ${activeCert.iconBg} rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
@@ -156,7 +156,7 @@ export function Certifications() {
                   key={index}
                   onClick={() => setActiveIndex(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === activeIndex ? 'bg-[#3B82F6] w-8' : 'bg-[#BFDBFE] hover:bg-[#93C5FD]'
+                    index === activeIndex ? 'bg-[#06d6a0] w-8' : 'bg-[#BFDBFE] hover:bg-[#93C5FD]'
                   }`}
                   aria-label={`View certification ${index + 1}`}
                 />
@@ -166,7 +166,7 @@ export function Certifications() {
 
           <div className="space-y-5">
             <div>
-              <h3 className="text-2xl font-semibold text-[#0F172A] mb-4">Licensed & Certified</h3>
+              <h3 className="text-2xl font-semibold text-[#03045e] mb-4">Licensed & Certified</h3>
               <p className="text-[#1E3A5A] leading-relaxed mb-6">
                 Mass Power Infra holds all necessary certifications and licenses required for 
                 executing EHV substation and transmission line projects. Our credentials reflect our 
@@ -176,11 +176,11 @@ export function Certifications() {
 
             <div className="grid gap-4">
               {achievements.map((achievement, index) => {
-                const colors = ['from-[#0F172A] to-[#334155]', 'from-[#3B82F6] to-[#1D4ED8]', 'from-[#10B981] to-[#059669]']
+                const colors = ['bg-[#03045e]', 'bg-[#06d6a0]', 'bg-[#10B981]']
                 return (
                   <Card
                     key={achievement.title}
-                    className={`p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-gradient-to-r ${colors[index]} group`}
+                    className={`p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 ${colors[index]} group`}
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -196,25 +196,25 @@ export function Certifications() {
               })}
             </div>
 
-            <Card className="p-6 bg-gradient-to-br from-[#F0F9FF]/70 to-white/80 border-[#3B82F6]/20 shadow-lg">
-              <h4 className="font-semibold text-lg text-[#0F172A] mb-3">Regulatory Compliance</h4>
+            <Card className="p-6 bg-[#F0F9FF] border-[#06d6a0]/20 shadow-lg">
+              <h4 className="font-semibold text-lg text-[#03045e] mb-3">Regulatory Compliance</h4>
               <p className="text-sm text-[#1E3A5A] leading-relaxed mb-4">
                 We maintain strict adherence to all statutory and regulatory requirements for power 
                 infrastructure projects, including environmental clearances and safety certifications.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">TNEB Approved</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full shadow">CEIG Compliant</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">Safety Certified</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#0F172A] to-[#334155] rounded-full shadow">ISO 9001:2015</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#06d6a0] rounded-full shadow">TNEB Approved</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#10B981] rounded-full shadow">CEIG Compliant</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#06d6a0] rounded-full shadow">Safety Certified</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#03045e] rounded-full shadow">ISO 9001:2015</span>
               </div>
             </Card>
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] rounded-2xl p-6 lg:p-8 text-center relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
+        <div className="bg-[#03045e] rounded-2xl p-6 lg:p-8 text-center relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
           <div className="relative z-10">
             <h3 className="text-2xl font-bold text-white mb-4">
               Trusted by Power Utilities & Independent Power Producers
@@ -225,11 +225,11 @@ export function Certifications() {
             </p>
             <div className="grid sm:grid-cols-4 gap-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-3xl font-bold text-[#3B82F6] mb-2 group-hover:scale-110 transition-transform">Class I</div>
+                <div className="text-3xl font-bold text-[#06d6a0] mb-2 group-hover:scale-110 transition-transform">Class I</div>
                 <div className="text-sm text-white/70">TNEB Contractor</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-3xl font-bold text-[#3B82F6] mb-2 group-hover:scale-110 transition-transform">ESA:530</div>
+                <div className="text-3xl font-bold text-[#06d6a0] mb-2 group-hover:scale-110 transition-transform">ESA:530</div>
                 <div className="text-sm text-white/70">Grade License</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10 hover:bg-white/15 transition-colors group">
@@ -237,7 +237,7 @@ export function Certifications() {
                 <div className="text-sm text-white/70">CMWSSB Class</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10 hover:bg-white/15 transition-colors group">
-                <div className="text-3xl font-bold text-[#3B82F6] mb-2 group-hover:scale-110 transition-transform">ISO</div>
+                <div className="text-3xl font-bold text-[#06d6a0] mb-2 group-hover:scale-110 transition-transform">ISO</div>
                 <div className="text-sm text-white/70">9001:2015</div>
               </div>
             </div>

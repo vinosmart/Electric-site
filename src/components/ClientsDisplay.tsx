@@ -56,10 +56,10 @@ export function ClientsDisplay() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-5 py-2 bg-[#3B82F6] text-white font-semibold rounded-full text-sm mb-6">
+          <span className="inline-block px-5 py-2 bg-[#06d6a0] text-white font-semibold rounded-full text-sm mb-6">
             Client Testimonials
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">What Our Clients Say</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-4">What Our Clients Say</h2>
           <p className="text-[#64748B] max-w-2xl mx-auto">
             Trusted by leading companies and organizations across the power sector.
           </p>
@@ -69,11 +69,11 @@ export function ClientsDisplay() {
           {clients.map((client, idx) => (
             <Card key={idx} className="p-6 bg-white/70 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-0">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] rounded-2xl flex items-center justify-center">
+                <div className="w-14 h-14 bg-[#06d6a0] rounded-2xl flex items-center justify-center">
                   <User size={28} className="text-white" weight="duotone" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#0F172A] text-lg">{client.role}</h3>
+                  <h3 className="font-semibold text-[#03045e] text-lg">{client.role}</h3>
                   <p className="text-[#64748B] text-sm">{client.company}</p>
                 </div>
               </div>

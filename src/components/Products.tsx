@@ -23,21 +23,21 @@ export function Products() {
       description: 'Extra High Voltage substations for bulk power transmission and distribution networks',
       specs: ['Complete EPC services', 'GIS/AIS configurations', 'Bay extensions', 'Protection & control systems'],
       image: heroBgImage,
-      color: 'from-[#0F172A] to-[#334155]',
+      color: 'bg-[#03045e]',
     },
     {
       name: '230kV Substations',
       description: 'High voltage substations for regional power distribution and industrial power systems',
       specs: ['Turnkey execution', 'Civil & electrical works', 'Automation systems', 'Grid interconnection'],
       image: teamImage,
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
     {
       name: '110kV & 66kV Substations',
       description: 'Medium voltage substations for local power distribution and industrial applications',
       specs: ['Compact designs', 'Quick deployment', 'Urban/rural configurations', 'Smart grid ready'],
       image: installationImage,
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
     },
   ]
 
@@ -47,21 +47,21 @@ export function Products() {
       description: 'Extra high voltage transmission lines for long-distance power transfer across regions',
       specs: ['ACSR/AAAC conductors', 'Lattice tower structures', 'ROW management', 'Environment clearance support'],
       image: solarPanelImage,
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
     {
       name: '230kV Transmission Lines',
       description: 'High voltage lines connecting substations and power plants to transmission grids',
       specs: ['Single/double circuit', 'Foundation engineering', 'Stringing works', 'Testing & energization'],
       image: powerLinesImage,
-      color: 'from-[#0F172A] to-[#334155]',
+      color: 'bg-[#03045e]',
     },
     {
       name: '110kV & 66kV Lines',
       description: 'Medium voltage transmission and distribution lines for regional power networks',
       specs: ['Overhead/underground', 'Tower erection', 'Cable laying', 'Protection systems'],
       image: towerImage,
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
   ]
 
@@ -122,7 +122,7 @@ export function Products() {
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               loading="lazy"
             />
-            <div className={`absolute inset-0 bg-gradient-to-t ${product.color} opacity-80`}></div>
+            <div className={`absolute inset-0 ${product.color} opacity-80`}></div>
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <h3 className="text-xl font-bold text-white drop-shadow-lg">{product.name}</h3>
@@ -131,11 +131,11 @@ export function Products() {
           <div className="p-5">
             <p className="text-[#64748B] mb-4 leading-relaxed text-sm">{product.description}</p>
             <div className="space-y-2">
-              <h4 className="text-sm font-semibold text-[#0F172A] mb-2">Key Features:</h4>
+              <h4 className="text-sm font-semibold text-[#03045e] mb-2">Key Features:</h4>
               {product.specs.map((spec, idx) => (
                 <div key={spec} className="flex items-center gap-2">
-                  <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${product.color} flex-shrink-0`}></div>
-                  <span className="text-sm text-[#0F172A]">{spec}</span>
+                  <div className={`w-1.5 h-1.5 rounded-full ${product.color} flex-shrink-0`}></div>
+                  <span className="text-sm text-[#03045e]">{spec}</span>
                 </div>
               ))}
             </div>
@@ -147,12 +147,12 @@ export function Products() {
 
   return (
     <section id="products" className="py-16 lg:py-20 bg-white/70 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#10B981] to-[#059669] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#10B981]/25">Our Expertise</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
+          <span className="inline-block px-4 py-2 bg-[#10B981] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#10B981]/25">Our Expertise</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-4">
             Project Capabilities
           </h2>
           <p className="text-base text-[#64748B] max-w-3xl mx-auto">
@@ -162,11 +162,11 @@ export function Products() {
         </div>
 
         <Tabs defaultValue="substations" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-10 bg-[#0F172A]/5 p-1.5 rounded-xl h-14">
-            <TabsTrigger value="substations" className="text-base font-semibold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#3B82F6] data-[state=active]:to-[#1D4ED8] data-[state=active]:text-white data-[state=active]:shadow-lg rounded-lg transition-all">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-10 bg-[#03045e]/5 p-1.5 rounded-xl h-14">
+            <TabsTrigger value="substations" className="text-base font-semibold data-[state=active]:bg-[#06d6a0] data-[state=active]:text-white data-[state=active]:shadow-lg rounded-lg transition-all">
               EHV Substations
             </TabsTrigger>
-            <TabsTrigger value="transmission" className="text-base font-semibold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#3B82F6] data-[state=active]:to-[#1D4ED8] data-[state=active]:text-white data-[state=active]:shadow-lg rounded-lg transition-all">
+            <TabsTrigger value="transmission" className="text-base font-semibold data-[state=active]:bg-[#06d6a0] data-[state=active]:text-white data-[state=active]:shadow-lg rounded-lg transition-all">
               Transmission Lines
             </TabsTrigger>
           </TabsList>
@@ -188,9 +188,9 @@ export function Products() {
           </TabsContent>
         </Tabs>
 
-        <div className="mt-10 bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] rounded-2xl p-6 lg:p-8 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
+        <div className="mt-10 bg-[#03045e] rounded-2xl p-6 lg:p-8 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
           <div className="grid md:grid-cols-2 gap-8 items-center relative z-10">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-white">Turnkey Solutions</h3>
@@ -201,7 +201,7 @@ export function Products() {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#06d6a0]"></div>
                   <span className="text-sm font-medium text-white/90">Single-point responsibility</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -209,11 +209,11 @@ export function Products() {
                   <span className="text-sm font-medium text-white/90">Budget adherence</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#06d6a0]"></div>
                   <span className="text-sm font-medium text-white/90">Quality assurance</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#06d6a0]"></div>
                   <span className="text-sm font-medium text-white/90">Timely delivery</span>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export function Products() {
                   alt="Power infrastructure project"
                   className="w-full h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-[#03045e]/70"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-semibold text-lg">Delivering Power. Powering Progress.</p>
                 </div>

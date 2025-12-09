@@ -69,10 +69,10 @@ export function Testimonials() {
     <section ref={sectionRef} className="py-20 bg-[#F0F9FF] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-[#DBEAFE] text-[#3B82F6] font-bold rounded-full text-sm mb-4">
+          <span className="inline-block px-4 py-2 bg-[#DBEAFE] text-[#06d6a0] font-bold rounded-full text-sm mb-4">
             Client Feedback
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-4">
             Trusted by Industry Leaders
           </h2>
           <p className="text-[#1E3A5A] max-w-2xl mx-auto">
@@ -85,22 +85,22 @@ export function Testimonials() {
             <Card key={idx} className="testimonial-card p-8 hover:shadow-xl transition-shadow border-[#BFDBFE] bg-white/70 group">
               <Quotes size={48} weight="duotone" className="text-[#BFDBFE] mb-6 group-hover:text-[#93C5FD] transition-colors" />
               
-              <p className="text-[#0F172A] leading-relaxed mb-6 italic text-sm sm:text-base">
+              <p className="text-[#03045e] leading-relaxed mb-6 italic text-sm sm:text-base">
                 "{item.text}"
               </p>
 
               <div className="flex items-center gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} weight="fill" className="text-[#3B82F6]" />
+                  <Star key={i} size={16} weight="fill" className="text-[#06d6a0]" />
                 ))}
               </div>
 
               <div className="flex items-center gap-4 pt-6 border-t border-[#E0F2FE]">
-                <div className="w-10 h-10 rounded-full bg-[#E0F2FE] flex items-center justify-center text-[#3B82F6] font-bold text-lg">
+                <div className="w-10 h-10 rounded-full bg-[#E0F2FE] flex items-center justify-center text-[#06d6a0] font-bold text-lg">
                   {item.company.charAt(0)}
                 </div>
                 <div>
-                  <div className="font-bold text-[#0F172A] text-sm">{item.author}</div>
+                  <div className="font-bold text-[#03045e] text-sm">{item.author}</div>
                   <div className="text-[#1E3A5A] text-xs">{item.location}</div>
                 </div>
               </div>

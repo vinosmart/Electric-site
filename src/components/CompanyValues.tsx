@@ -112,7 +112,7 @@ export function CompanyValues() {
   return (
     <section ref={sectionRef} className="py-16 lg:py-24 bg-[#F0F9FF] relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#E0F2FE] via-white to-white opacity-60"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[#E0F2FE]/60"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -124,7 +124,7 @@ export function CompanyValues() {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 shadow-sm ${
                 activeTab === tab.id
-                  ? 'bg-[#3B82F6] text-white shadow-[#93C5FD] shadow-lg scale-105'
+                  ? 'bg-[#06d6a0] text-white shadow-[#93C5FD] shadow-lg scale-105'
                   : 'bg-white/70 text-[#1E3A5A] hover:bg-[#E0F2FE] border border-[#BFDBFE]'
               }`}
             >
@@ -139,7 +139,7 @@ export function CompanyValues() {
           
           {/* Image Side */}
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#BFDBFE] to-[#E0F2FE] rounded-[2rem] transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+            <div className="absolute -inset-4 bg-[#E0F2FE] rounded-[2rem] transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] transform transition-transform duration-500">
               <img
                 ref={imageRef}
@@ -148,7 +148,7 @@ export function CompanyValues() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-6 left-6">
-                <div className="bg-[#3B82F6] text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg">
+                <div className="bg-[#06d6a0] text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg">
                   <Target size={24} weight="fill" />
                   {activeContent.title}
                 </div>
@@ -158,7 +158,7 @@ export function CompanyValues() {
 
           {/* Text Content Side */}
           <div ref={contentRef} className="bg-white/70 rounded-3xl p-8 sm:p-10 shadow-xl border border-[#E0F2FE] ring-1 ring-[#E0F2FE]/50">
-            <h3 className="text-3xl font-bold text-[#0F172A] mb-8 border-l-4 border-[#3B82F6] pl-4">
+            <h3 className="text-3xl font-bold text-[#03045e] mb-8 border-l-4 border-[#06d6a0] pl-4">
               {activeContent.title}
             </h3>
             
@@ -166,7 +166,7 @@ export function CompanyValues() {
               {activeContent.items.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4 group">
                   <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#E0F2FE] flex items-center justify-center group-hover:bg-[#BFDBFE] transition-colors">
-                    <CheckCircle size={18} className="text-[#3B82F6]" weight="bold" />
+                    <CheckCircle size={18} className="text-[#06d6a0]" weight="bold" />
                   </div>
                   <p className="text-[#1E3A5A] leading-relaxed font-medium">
                     {item}

@@ -45,7 +45,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2022',
       image: substation1,
-      color: 'from-[#0F172A] to-[#334155]',
+      color: 'bg-[#03045e]',
     },
     {
       id: 'substation-2',
@@ -55,7 +55,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2021',
       image: substation2,
-      color: 'from-[#3B82F6] to-[#1E40AF]',
+      color: 'bg-[#06d6a0]',
     },
     {
       id: 'substation-3',
@@ -65,7 +65,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2023',
       image: substation3,
-      color: 'from-[#10B981] to-[#047857]',
+      color: 'bg-[#10B981]',
     },
     {
       id: 'substation-4',
@@ -75,7 +75,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2020',
       image: substation4,
-      color: 'from-[#3B82F6] to-[#1E40AF]',
+      color: 'bg-[#06d6a0]',
     },
   ]
 
@@ -88,7 +88,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2022',
       image: transmission1,
-      color: 'from-[#0F172A] to-[#1E293B]',
+      color: 'bg-[#03045e]',
     },
     {
       id: 'transmission-2',
@@ -98,7 +98,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2021',
       image: transmission2,
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
     {
       id: 'transmission-3',
@@ -108,7 +108,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2023',
       image: transmission3,
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
     },
     {
       id: 'transmission-4',
@@ -118,7 +118,7 @@ export function Gallery() {
       location: 'Tamil Nadu',
       year: '2020',
       image: transmission4,
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
   ]
 
@@ -128,28 +128,28 @@ export function Gallery() {
       title: 'Substations Completed',
       value: '50+',
       description: 'Successfully commissioned',
-      color: 'from-[#0F172A] to-[#1E293B]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Broadcast,
       title: 'Transmission Lines',
       value: '500+ km',
       description: 'Constructed & energized',
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
     {
       icon: HardHat,
       title: 'Team Strength',
       value: '300+',
       description: 'Skilled professionals',
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
     },
     {
       icon: Wrench,
       title: 'O&M Contracts',
       value: '20+',
       description: 'Active maintenance',
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
   ]
 
@@ -209,10 +209,10 @@ export function Gallery() {
     <section id="gallery" className="py-20 lg:py-28 bg-[#F8FAFC]/60 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={titleRef} className="text-center mb-12">
-          <span className="inline-block px-5 py-2 bg-[#3B82F6] text-white font-semibold rounded-full text-sm mb-6">
+          <span className="inline-block px-5 py-2 bg-[#06d6a0] text-white font-semibold rounded-full text-sm mb-6">
             Project Gallery
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#0F172A]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#03045e]">
             Our Projects & Infrastructure
           </h2>
           <p className="text-base lg:text-lg text-[#64748B] max-w-2xl mx-auto">
@@ -225,8 +225,8 @@ export function Gallery() {
             <button 
               onClick={() => setActiveTab('civil')}
               style={{
-                backgroundColor: activeTab === 'civil' ? '#3B82F6' : '#ffffff',
-                color: activeTab === 'civil' ? '#ffffff' : '#0F172A',
+                backgroundColor: activeTab === 'civil' ? '#06d6a0' : '#ffffff',
+                color: activeTab === 'civil' ? '#ffffff' : '#03045e',
               }}
               className="px-6 py-3 text-sm font-semibold rounded-full shadow-md transition-all"
             >
@@ -236,7 +236,7 @@ export function Gallery() {
               onClick={() => setActiveTab('pile')}
               style={{
                 backgroundColor: activeTab === 'pile' ? '#10B981' : '#ffffff',
-                color: activeTab === 'pile' ? '#ffffff' : '#0F172A',
+                color: activeTab === 'pile' ? '#ffffff' : '#03045e',
               }}
               className="px-6 py-3 text-sm font-semibold rounded-full shadow-md transition-all"
             >
@@ -270,7 +270,7 @@ export function Gallery() {
                 onClick={() => setSelectedImage(null)}
                 className="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-white/70 flex items-center justify-center hover:bg-[#F8FAFC]/60 transition-colors shadow-md"
               >
-                <X size={16} className="text-[#0F172A]" />
+                <X size={16} className="text-[#03045e]" />
               </button>
               <div className="relative h-64 sm:h-80">
                 <img 
@@ -278,20 +278,20 @@ export function Gallery() {
                   alt={selectedImage.title}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-br ${selectedImage.color} opacity-50`}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent"></div>
+                <div className={`absolute inset-0 ${selectedImage.color} opacity-60`}></div>
+                <div className="absolute inset-0 bg-white/30"></div>
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-                  <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] text-sm font-semibold rounded-full">
+                  <span className="inline-block px-3 py-1 bg-[#06d6a0]/10 text-[#06d6a0] text-sm font-semibold rounded-full">
                     {selectedImage.category}
                   </span>
-                  <div className="flex items-center gap-3 text-sm text-[#0F172A] font-medium">
+                  <div className="flex items-center gap-3 text-sm text-[#03045e] font-medium">
                     {selectedImage.location && <span>{selectedImage.location}</span>}
                     {selectedImage.year && <span>• {selectedImage.year}</span>}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-[#0F172A]">{selectedImage.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#03045e]">{selectedImage.title}</h3>
                 <p className="text-[#64748B] leading-relaxed text-sm">{selectedImage.description}</p>
               </div>
             </div>

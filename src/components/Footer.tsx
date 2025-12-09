@@ -33,12 +33,12 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-[#0F172A] text-white py-8">
+    <footer className="bg-[#03045e] text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/70 text-[#0F172A] rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-white/70 text-[#03045e] rounded-lg flex items-center justify-center">
                 <span className="font-bold text-lg">MPI</span>
               </div>
               <div>
@@ -52,15 +52,15 @@ export function Footer() {
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-white/70">
-                <Phone size={14} className="text-[#3B82F6]" />
+                <Phone size={14} className="text-[#06d6a0]" />
                 <span>+91 94421 52528</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
-                <Envelope size={14} className="text-[#3B82F6]" />
+                <Envelope size={14} className="text-[#06d6a0]" />
                 <span>info@masspowerinfra.com</span>
               </div>
               <div className="flex items-start gap-2 text-sm text-white/70">
-                <MapPin size={14} className="text-[#3B82F6] mt-0.5 flex-shrink-0" />
+                <MapPin size={14} className="text-[#06d6a0] mt-0.5 flex-shrink-0" />
                 <span>Chennai, Tamil Nadu, India</span>
               </div>
             </div>

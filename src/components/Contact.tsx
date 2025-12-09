@@ -118,36 +118,36 @@ export function Contact() {
       icon: MapPin,
       title: 'Visit Us',
       details: ['MASS POWER SOLUTIONS', 'Tamil Nadu', 'India'],
-      color: 'from-[#0F172A] to-[#334155]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Phone,
       title: 'Call Us',
       details: ['+91 XXXXX XXXXX', '+91 XXXXX XXXXX', 'Mon-Sat: 9:00 AM - 6:00 PM'],
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
     {
       icon: Envelope,
       title: 'Email Us',
       details: ['info@masspowersolutions.co.in', 'projects@masspowersolutions.co.in', 'support@masspowersolutions.co.in'],
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
     },
     {
       icon: Clock,
       title: 'Business Hours',
       details: ['Monday - Saturday', '9:00 AM - 6:00 PM', 'Sunday: Closed'],
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
   ]
 
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white/70 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-8 sm:mb-10">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#3B82F6]/25">Contact Us</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0F172A] mb-3 sm:mb-4">
+          <span className="inline-block px-4 py-2 bg-[#06d6a0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#06d6a0]/25">Contact Us</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#03045e] mb-3 sm:mb-4">
             Get in Touch with Us
           </h2>
           <p className="text-sm sm:text-base text-[#64748B] max-w-3xl mx-auto">
@@ -158,12 +158,12 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8 overflow-hidden">
           <div ref={formRef}>
-            <Card className="p-6 border-0 bg-gradient-to-br from-[#F8FAFC]/60 to-white/70 shadow-xl">
-              <h3 className="text-xl font-semibold text-[#0F172A] mb-5">Send us a Message</h3>
+            <Card className="p-6 border-0 bg-white/70 shadow-xl">
+              <h3 className="text-xl font-semibold text-[#03045e] mb-5">Send us a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-[#0F172A]">Full Name *</Label>
+                    <Label htmlFor="name" className="text-[#03045e]">Full Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -171,11 +171,11 @@ export function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="border-[#E2E8F0] focus:border-[#3B82F6]"
+                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-[#0F172A]">Email Address *</Label>
+                    <Label htmlFor="email" className="text-[#03045e]">Email Address *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -184,14 +184,14 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="border-[#E2E8F0] focus:border-[#3B82F6]"
+                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
                     />
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-[#0F172A]">Phone Number</Label>
+                    <Label htmlFor="phone" className="text-[#03045e]">Phone Number</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -199,24 +199,24 @@ export function Contact() {
                       placeholder="+91 1234567890"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="border-[#E2E8F0] focus:border-[#3B82F6]"
+                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="company" className="text-[#0F172A]">Company Name</Label>
+                    <Label htmlFor="company" className="text-[#03045e]">Company Name</Label>
                     <Input
                       id="company"
                       name="company"
                       placeholder="Your Company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="border-[#E2E8F0] focus:border-[#3B82F6]"
+                      className="border-[#E2E8F0] focus:border-[#06d6a0]"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-[#0F172A]">Message *</Label>
+                  <Label htmlFor="message" className="text-[#03045e]">Message *</Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -225,14 +225,14 @@ export function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="border-[#E2E8F0] focus:border-[#3B82F6]"
+                    className="border-[#E2E8F0] focus:border-[#06d6a0]"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] hover:from-[#2563EB] hover:to-[#1E40AF] text-white shadow-lg shadow-[#3B82F6]/30"
+                  className="w-full bg-[#06d6a0] hover:bg-[#059669] text-white shadow-lg shadow-[#06d6a0]/30"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -243,7 +243,7 @@ export function Contact() {
 
           <div ref={contactCardsRef} className="space-y-4 w-full" style={{ opacity: 1 }}>
             {contactInfo.map((info, index) => (
-              <Card key={info.title} className={`p-4 sm:p-5 border-0 bg-gradient-to-r ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group w-full`} style={{ opacity: 1 }}>
+              <Card key={info.title} className={`p-4 sm:p-5 border-0 ${info.color} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group w-full`} style={{ opacity: 1 }}>
                 <div className="flex items-start gap-2 sm:gap-4 w-full">
                   <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <info.icon size={18} className="text-white sm:hidden" weight="duotone" />
@@ -264,9 +264,9 @@ export function Contact() {
         </div>
 
         <div ref={ctaRef}>
-          <Card className="p-5 lg:p-6 bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] border-none shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
+          <Card className="p-5 lg:p-6 bg-[#03045e] border-none shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
             <div className="text-center relative z-10">
               <h3 className="text-xl font-semibold text-white mb-3">Ready to Power Your Next Project?</h3>
               <p className="text-white/70 mb-5 max-w-2xl mx-auto text-sm">
@@ -275,10 +275,10 @@ export function Contact() {
                 and turnkey execution.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">Free Project Consultation</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full shadow">TNEB Class I Certified</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full shadow">Turnkey Solutions</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#0F172A] to-[#334155] rounded-full shadow border border-white/20">30 Years Experience</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#06d6a0] rounded-full shadow">Free Project Consultation</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#10B981] rounded-full shadow">TNEB Class I Certified</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#06d6a0] rounded-full shadow">Turnkey Solutions</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#03045e] rounded-full shadow border border-white/20">30 Years Experience</span>
               </div>
             </div>
           </Card>

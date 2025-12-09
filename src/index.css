@@ -6,20 +6,15 @@
         box-sizing: border-box;
     }
     html {
-        background-color: #f8fafc;
+        background-color: #EEE8A9;
     }
     body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
-        background-color: #f8fafc !important;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('/electric.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: soft-light;
+        background-color: #EEE8A9 !important;
+        background-image: none;
     }
     h1,
     h2,
@@ -41,32 +36,27 @@
 }
 
 :root {
-    /* Primary: Deep Blue (#0F172A) - professionalism, trust */
+    /* Palette: #3B82F6 (primary blue), #39726F (deep teal), #EEE8A9 (soft yellow) */
     --background: #FFFFFF;
-    --foreground: #0F172A;
+    --foreground: #39726F;
     --card: #FFFFFF;
-    --card-foreground: #0F172A;
+    --card-foreground: #39726F;
     --popover: #FFFFFF;
-    --popover-foreground: #0F172A;
-    /* Primary: Deep Blue */
-    --primary: #0F172A;
+    --popover-foreground: #39726F;
+    --primary: #3B82F6;
     --primary-foreground: #FFFFFF;
-    /* Secondary: Electric Blue (#3B82F6) - energy, innovation */
-    --secondary: #3B82F6;
+    --secondary: #39726F;
     --secondary-foreground: #FFFFFF;
-    /* Muted: Light Blue Tints */
-    --muted: #F0F9FF;
-    --muted-foreground: #1E3A5A;
-    /* Accent: Orange (#F97316) - power, action */
-    --accent: #F97316;
-    --accent-foreground: #FFFFFF;
-    /* Success: Green (#10B981) */
-    --success: #10B981;
+    --muted: #EEE8A9;
+    --muted-foreground: #39726F;
+    --accent: #EEE8A9;
+    --accent-foreground: #39726F;
+    --success: #3B82F6;
     --success-foreground: #FFFFFF;
-    --destructive: #EF4444;
+    --destructive: #39726F;
     --destructive-foreground: #FFFFFF;
-    --border: #BFDBFE;
-    --input: #BFDBFE;
+    --border: #39726F;
+    --input: #39726F;
     --ring: #3B82F6;
     --radius: 0.5rem;
 }

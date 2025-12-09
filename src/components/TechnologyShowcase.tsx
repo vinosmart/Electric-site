@@ -37,7 +37,7 @@ export function TechnologyShowcase() {
       voltageRange: '66kV to 400kV',
       applications: 'Urban substations, Industrial power systems',
       image: transformerImage,
-      color: 'from-[#3B82F6] to-[#2563EB]',
+      color: 'bg-[#06d6a0]',
     },
     {
       icon: Power,
@@ -53,7 +53,7 @@ export function TechnologyShowcase() {
       voltageRange: '66kV to 400kV',
       applications: 'Transmission substations, Power plants',
       image: heroBgImage,
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
     },
     {
       icon: Broadcast,
@@ -69,7 +69,7 @@ export function TechnologyShowcase() {
       voltageRange: '33kV to 400kV',
       applications: 'Substations, Distribution networks',
       image: teamImage,
-      color: 'from-[#0F172A] to-[#1E293B]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: ShieldStar,
@@ -85,7 +85,7 @@ export function TechnologyShowcase() {
       voltageRange: 'All Voltage Levels',
       applications: 'Substations, Control centers',
       image: gridImage,
-      color: 'from-[#3B82F6] to-[#1D4ED8]',
+      color: 'bg-[#06d6a0]',
     },
     {
       icon: Cpu,
@@ -101,7 +101,7 @@ export function TechnologyShowcase() {
       voltageRange: 'All Voltage Levels',
       applications: 'Smart substations, Grid modernization',
       image: installationImage,
-      color: 'from-[#3B82F6] to-[#2563EB]',
+      color: 'bg-[#06d6a0]',
     },
     {
       icon: Gauge,
@@ -117,7 +117,7 @@ export function TechnologyShowcase() {
       voltageRange: 'Up to 400kV',
       applications: 'T&C services, Maintenance',
       image: officeImage,
-      color: 'from-[#10B981] to-[#059669]',
+      color: 'bg-[#10B981]',
     },
   ]
 
@@ -190,13 +190,13 @@ export function TechnologyShowcase() {
 
   return (
     <section id="technology" className="py-16 lg:py-20 bg-[#F8FAFC]/60 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#3B82F6]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={titleRef} className="text-center mb-10">
-          <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] rounded-full mb-4 shadow-lg shadow-[#3B82F6]/25">Technology & Equipment</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4">
+          <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-[#06d6a0] rounded-full mb-4 shadow-lg shadow-[#06d6a0]/25">Technology & Equipment</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-4">
             Advanced Power Infrastructure Solutions
           </h2>
           <p className="text-base text-[#64748B] max-w-3xl mx-auto">
@@ -208,7 +208,7 @@ export function TechnologyShowcase() {
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
           <div ref={carouselRef} key={currentIndex}>
             <Card className="overflow-hidden shadow-2xl border-0 bg-white/70 rounded-2xl">
-              <div className={`relative h-64 bg-gradient-to-br ${currentTech.color}`}>
+              <div className={`relative h-64 ${currentTech.color}`}>
                 <div className="absolute inset-0 opacity-40">
                   <img
                     src={currentTech.image}
@@ -217,7 +217,7 @@ export function TechnologyShowcase() {
                     loading="lazy"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-black/50"></div>
                 <div className="absolute top-4 right-4">
                   <span className="px-3 py-1.5 text-xs font-bold text-white bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                     {currentTech.category}
@@ -225,7 +225,7 @@ export function TechnologyShowcase() {
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-20 h-20 rounded-2xl bg-white/70 backdrop-blur-sm flex items-center justify-center shadow-2xl">
-                    <currentTech.icon size={40} className="text-[#3B82F6]" weight="duotone" />
+                    <currentTech.icon size={40} className="text-[#06d6a0]" weight="duotone" />
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -239,20 +239,20 @@ export function TechnologyShowcase() {
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="bg-[#F8FAFC]/60 rounded-lg p-3 border border-[#E2E8F0]">
                     <div className="text-xs text-[#64748B] mb-1">Voltage Range</div>
-                    <div className="font-semibold text-sm text-[#0F172A]">{currentTech.voltageRange}</div>
+                    <div className="font-semibold text-sm text-[#03045e]">{currentTech.voltageRange}</div>
                   </div>
                   <div className="bg-[#F8FAFC]/60 rounded-lg p-3 border border-[#E2E8F0]">
                     <div className="text-xs text-[#64748B] mb-1">Applications</div>
-                    <div className="font-semibold text-sm text-[#0F172A]">{currentTech.applications}</div>
+                    <div className="font-semibold text-sm text-[#03045e]">{currentTech.applications}</div>
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-sm text-[#0F172A] mb-2">Key Features:</h4>
+                  <h4 className="font-semibold text-sm text-[#03045e] mb-2">Key Features:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {currentTech.features.map((feature) => (
                       <div key={feature} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#3B82F6] flex-shrink-0"></div>
-                        <span className="text-sm text-[#0F172A]">{feature}</span>
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#06d6a0] flex-shrink-0"></div>
+                        <span className="text-sm text-[#03045e]">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -268,8 +268,8 @@ export function TechnologyShowcase() {
                     onClick={() => goToSlide(index)}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       index === currentIndex 
-                        ? 'w-8 bg-[#3B82F6]' 
-                        : 'w-2 bg-[#E2E8F0] hover:bg-[#3B82F6]/50'
+                        ? 'w-8 bg-[#06d6a0]' 
+                        : 'w-2 bg-[#E2E8F0] hover:bg-[#06d6a0]/50'
                     }`}
                     aria-label={`View technology ${index + 1}`}
                   />
@@ -299,7 +299,7 @@ export function TechnologyShowcase() {
 
           <div className="hidden lg:block space-y-5">
             <div>
-              <h3 className="text-xl font-semibold text-[#0F172A] mb-3">Equipment Expertise</h3>
+              <h3 className="text-xl font-semibold text-[#03045e] mb-3">Equipment Expertise</h3>
               <p className="text-[#64748B] leading-relaxed mb-5 text-sm">
                 Mass Power Infra has extensive experience in handling and installing diverse 
                 power infrastructure equipment across all voltage levels. Our technical team is 
@@ -313,25 +313,25 @@ export function TechnologyShowcase() {
                   key={tech.title}
                   className={`p-3 cursor-pointer transition-all duration-300 ${
                     index === currentIndex
-                      ? 'bg-[#3B82F6]/5 border-[#3B82F6] shadow-md'
-                      : 'border-[#E2E8F0] hover:bg-[#F8FAFC]/60 hover:border-[#3B82F6]/30'
+                      ? 'bg-[#06d6a0]/5 border-[#06d6a0] shadow-md'
+                      : 'border-[#E2E8F0] hover:bg-[#F8FAFC]/60 hover:border-[#06d6a0]/30'
                   }`}
                   onClick={() => goToSlide(index)}
                 >
                   <div className="flex items-center gap-3">
                     <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${
                       index === currentIndex
-                        ? 'bg-[#3B82F6] text-white'
-                        : 'bg-[#3B82F6]/10 text-[#3B82F6]'
+                        ? 'bg-[#06d6a0] text-white'
+                        : 'bg-[#06d6a0]/10 text-[#06d6a0]'
                     }`}>
                       <tech.icon size={20} weight="duotone" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold text-sm text-[#0F172A] mb-0.5">{tech.title}</h4>
+                      <h4 className="font-semibold text-sm text-[#03045e] mb-0.5">{tech.title}</h4>
                       <p className="text-xs text-[#64748B]">{tech.category}</p>
                     </div>
                     {index === currentIndex && (
-                      <div className="w-2 h-2 rounded-full bg-[#3B82F6] animate-pulse"></div>
+                      <div className="w-2 h-2 rounded-full bg-[#06d6a0] animate-pulse"></div>
                     )}
                   </div>
                 </Card>
@@ -343,21 +343,21 @@ export function TechnologyShowcase() {
         <Card className="p-4 sm:p-6 lg:p-10 bg-[#F8FAFC]/60 border border-[#E2E8F0]">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Lightning size={24} className="text-[#3B82F6] sm:hidden" weight="duotone" />
-                <Lightning size={28} className="text-[#3B82F6] hidden sm:block" weight="duotone" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#06d6a0]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <Lightning size={24} className="text-[#06d6a0] sm:hidden" weight="duotone" />
+                <Lightning size={28} className="text-[#06d6a0] hidden sm:block" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">OEM Partnerships</h4>
+              <h4 className="font-semibold text-[#03045e] mb-1 text-sm sm:text-base">OEM Partnerships</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">
                 Authorized partners with leading global equipment manufacturers
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <ShieldStar size={24} className="text-[#3B82F6] sm:hidden" weight="duotone" />
-                <ShieldStar size={28} className="text-[#3B82F6] hidden sm:block" weight="duotone" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#06d6a0]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <ShieldStar size={24} className="text-[#06d6a0] sm:hidden" weight="duotone" />
+                <ShieldStar size={28} className="text-[#06d6a0] hidden sm:block" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">Quality Assurance</h4>
+              <h4 className="font-semibold text-[#03045e] mb-1 text-sm sm:text-base">Quality Assurance</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">
                 Stringent quality checks and factory acceptance testing
               </p>
@@ -367,7 +367,7 @@ export function TechnologyShowcase() {
                 <Gauge size={24} className="text-[#10B981] sm:hidden" weight="duotone" />
                 <Gauge size={28} className="text-[#10B981] hidden sm:block" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#0F172A] mb-1 text-sm sm:text-base">Performance Testing</h4>
+              <h4 className="font-semibold text-[#03045e] mb-1 text-sm sm:text-base">Performance Testing</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">
                 Comprehensive site and commissioning tests as per standards
               </p>
@@ -378,10 +378,7 @@ export function TechnologyShowcase() {
 
       <style>{`
         .bg-grid-pattern {
-          background-image: 
-            linear-gradient(to right, currentColor 1px, transparent 1px),
-            linear-gradient(to bottom, currentColor 1px, transparent 1px);
-          background-size: 40px 40px;
+          background-image: none;
         }
       `}</style>
     </section>

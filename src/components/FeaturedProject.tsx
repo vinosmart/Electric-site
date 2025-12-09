@@ -47,14 +47,14 @@ export function FeaturedProject() {
           
           <div ref={imageRef} className="w-full lg:w-1/2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-[#0F172A]/10 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-[#03045e]/10 mix-blend-multiply"></div>
               <img 
                 src={substationImage} 
                 alt="Substation Project" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute bottom-6 left-6">
-                 <div className="bg-[#3B82F6] text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+                 <div className="bg-[#06d6a0] text-white px-4 py-2 rounded-lg font-bold shadow-lg">
                     Turnkey Solutions
                  </div>
               </div>
@@ -62,7 +62,7 @@ export function FeaturedProject() {
           </div>
 
           <div ref={contentRef} className="w-full lg:w-1/2">
-            <h2 className="text-4xl font-bold text-[#0F172A] mb-6">
+            <h2 className="text-4xl font-bold text-[#03045e] mb-6">
               Substation Projects
             </h2>
             <p className="text-[#1E3A5A] text-lg leading-relaxed mb-8">
@@ -79,14 +79,14 @@ export function FeaturedProject() {
                ].map((item, idx) => (
                  <div key={idx} className="flex items-start gap-3">
                    <div className="mt-1 w-5 h-5 rounded-full bg-[#E0F2FE] flex items-center justify-center flex-shrink-0">
-                     <div className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]"></div>
+                     <div className="w-2.5 h-2.5 rounded-full bg-[#06d6a0]"></div>
                    </div>
-                   <span className="text-[#0F172A] font-medium">{item}</span>
+                   <span className="text-[#03045e] font-medium">{item}</span>
                  </div>
                ))}
             </div>
 
-            <Button className="bg-white/70 text-[#3B82F6] border-2 border-[#3B82F6] hover:bg-[#E0F2FE] text-base font-bold px-8 py-6 rounded-none uppercase tracking-wide group">
+            <Button className="bg-white/70 text-[#06d6a0] border-2 border-[#06d6a0] hover:bg-[#E0F2FE] text-base font-bold px-8 py-6 rounded-none uppercase tracking-wide group">
               Learn More
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
