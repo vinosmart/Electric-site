@@ -47,14 +47,14 @@ export function FeaturedProject() {
           
           <div ref={imageRef} className="w-full lg:w-1/2">
             <div className="relative overflow-hidden shadow-2xl rounded-2xl">
-              <div className="absolute inset-0 bg-[#154D71]/10 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-[#03045e]/10 mix-blend-multiply"></div>
               <img 
                 src={substationImage} 
                 alt="Substation Project" 
                 className="object-cover w-full h-full transition-transform duration-700 transform hover:scale-105"
               />
               <div className="absolute bottom-6 left-6">
-                 <div className="bg-[#FFF9AF] text-[#154D71] px-4 py-2 rounded-lg font-bold shadow-lg">
+                 <div className="bg-[#03045e] text-[#03045e] px-4 py-2 rounded-lg font-bold shadow-lg">
                     Turnkey Solutions
                  </div>
               </div>
@@ -62,10 +62,10 @@ export function FeaturedProject() {
           </div>
 
           <div ref={contentRef} className="w-full lg:w-1/2">
-            <h2 className="text-4xl font-bold text-[#154D71] mb-6">
+            <h2 className="text-4xl font-bold text-[#03045e] mb-6">
               Substation Projects
             </h2>
-            <p className="text-[#1E3A5A] text-lg leading-relaxed mb-8">
+            <p className="text-[#03045e] text-lg leading-relaxed mb-8">
               Mass Techno Power Infrastructure delivers turnkey electrical substation solutions from design to commissioning, providing equipment supply, civil works, installation, and testing — all with strict quality and safety standards.
             </p>
 
@@ -78,15 +78,15 @@ export function FeaturedProject() {
                  'Approvals up to commissioning'
                ].map((item, idx) => (
                  <div key={idx} className="flex items-start gap-3">
-                   <div className="mt-1 w-5 h-5 rounded-full bg-[#154D71] flex items-center justify-center flex-shrink-0">
-                     <div className="w-2.5 h-2.5 rounded-full bg-[#FFF9AF]"></div>
+                   <div className="mt-1 w-5 h-5 rounded-full bg-[#03045e] flex items-center justify-center flex-shrink-0">
+                     <div className="w-2.5 h-2.5 rounded-full bg-white"></div>
                    </div>
-                   <span className="text-[#154D71] font-medium">{item}</span>
+                   <span className="text-[#03045e] font-medium">{item}</span>
                  </div>
                ))}
             </div>
 
-            <Button className="bg-white/70 text-[#154D71] border-2 border-[#FFF9AF] hover:bg-[#E0F2FE] text-base font-bold px-8 py-6 rounded-none uppercase tracking-wide group">
+            <Button className="bg-white/70 text-[#03045e] border-2 border-[#03045e] hover:bg-[#E0F2FE] text-base font-bold px-8 py-6 rounded-none uppercase tracking-wide group">
               Learn More
               <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </Button>

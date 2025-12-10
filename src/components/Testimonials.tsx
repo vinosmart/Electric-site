@@ -83,14 +83,14 @@ export function Testimonials() {
         <div className="mb-16 text-center">
          
 
-           <span className="inline-block px-5 py-2 bg-[#1C6EA4] text-white font-semibold rounded-full text-sm mb-6">
+           <span className="inline-block px-5 py-2 bg-[#03045e] text-white font-semibold rounded-full text-sm mb-6">
                       Client Feedback
 
           </span>
       
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
                   Trusted by 
-   <span className="text-[#33A1E0] ml-2">
+   <span className="text-[#03045e] ml-2">
                 Industry Leaders 
 
 
@@ -123,7 +123,7 @@ export function Testimonials() {
                   <div className="text-[#1E3A5A] text-xs">{item.location}</div>
                   <div className="flex items-center gap-1 ">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} weight="fill" className="text-[#FFF9AF]" />
+                  <Star key={i} size={16} weight="fill" className="text-[#03045e]" />
                 ))}
               </div>
                 </div>

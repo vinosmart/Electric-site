@@ -122,7 +122,7 @@ const contactInfo = [
       'A.Salaipudur, Kovilpatti - 628502',
       'Tamil Nadu, India',
     ],
-    color: 'bg-[#154D71]',
+    color: 'bg-[#03045e]',
   },
  
   
@@ -134,7 +134,7 @@ const contactInfo = [
       '+91 94421 52528',
       'Mon–Sat: 9:00 AM - 6:00 PM',
     ],
-    color: 'bg-[#1C6EA4]',
+    color: 'bg-[#03045e]',
   },
   {
     icon: Envelope,
@@ -142,26 +142,26 @@ const contactInfo = [
     details: [
       'info@masstechnopower.com',
     ],
-    color: 'bg-[#33A1E0]',
+    color: 'bg-[#03045e]',
   },
   {
     icon: Clock,
     title: 'Business Hours',
     details: ['Monday - Saturday', '9:00 AM - 6:00 PM', 'Sunday: Closed'],
-    color: 'bg-[#1C6EA4]',
+    color: 'bg-[#03045e]',
   },
 ]
 
 
   return (
     <section id="contact" className="relative py-12 overflow-hidden sm:py-16 lg:py-20 bg-white/70">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#33A1E0]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FFF9AF]/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#03045e]/20 rounded-full blur-3xl"></div>
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-8 text-center sm:mb-10">
-          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">Contact Us</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#154D71] mb-3 sm:mb-4">
-            Get in Touch <span className='text-[#33A1E0]'>
+          <span className="inline-block px-4 py-2 bg-[#03045e] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#03045e]/25">Contact Us</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#03045e] mb-3 sm:mb-4">
+            Get in Touch <span className='text-[#03045e]'>
               with Us
             </span>
           </h2>
@@ -174,11 +174,11 @@ const contactInfo = [
         <div className="grid gap-8 mb-8 overflow-hidden lg:grid-cols-2">
           <div ref={formRef}>
             <Card className="p-6 border-0 shadow-xl bg-white/70">
-              <h3 className="text-xl font-semibold text-[#154D71] mb-5">Send us a Message</h3>
+              <h3 className="text-xl font-semibold text-[#03045e] mb-5">Send us a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-[#154D71]">Full Name *</Label>
+                    <Label htmlFor="name" className="text-[#03045e]">Full Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -186,11 +186,11 @@ const contactInfo = [
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="border-[#E2E8F0]  focus:border-[#33A1E0]"
+                      className="border-[#E2E8F0]  focus:border-[#03045e]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-[#154D71]">Email Address *</Label>
+                    <Label htmlFor="email" className="text-[#03045e]">Email Address *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -199,14 +199,14 @@ const contactInfo = [
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="border-[#E2E8F0] focus:border-[#33A1E0]"
+                      className="border-[#E2E8F0] focus:border-[#03045e]"
                     />
                   </div>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-[#154D71]">Phone Number</Label>
+                    <Label htmlFor="phone" className="text-[#03045e]">Phone Number</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -214,24 +214,24 @@ const contactInfo = [
                       placeholder="+91 1234567890"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="border-[#E2E8F0] focus:border-[#33A1E0]"
+                      className="border-[#E2E8F0] focus:border-[#03045e]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="company" className="text-[#154D71]">Company Name</Label>
+                    <Label htmlFor="company" className="text-[#03045e]">Company Name</Label>
                     <Input
                       id="company"
                       name="company"
                       placeholder="Your Company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="border-[#E2E8F0] focus:border-[#33A1E0]"
+                      className="border-[#E2E8F0] focus:border-[#03045e]"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-[#154D71]">Message *</Label>
+                  <Label htmlFor="message" className="text-[#03045e]">Message *</Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -240,14 +240,14 @@ const contactInfo = [
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="border-[#E2E8F0] focus:border-[#33A1E0]"
+                    className="border-[#E2E8F0] focus:border-[#03045e]"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-[#33A1E0] hover:bg-[#1C6EA4] text-white shadow-lg shadow-[#33A1E0]/30"
+                  className="w-full bg-[#03045e] hover:bg-[#03045e] text-white shadow-lg shadow-[#03045e]/30"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -279,9 +279,9 @@ const contactInfo = [
         </div>
 
         <div ref={ctaRef}>
-          <Card className="p-5 lg:p-6 bg-[#154D71] border-none shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFF9AF]/20 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#33A1E0]/10 rounded-full blur-3xl"></div>
+          <Card className="p-5 lg:p-6 bg-[#03045e] border-none shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#03045e]/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-36 h-36 bg-[#03045e]/10 rounded-full blur-3xl"></div>
             <div className="relative z-10 text-center">
               <h3 className="mb-3 text-xl font-semibold text-white">Ready to Power Your Next Project?</h3>
               <p className="max-w-2xl mx-auto mb-5 text-sm text-white/70">
@@ -290,10 +290,10 @@ const contactInfo = [
                 and turnkey execution.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                <span className="px-3 py-1.5 text-xs font-semibold text-[#154D71] bg-[#FFF9AF] rounded-full shadow">Free Project Consultation</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#1C6EA4] rounded-full shadow">TNEB Class I Certified</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#33A1E0] rounded-full shadow">Turnkey Solutions</span>
-                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#154D71] rounded-full shadow border border-white/20">30 Years Experience</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-[#03045e] bg-[#03045e] rounded-full shadow">Free Project Consultation</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#03045e] rounded-full shadow">TNEB Class I Certified</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#03045e] rounded-full shadow">Turnkey Solutions</span>
+                <span className="px-3 py-1.5 text-xs font-semibold text-white bg-[#03045e] rounded-full shadow border border-white/20">30 Years Experience</span>
               </div>
             </div>
           </Card>

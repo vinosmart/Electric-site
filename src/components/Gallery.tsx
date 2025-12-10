@@ -209,14 +209,14 @@ export function Gallery() {
     <section id="gallery" className="py-20 lg:py-28 bg-[#F8FAFC]/60 relative">
       <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-12 text-center">
-          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
+          <span className="inline-block px-4 py-2 bg-[#03045e] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
             Project Gallery
           </span>
      
           
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
              Our Projects & 
-   <span className="text-[#33A1E0] ml-2">
+   <span className="text-[#03045e] ml-2">
             Infrastructure
 
         </span>
@@ -231,8 +231,8 @@ export function Gallery() {
             <button 
               onClick={() => setActiveTab('civil')}
               style={{
-                backgroundColor: activeTab === 'civil' ? '#FFF9AF' : '#ffffff',
-                color: activeTab === 'civil' ? '#154D71' : '#154D71',
+                backgroundColor: activeTab === 'civil' ? '#03045e' : '#ffffff',
+                color: activeTab === 'civil' ? '#ffffff' : '#154D71',
               }}
               className="px-6 py-3 text-sm font-semibold transition-all rounded-full shadow-md"
             >

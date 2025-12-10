@@ -66,7 +66,7 @@ export function Header() {
               </a>
               <Button
                 size="sm"
-                className="bg-[#FFF9AF] hover:bg-[#FFF9AF] text-[#154D71] bordder-[#154D71] border font-semibold h-9 px-4"
+                className="bg-[#03045e] hover:bg-[#03045e] text-white bordder-[#154D71] border font-semibold h-9 px-4"
                 onClick={() => scrollToSection('contact')}
               >
                 Contact Us

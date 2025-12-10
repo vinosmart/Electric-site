@@ -22,7 +22,7 @@ import { Footer } from '@/components/Footer'
 
 function App() {
   return (
-    <div className="relative min-h-screen smooth-scroll">
+    <div className="relative min-h-screen bg-[#90e0ef]/50 smooth-scroll">
       <Toaster position="top-right" richColors />
       <Header />
       <main>

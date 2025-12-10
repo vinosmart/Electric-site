@@ -16,7 +16,7 @@ export function Specifications() {
     {
       category: 'Civil Works',
       icon: HardHat,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
       textColor2: 'text-white',
       capabilities: [
         'Foundation & earthwork for substations and tower structures',
@@ -30,7 +30,7 @@ export function Specifications() {
     {
       category: 'Electrical Works',
       icon: ClipboardText,
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
       textColor2: 'text-white',
       capabilities: [
         'Busbar & conductor installation',
@@ -44,8 +44,8 @@ export function Specifications() {
     {
       category: 'Testing & Quality',
       icon: Target,
-      color: 'bg-[#FFF9AF]',
-      textColor2: 'text-[#154D71]',
+      color: 'bg-[#03045e]',
+      textColor2: 'text-white',
       capabilities: [
         'Pre-commissioning inspections & tests',
         'Equipment calibration & functional testing',
@@ -62,29 +62,29 @@ export function Specifications() {
       icon: CheckCircle,
       title: 'Strict Quality Control',
       description: 'Comprehensive quality assurance at every stage from procurement to commissioning',
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
       textColor: 'text-white',
     },
     {
       icon: Users,
       title: 'Expert Supervision',
       description: '300+ experienced professionals ensuring adherence to standards and safety protocols',
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
       textColor: 'text-white',
     },
     {
       icon: ClipboardText,
       title: 'Documentation',
       description: 'Complete project documentation including as-built drawings and O&M manuals',
-      color: 'bg-[#33A1E0]',
+      color: 'bg-[#03045e]',
       textColor: 'text-white',
     },
     {
       icon: HardHat,
       title: 'Safety Compliance',
       description: 'Zero-accident safety culture with strict adherence to safety regulations',
-      color: 'bg-[#FFF9AF]',
-      textColor: 'text-[#154D71]',
+      color: 'bg-[#03045e]',
+      textColor: 'text-white',
     },
   ]
 
@@ -186,11 +186,11 @@ export function Specifications() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-10 text-center">
-          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">Execution Excellence</span>
+          <span className="inline-block px-4 py-2 bg-[#03045e] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#03045e]/25">Execution Excellence</span>
 
-           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
                       Project Execution 
- <span className="text-[#33A1E0] ml-2">
+ <span className="text-[#03045e] ml-2">
                   Capabilities
 
             </span>
@@ -219,9 +219,9 @@ export function Specifications() {
           ))}
         </div>
 
-        <div ref={bottomCtaRef} className="bg-[#154D71] rounded-2xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#33A1E0]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#1C6EA4]/20 rounded-full blur-3xl"></div>
+        <div ref={bottomCtaRef} className="bg-[#03045e] rounded-2xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#03045e]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#03045e]/20 rounded-full blur-3xl"></div>
           <div className="relative z-10 grid items-center gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-4 text-2xl font-bold lg:text-3xl">
@@ -233,32 +233,32 @@ export function Specifications() {
           and reliability. We maintain strong relationships with TNEB/CEIG for seamless project execution.
               </p>
               <div className="flex flex-wrap gap-3">
-          <span className="px-4 py-2 text-sm font-semibold text-[#154D71] bg-[#FFF9AF] rounded-full shadow">
+          <span className="px-4 py-2 text-sm font-semibold text-white bg-[#03045e] rounded-full shadow">
             TNEB Class I Certified
           </span>
-          <span className="px-4 py-2 text-sm font-semibold text-white bg-[#33A1E0] rounded-full shadow">
+          <span className="px-4 py-2 text-sm font-semibold text-white bg-[#03045e] rounded-full shadow">
             ESA:530 License
           </span>
-          <span className="px-4 py-2 text-sm font-semibold text-white bg-[#1C6EA4] rounded-full shadow">
+          <span className="px-4 py-2 text-sm font-semibold text-white bg-[#03045e] rounded-full shadow">
             CMWSSB Class A&B
           </span>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-5 text-center transition-colors border bg-white/10 backdrop-blur-sm rounded-xl border-white/10 hover:bg-white/15 group">
-          <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#33A1E0] group-hover:scale-110 transition-transform">100%</div>
+          <div className="mb-2 text-3xl font-bold text-white transition-transform lg:text-4xl group-hover:scale-110">100%</div>
           <div className="text-sm text-white">Quality Tested</div>
               </div>
               <div className="p-5 text-center transition-colors border bg-white/10 backdrop-blur-sm rounded-xl border-white/10 hover:bg-white/15 group">
-          <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#FFF9AF] group-hover:scale-110 transition-transform">On-Time</div>
+          <div className="mb-2 text-3xl font-bold text-white transition-transform lg:text-4xl group-hover:scale-110">On-Time</div>
           <div className="text-sm text-white">Delivery Focus</div>
               </div>
               <div className="p-5 text-center transition-colors border bg-white/10 backdrop-blur-sm rounded-xl border-white/10 hover:bg-white/15 group">
-          <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#33A1E0] group-hover:scale-110 transition-transform">300+</div>
+          <div className="mb-2 text-3xl font-bold text-white transition-transform lg:text-4xl group-hover:scale-110">300+</div>
           <div className="text-sm text-white">Team Members</div>
               </div>
               <div className="p-5 text-center transition-colors border bg-white/10 backdrop-blur-sm rounded-xl border-white/10 hover:bg-white/15 group">
-          <div className="text-3xl lg:text-4xl font-bold mb-2 text-[#33A1E0] group-hover:scale-110 transition-transform">Zero</div>
+          <div className="mb-2 text-3xl font-bold text-white transition-transform lg:text-4xl group-hover:scale-110">Zero</div>
           <div className="text-sm text-white">Compromise</div>
               </div>
             </div>

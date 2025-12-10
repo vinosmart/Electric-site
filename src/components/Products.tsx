@@ -147,18 +147,18 @@ export function Products() {
 
   return (
     <section id="products" className="relative py-16 overflow-hidden lg:py-20 bg-white/70">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#06d6a0]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-10 text-center">
         
-          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
+          <span className="inline-block px-4 py-2 bg-[#03045e] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
         
         Our Expertise</span>
      
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
                        Project 
- <span className="text-[#33A1E0] ml-2">
+ <span className="text-[#03045e] ml-2">
             Capabilities
             </span>
           </h2>
@@ -170,10 +170,10 @@ export function Products() {
 
         <Tabs defaultValue="substations" className="w-full">
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-10 bg-[#154D71]/10 p-1.5 rounded-xl h-14">
-            <TabsTrigger value="substations" className="text-base font-semibold data-[state=active]:bg-[#FFF9AF] data-[state=active]:border-[#154D71] data-[state=active]:text-[#154D71] data-[state=active]:shadow-lg data-[state=active]:border-2 rounded-lg transition-all">
+            <TabsTrigger value="substations" className="text-base font-semibold text-white data-[state=active]:bg-[#03045e] data-[state=active]:border-[#154D71] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border-2 rounded-lg transition-all">
               EHV Substations
             </TabsTrigger>
-            <TabsTrigger value="transmission" className="text-base font-semibold data-[state=active]:bg-[#33A1E0] py-2 data-[state=active]:border-[#154D71] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border rounded-lg transition-all"
+            <TabsTrigger value="transmission" className="text-base font-semibold text-white data-[state=active]:bg-[#33A1E0] py-2 data-[state=active]:border-[#154D71] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border rounded-lg transition-all"
             >
               Transmission Lines
             </TabsTrigger>
@@ -196,9 +196,9 @@ export function Products() {
           </TabsContent>
         </Tabs>
 
-        <div className="mt-10 bg-[#154D71] rounded-2xl p-6 lg:p-8 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#06d6a0]/10 rounded-full blur-3xl"></div>
+        <div className="mt-10 bg-[#03045e] rounded-2xl p-6 lg:p-8 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#03045e]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#03045e]/10 rounded-full blur-3xl"></div>
           <div className="relative z-10 grid items-center gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-4 text-2xl font-bold text-white">Turnkey Solutions</h3>
@@ -209,7 +209,7 @@ export function Products() {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#06d6a0]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#03045e]"></div>
                   <span className="text-sm font-medium text-white/90">Single-point responsibility</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -217,11 +217,11 @@ export function Products() {
                   <span className="text-sm font-medium text-white/90">Budget adherence</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#06d6a0]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#03045e]"></div>
                   <span className="text-sm font-medium text-white/90">Quality assurance</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#06d6a0]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#03045e]"></div>
                   <span className="text-sm font-medium text-white/90">Timely delivery</span>
                 </div>
               </div>

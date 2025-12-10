@@ -10,12 +10,12 @@ export function Clients() {
   const clientsRef = useRef<HTMLDivElement>(null)
 
   const clients = [
-    { name: 'Mahabala', icon: Buildings, color: 'bg-[#1C6EA4]' },
-    { name: 'TNEB', icon: Lightning, color: 'bg-[#154D71]' },
-    { name: 'NLC India', icon: SunHorizon, color: 'bg-[#33A1E0]' },
-    { name: 'Green Sparrow', icon: Broadcast, color: 'bg-[#1C6EA4]' },
-    { name: 'Kalpa-Taru', icon: Gear, color: 'bg-[#154D71]' },
-    { name: 'TNSB', icon: Factory, color: 'bg-[#33A1E0]' },
+    { name: 'Mahabala', icon: Buildings, color: 'bg-[#03045e]' },
+    { name: 'TNEB', icon: Lightning, color: 'bg-[#03045e]' },
+    { name: 'NLC India', icon: SunHorizon, color: 'bg-[#03045e]' },
+    { name: 'Green Sparrow', icon: Broadcast, color: 'bg-[#03045e]' },
+    { name: 'Kalpa-Taru', icon: Gear, color: 'bg-[#03045e]' },
+    { name: 'TNSB', icon: Factory, color: 'bg-[#03045e]' },
   ]
 
   // Updated revenue data based on screenshot
@@ -69,24 +69,24 @@ export function Clients() {
   }, [])
 
   return (
-    <section id="clients" className="py-20 lg:py-28 bg-[#FFF9AF]/40 relative overflow-hidden">
+    <section id="clients" className="py-20 lg:py-28 bg-[#03045e]/10 relative overflow-hidden">
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         {/* Header */}
         <div ref={titleRef} className="mb-16 text-center">
 
           
-          <span className="inline-block px-5 py-2 bg-[#1C6EA4] text-white font-semibold rounded-full text-sm mb-6">
+          <span className="inline-block px-5 py-2 bg-[#03045e] text-white font-semibold rounded-full text-sm mb-6">
             Our Valued Partners
           </span>
       
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
             Trusted by
-   <span className="text-[#33A1E0] ml-2">
+   <span className="text-[#03045e] ml-2">
                       Industry Leaders
 
         </span>
         </h2>
-          <p className="text-base lg:text-lg text-[#154D71] max-w-2xl mx-auto">
+          <p className="text-base lg:text-lg text-[#03045e] max-w-2xl mx-auto">
             Partnering with leading power utilities, infrastructure companies, and independent power producers 
             across Tamil Nadu and neighboring states.
           </p>
@@ -102,7 +102,7 @@ export function Clients() {
               <div className={`w-14 h-14 rounded-2xl ${client.color} flex items-center justify-center group-hover:scale-105 transition-transform`}>
                 <client.icon size={28} className="text-white" weight="duotone" />
               </div>
-              <span className="text-sm font-semibold text-[#154D71]">{client.name}</span>
+              <span className="text-sm font-semibold text-[#03045e]">{client.name}</span>
             </div>
           ))}
         </div>
@@ -110,23 +110,23 @@ export function Clients() {
         {/* Stats - Clean card style */}
         <div className="grid grid-cols-1 gap-6 mb-16 sm:grid-cols-3">
           <div className="p-6 text-center shadow-md bg-white/80 rounded-2xl">
-            <div className="text-3xl sm:text-4xl font-bold text-[#1C6EA4] mb-2">₹22.12 Cr</div>
-            <div className="text-sm text-[#154D71] font-medium">Latest Revenue</div>
+            <div className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-2">₹22.12 Cr</div>
+            <div className="text-sm text-[#03045e] font-medium">Latest Revenue</div>
           </div>
           <div className="p-6 text-center shadow-md bg-white/80 rounded-2xl">
-            <div className="text-3xl sm:text-4xl font-bold text-[#1C6EA4] mb-2">₹26.56 Cr</div>
-            <div className="text-sm text-[#154D71] font-medium">Peak Revenue</div>
+            <div className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-2">₹26.56 Cr</div>
+            <div className="text-sm text-[#03045e] font-medium">Peak Revenue</div>
           </div>
           <div className="p-6 text-center shadow-md bg-white/80 rounded-2xl">
-            <div className="text-3xl sm:text-4xl font-bold text-[#33A1E0] mb-2">9+ Years</div>
-            <div className="text-sm text-[#154D71] font-medium">Track Record</div>
+            <div className="text-3xl sm:text-4xl font-bold text-[#03045e] mb-2">9+ Years</div>
+            <div className="text-sm text-[#03045e] font-medium">Track Record</div>
           </div>
         </div>
 
         {/* Growth Timeline */}
-        <div className="bg-[#154D71] rounded-3xl p-6 lg:p-10 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#1C6EA4]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#FFF9AF]/40 rounded-full blur-3xl"></div>
+        <div className="bg-[#03045e] rounded-3xl p-6 lg:p-10 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#03045e]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#03045e]/40 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
             <h3 className="mb-8 text-2xl font-bold text-center text-white">Our Growth Journey</h3>
@@ -136,10 +136,10 @@ export function Clients() {
                 <div key={data.year} className="flex flex-col items-center group">
                   <div className="relative flex items-end justify-center w-full" style={{ height: '200px' }}>
                     <div 
-                      className="relative w-full transition-all duration-300 rounded-t-lg bg-[#33A1E0]/60 group-hover:bg-[#33A1E0]"
+                      className="relative w-full transition-all duration-300 rounded-t-lg bg-white group-hover:bg-[#03045e]"
                       style={{ height: `${(data.amount / 30) * 100}%` }}
                     >
-                      <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-white font-bold text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-[#1C6EA4] px-2 py-1 rounded">
+                      <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-white font-bold text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-[#03045e] px-2 py-1 rounded">
                         {data.label}
                       </div>
                     </div>

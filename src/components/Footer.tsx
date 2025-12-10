@@ -33,18 +33,20 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-[#154D71] text-white py-12">
+    <footer className="bg-[#03045e] text-white py-12">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/70 text-[#154D71] rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-white/70 text-[#03045e] rounded-lg flex items-center justify-center">
                 <span className="text-lg font-bold">MPI</span>
               </div>
               <div>
                 <h3 className="text-base font-bold leading-tight">Mass Power Infra</h3>
                 <p className="text-xs text-white/60">Power Infrastructure Experts Since 2009</p>
+                <p className="text-xs text-white/60">Ayappan & Co</p>
+
               </div>
             </div>
             <p className="mb-4 text-sm leading-relaxed text-white/70">
@@ -108,13 +110,13 @@ export function Footer() {
             {/* Phone & Email */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
-                <Phone size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0" />
+                <Phone size={18} weight="duotone" className="flex-shrink-0 text-white" />
                 <a href="tel:04632242528" className="transition-colors text-white/80 hover:text-white">
                   04632-242528
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <Envelope size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0" />
+                <Envelope size={18} weight="duotone" className="flex-shrink-0 text-white" />
                 <a href="mailto:info@masstechnopower.com" className="break-all transition-colors text-white/80 hover:text-white">
                   info@masstechnopower.com
                 </a>
@@ -123,7 +125,7 @@ export function Footer() {
 
             {/* Head Office */}
             <div className="flex items-start gap-3">
-              <MapPin size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0 mt-0.5" />
+              <MapPin size={18} weight="duotone" className="text-white flex-shrink-0 mt-0.5" />
               <div>
                 <h5 className="mb-1 text-sm font-semibold text-white">Head Office</h5>
                 <p className="text-sm leading-relaxed text-white/80">
@@ -135,7 +137,7 @@ export function Footer() {
 
             {/* Chennai Office */}
             <div className="flex items-start gap-3">
-              <MapPin size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0 mt-0.5" />
+              <MapPin size={18} weight="duotone" className="text-white flex-shrink-0 mt-0.5" />
               <div>
                 <h5 className="mb-1 text-sm font-semibold text-white">Chennai Office</h5>
                 <p className="text-sm leading-relaxed text-white/80">
@@ -147,7 +149,7 @@ export function Footer() {
 
             {/* Saudi Arabia Office */}
             <div className="flex items-start gap-3">
-              <MapPin size={18} weight="duotone" className="text-[#06d6a0] flex-shrink-0 mt-0.5" />
+              <MapPin size={18} weight="duotone" className="text-white flex-shrink-0 mt-0.5" />
               <div>
                 <h5 className="mb-1 text-sm font-semibold text-white">Saudi Arabia Office</h5>
                 <p className="text-sm leading-relaxed text-white/80">

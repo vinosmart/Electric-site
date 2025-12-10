@@ -110,9 +110,9 @@ export function CompanyValues() {
   const activeContent = content[activeTab as keyof typeof content]
 
   return (
-    <section ref={sectionRef} className="py-16 lg:py-24 bg-[#33A1E0] relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 lg:py-24 bg-[#03045e]/10 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[#FFF9AF]/80"></div>
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-[#03045e]/80"></div> */}
       
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         
@@ -124,7 +124,7 @@ export function CompanyValues() {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 shadow-sm ${
                 activeTab === tab.id
-                  ? 'bg-[#1C6EA4] text-white shadow-[#33A1E0] shadow-lg scale-105'
+                  ? 'bg-[#03045e] text-white shadow-[#33A1E0] shadow-lg scale-105'
                   : 'bg-white/70 text-[#154D71] hover:bg-[#33A1E0]/20 border border-[#33A1E0]'
               }`}
             >
@@ -148,7 +148,7 @@ export function CompanyValues() {
                 className="object-cover w-full h-full"
               />
               <div className="absolute bottom-6 left-6">
-                <div className="bg-[#1C6EA4] text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg">
+                <div className="bg-[#03045e] text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg">
                   <Target size={24} weight="fill" />
                   {activeContent.title}
                 </div>
@@ -158,7 +158,7 @@ export function CompanyValues() {
 
           {/* Text Content Side */}
           <div ref={contentRef} className="bg-white/90 rounded-3xl p-8 sm:p-10 shadow-xl border border-[#33A1E0] ring-1 ring-[#33A1E0]/50">
-            <h3 className="text-3xl font-bold text-[#154D71] mb-8 border-l-4 border-[#1C6EA4] pl-4">
+            <h3 className="text-3xl font-bold text-[#154D71] mb-8 border-l-4 border-[#03045e] pl-4">
               {activeContent.title}
             </h3>
             
@@ -166,7 +166,7 @@ export function CompanyValues() {
               {activeContent.items.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4 group">
                   <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#33A1E0]/20 flex items-center justify-center group-hover:bg-[#33A1E0]/40 transition-colors">
-                    <CheckCircle size={18} className="text-[#1C6EA4]" weight="bold" />
+                    <CheckCircle size={18} className="text-[#03045e]" weight="bold" />
                   </div>
                   <p className="text-[#154D71] leading-relaxed font-medium">
                     {item}

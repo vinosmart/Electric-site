@@ -14,63 +14,63 @@ export function Services() {
       title: 'Substation Construction Works',
       description: 'Turnkey execution of EHV substations including civil and electrical works.',
       features: ['Air Insulated Substations', 'Gas Insulated Substations', 'Control Rooms', 'Switchyards'],
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Gear,
       title: 'Structure Erection Works',
       description: 'Erection of steel structures for transmission lines and substation gantries.',
       features: ['Tower erection', 'Gantry structures', 'Equipment support', 'Structural alignment'],
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Wrench,
       title: 'Substation Civil & Foundation Works',
       description: 'Specialized civil works including equipment foundations, control buildings, and cable trenches.',
       features: ['Transformer plinths', 'Equipment foundations', 'Cable trenches', 'Control buildings'],
-      color: 'bg-[#33A1E0]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: TrendUp,
       title: 'Transmission Line Towers Erection',
       description: 'Complete transmission line construction including tower erection and stringing works.',
       features: ['Tower footing', 'Erection', 'Stringing', 'Sagging'],
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Flask,
       title: 'HT & LT Cable Laying Works',
       description: 'Underground cable laying, jointing, and termination for HT and LT networks.',
       features: ['Cable trenching', 'Cable laying', 'Jointing kits', 'Termination'],
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Headset,
       title: 'Testing & Commissioning',
       description: 'Pre-commissioning tests for substations, transformers, and protection systems.',
       features: ['Relay testing', 'Transformer testing', 'Switchgear testing', 'System charging'],
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: FileText,
       title: 'Liaisoning Works (CEIG/TANGEDCO)',
       description: 'Statutory approvals and clearances from CEIG and TANGEDCO.',
       features: ['Safety certificates', 'Drawings approval', 'Charging clearance', 'Regulatory compliance'],
-      color: 'bg-[#33A1E0]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: ShieldCheck,
       title: 'Operation & Maintenance Works',
       description: 'Comprehensive O&M services for substations and transmission assets.',
       features: ['Preventive maintenance', 'Breakdown services', '24/7 monitoring', 'Asset management'],
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Sun,
       title: 'Solar Power Plant Works',
       description: 'EPC services for solar power evacuation and grid interconnection.',
       features: ['Pooling substations', 'Inverter duty transformers', 'Grid synchronization', 'Evacuation lines'],
-      color: 'bg-[#1C6EA4]',
+      color: 'bg-[#03045e]',
     },
   ]
 
@@ -161,18 +161,18 @@ export function Services() {
 
   return (
     <section id="services" className="relative py-16 overflow-hidden lg:py-20 bg-white/70">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#33A1E0]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1C6EA4]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-10 text-center">
-          <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
+          <span className="inline-block px-4 py-2 bg-[#03045e] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#03045e]/25">
             Our Services
           </span>
    
           
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
               Comprehensive Power
-   <span className="text-[#33A1E0] ml-2">
+   <span className="text-[#03045e] ml-2">
                                Infrastructure Solutions
 
 
@@ -192,41 +192,41 @@ export function Services() {
 
         <div ref={bottomCardsRef} className="grid gap-8 md:grid-cols-2">
           <Card className="p-10 bg-white/70 border border-[#E2E8F0] hover:shadow-lg transition-all">
-            <h3 className="text-2xl font-bold mb-6 text-[#154D71]">Why Choose Mass Power Infra?</h3>
+            <h3 className="text-2xl font-bold mb-6 text-[#03045e]">Why Choose Mass Power Infra?</h3>
             <ul className="space-y-5">
               <li className="flex items-start gap-4">
-                <div className="w-7 h-7 rounded-full bg-[#33A1E0] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-[#03045e] flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-base font-bold text-white">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#154D71] text-lg">TNEB Class I Certified</div>
+                  <div className="font-semibold text-[#03045e] text-lg">TNEB Class I Certified</div>
                   <div className="text-base text-[#64748B]">State Power Utility certified contractor for EHV works</div>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-7 h-7 rounded-full bg-[#33A1E0] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-[#03045e] flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-base font-bold text-white">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#154D71] text-lg">ESA Grade License Holder</div>
+                  <div className="font-semibold text-[#03045e] text-lg">ESA Grade License Holder</div>
                   <div className="text-base text-[#64748B]">ESA:530 license by Electrical Licensing Board of Tamil Nadu</div>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-7 h-7 rounded-full bg-[#33A1E0] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-[#03045e] flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-base font-bold text-white">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#154D71] text-lg">300+ Skilled Professionals</div>
+                  <div className="font-semibold text-[#03045e] text-lg">300+ Skilled Professionals</div>
                   <div className="text-base text-[#64748B]">Dedicated in-house team for all project aspects</div>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-7 h-7 rounded-full bg-[#33A1E0] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-[#03045e] flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-base font-bold text-white">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-[#154D71] text-lg">Strong Supplier Network</div>
+                  <div className="font-semibold text-[#03045e] text-lg">Strong Supplier Network</div>
                   <div className="text-base text-[#64748B]">Ensuring timely material supply and cost efficiency</div>
                 </div>
               </li>
@@ -234,7 +234,7 @@ export function Services() {
           </Card>
 
           <Card className="p-10 bg-white/70 border border-[#E2E8F0] hover:shadow-lg transition-all">
-            <h3 className="text-2xl font-bold mb-6 text-[#154D71]">Sectors We Serve</h3>
+            <h3 className="text-2xl font-bold mb-6 text-[#03045e]">Sectors We Serve</h3>
             <div className="grid grid-cols-2 gap-5">
               {[
                 'Power Utilities',
@@ -247,8 +247,8 @@ export function Services() {
                 'Transmission Infrastructure',
               ].map((sector) => (
                 <div key={sector} className="flex items-center gap-3">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#33A1E0]"></div>
-                  <span className="text-lg text-[#154D71]">{sector}</span>
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#03045e]"></div>
+                  <span className="text-lg text-[#03045e]">{sector}</span>
                 </div>
               ))}
             </div>

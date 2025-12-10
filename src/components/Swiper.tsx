@@ -38,13 +38,13 @@ export function Swiper() {
         <div className="mb-12 text-center">
         
 
-             <span className="inline-block px-5 py-2 bg-[#1C6EA4] text-white font-semibold rounded-full text-sm mb-6">
+             <span className="inline-block px-5 py-2 bg-[#03045e] text-white font-semibold rounded-full text-sm mb-6">
            Trusted By
           </span>
       
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
          Our Valued
-   <span className="text-[#33A1E0] ml-2">
+   <span className="text-[#03045e] ml-2">
                      Partners
 
         </span>

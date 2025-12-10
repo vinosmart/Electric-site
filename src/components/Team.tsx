@@ -23,8 +23,8 @@ export function Team() {
                 loading="lazy"
               />
             </div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#33A1E0]">Founder</p>
-            <h2 className="text-2xl sm:text-2xl font-bold text-[#154D71] leading-tight">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#03045e]">Founder</p>
+            <h2 className="text-2xl sm:text-2xl font-bold text-[#03045e] leading-tight">
               A. Ayyappan — Building Excellence in Power Infrastructure
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
@@ -43,8 +43,8 @@ export function Team() {
                 loading="lazy"
               />
             </div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#33A1E0]">CEO</p>
-            <h2 className="text-2xl sm:text-2xl font-bold text-[#154D71] leading-tight">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#03045e]">CEO</p>
+            <h2 className="text-2xl sm:text-2xl font-bold text-[#03045e] leading-tight">
               A. Ayyappan — Driving Growth with Precision
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
@@ -61,7 +61,7 @@ export function Team() {
               key={item.title}
               className="p-5 rounded-2xl border border-[#E2E8F0] bg-white/80 shadow-sm min-h-[140px] flex flex-col gap-2"
             >
-              <div className="text-xl font-semibold text-[#154D71]">{item.title}</div>
+              <div className="text-xl font-semibold text-[#03045e]">{item.title}</div>
               <div className="text-sm text-[#475569] leading-relaxed">{item.desc}</div>
             </div>
           ))}

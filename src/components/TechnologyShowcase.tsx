@@ -37,7 +37,7 @@ export function TechnologyShowcase() {
       voltageRange: '66kV to 400kV',
       applications: 'Urban substations, Industrial power systems',
       image: transformerImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Power,
@@ -53,7 +53,7 @@ export function TechnologyShowcase() {
       voltageRange: '66kV to 400kV',
       applications: 'Transmission substations, Power plants',
       image: heroBgImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Broadcast,
@@ -69,7 +69,7 @@ export function TechnologyShowcase() {
       voltageRange: '33kV to 400kV',
       applications: 'Substations, Distribution networks',
       image: teamImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: ShieldStar,
@@ -85,7 +85,7 @@ export function TechnologyShowcase() {
       voltageRange: 'All Voltage Levels',
       applications: 'Substations, Control centers',
       image: gridImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Cpu,
@@ -101,7 +101,7 @@ export function TechnologyShowcase() {
       voltageRange: 'All Voltage Levels',
       applications: 'Smart substations, Grid modernization',
       image: installationImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       icon: Gauge,
@@ -117,7 +117,7 @@ export function TechnologyShowcase() {
       voltageRange: 'Up to 400kV',
       applications: 'T&C services, Maintenance',
       image: officeImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
   ]
 
@@ -190,17 +190,17 @@ export function TechnologyShowcase() {
 
   return (
     <section id="technology" className="py-16 lg:py-20 bg-[#F8FAFC]/60 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#154D71]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#154D71]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#03045e]/5 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
         <div ref={titleRef} className="mb-10 text-center">
-                    <span className="inline-block px-4 py-2 bg-[#33A1E0] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
+                    <span className="inline-block px-4 py-2 bg-[#03045e] text-white font-bold rounded-full text-sm mb-4 shadow-lg shadow-[#33A1E0]/25">
 Technology & Equipment</span>
         
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
                         Advanced Power
- <span className="text-[#33A1E0] ml-2">
+ <span className="text-[#03045e] ml-2">
          Infrastructure Solutions
             </span>
           </h2>
@@ -230,7 +230,7 @@ Technology & Equipment</span>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="flex items-center justify-center w-20 h-20 shadow-2xl rounded-2xl bg-white/70 backdrop-blur-sm">
-                    <currentTech.icon size={40} className="text-[#154D71]" weight="duotone" />
+                    <currentTech.icon size={40} className="text-[#03045e]" weight="duotone" />
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -244,20 +244,20 @@ Technology & Equipment</span>
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="bg-[#F8FAFC]/60 rounded-lg p-3 border border-[#E2E8F0]">
                     <div className="text-xs text-[#64748B] mb-1">Voltage Range</div>
-                    <div className="font-semibold text-sm text-[#154D71]">{currentTech.voltageRange}</div>
+                    <div className="font-semibold text-sm text-[#03045e]">{currentTech.voltageRange}</div>
                   </div>
                   <div className="bg-[#F8FAFC]/60 rounded-lg p-3 border border-[#E2E8F0]">
                     <div className="text-xs text-[#64748B] mb-1">Applications</div>
-                    <div className="font-semibold text-sm text-[#154D71]">{currentTech.applications}</div>
+                    <div className="font-semibold text-sm text-[#03045e]">{currentTech.applications}</div>
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-sm text-[#154D71] mb-2">Key Features:</h4>
+                  <h4 className="font-semibold text-sm text-[#03045e] mb-2">Key Features:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {currentTech.features.map((feature) => (
                       <div key={feature} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#154D71] flex-shrink-0"></div>
-                        <span className="text-sm text-[#154D71]">{feature}</span>
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#03045e] flex-shrink-0"></div>
+                        <span className="text-sm text-[#03045e]">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -273,8 +273,8 @@ Technology & Equipment</span>
                     onClick={() => goToSlide(index)}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       index === currentIndex 
-                        ? 'w-8 bg-[#154D71]' 
-                        : 'w-2 bg-[#E2E8F0] hover:bg-[#154D71]/50'
+                        ? 'w-8 bg-[#03045e]' 
+                        : 'w-2 bg-[#E2E8F0] hover:bg-[#03045e]/50'
                     }`}
                     aria-label={`View technology ${index + 1}`}
                   />
@@ -304,7 +304,7 @@ Technology & Equipment</span>
 
           <div className="hidden space-y-5 lg:block">
             <div>
-              <h3 className="text-xl font-semibold text-[#154D71] mb-3">Equipment Expertise</h3>
+              <h3 className="text-xl font-semibold text-[#03045e] mb-3">Equipment Expertise</h3>
               <p className="text-[#64748B] leading-relaxed mb-5 text-sm">
                 Mass Power Infra has extensive experience in handling and installing diverse 
                 power infrastructure equipment across all voltage levels. Our technical team is 
@@ -318,25 +318,25 @@ Technology & Equipment</span>
                   key={tech.title}
                   className={`p-3 cursor-pointer transition-all duration-300 ${
                     index === currentIndex
-                      ? 'bg-[#154D71]/5 border-[#154D71] shadow-md'
-                      : 'border-[#E2E8F0] hover:bg-[#F8FAFC]/60 hover:border-[#154D71]/30'
+                      ? 'bg-[#03045e]/5 border-[#03045e] shadow-md'
+                      : 'border-[#E2E8F0] hover:bg-[#F8FAFC]/60 hover:border-[#03045e]/30'
                   }`}
                   onClick={() => goToSlide(index)}
                 >
                   <div className="flex items-center gap-3">
                     <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${
                       index === currentIndex
-                        ? 'bg-[#154D71] text-white'
-                        : 'bg-[#154D71]/10 text-[#154D71]'
+                        ? 'bg-[#03045e] text-white'
+                        : 'bg-[#03045e]/10 text-[#03045e]'
                     }`}>
                       <tech.icon size={20} weight="duotone" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold text-sm text-[#154D71] mb-0.5">{tech.title}</h4>
+                      <h4 className="font-semibold text-sm text-[#03045e] mb-0.5">{tech.title}</h4>
                       <p className="text-xs text-[#64748B]">{tech.category}</p>
                     </div>
                     {index === currentIndex && (
-                      <div className="w-2 h-2 rounded-full bg-[#154D71] animate-pulse"></div>
+                      <div className="w-2 h-2 rounded-full bg-[#03045e] animate-pulse"></div>
                     )}
                   </div>
                 </Card>
@@ -348,31 +348,31 @@ Technology & Equipment</span>
         <Card className="p-4 sm:p-6 lg:p-10 bg-[#F8FAFC]/60 border border-[#E2E8F0]">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-6">
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#154D71]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Lightning size={24} className="text-[#154D71] sm:hidden" weight="duotone" />
-                <Lightning size={28} className="text-[#154D71] hidden sm:block" weight="duotone" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#03045e]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <Lightning size={24} className="text-[#03045e] sm:hidden" weight="duotone" />
+                <Lightning size={28} className="text-[#03045e] hidden sm:block" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#154D71] mb-1 text-sm sm:text-base">OEM Partnerships</h4>
+              <h4 className="font-semibold text-[#03045e] mb-1 text-sm sm:text-base">OEM Partnerships</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">
                 Authorized partners with leading global equipment manufacturers
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#154D71]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <ShieldStar size={24} className="text-[#154D71] sm:hidden" weight="duotone" />
-                <ShieldStar size={28} className="text-[#154D71] hidden sm:block" weight="duotone" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#03045e]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <ShieldStar size={24} className="text-[#03045e] sm:hidden" weight="duotone" />
+                <ShieldStar size={28} className="text-[#03045e] hidden sm:block" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#154D71] mb-1 text-sm sm:text-base">Quality Assurance</h4>
+              <h4 className="font-semibold text-[#03045e] mb-1 text-sm sm:text-base">Quality Assurance</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">
                 Stringent quality checks and factory acceptance testing
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#154D71]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Gauge size={24} className="text-[#154D71] sm:hidden" weight="duotone" />
-                <Gauge size={28} className="text-[#154D71] hidden sm:block" weight="duotone" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#03045e]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <Gauge size={24} className="text-[#03045e] sm:hidden" weight="duotone" />
+                <Gauge size={28} className="text-[#03045e] hidden sm:block" weight="duotone" />
               </div>
-              <h4 className="font-semibold text-[#154D71] mb-1 text-sm sm:text-base">Performance Testing</h4>
+              <h4 className="font-semibold text-[#03045e] mb-1 text-sm sm:text-base">Performance Testing</h4>
               <p className="text-xs sm:text-sm text-[#64748B]">
                 Comprehensive site and commissioning tests as per standards
               </p>
