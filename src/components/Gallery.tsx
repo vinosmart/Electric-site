@@ -8,14 +8,19 @@ import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { X, Lightning, Broadcast, HardHat, Wrench } from '@phosphor-icons/react'
 
 // Import local gallery images
-import substation1 from '@/assets/substation1.jpg'
-import substation2 from '@/assets/substation2.jpg'
-import substation3 from '@/assets/substation3.jpg'
-import substation4 from '@/assets/substation4.jpg'
-import transmission1 from '@/assets/transmission1.jpg'
-import transmission2 from '@/assets/transmission2.jpg'
-import transmission3 from '@/assets/transmission3.jpg'
-import transmission4 from '@/assets/transmission4.jpg'
+import substation1 from '@/assets/substation/1.jpg'
+import substation2 from '@/assets/substation/2.jpg'
+import substation3 from '@/assets/substation/3.jpg'
+import substation4 from '@/assets/substation/4.jpg'
+import substation5 from '@/assets/substation/5.jpg'
+import substation6 from '@/assets/substation/6.jpg'
+import transmission1 from '@/assets/pile/1.jpg'
+import transmission2 from '@/assets/pile/2.jpg'
+import transmission3 from '@/assets/pile/3.jpg'
+import transmission4 from '@/assets/pile/4.jpg'
+import transmission5 from '@/assets/pile/5.jpg'
+import transmission6 from '@/assets/pile/6.jpg'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -77,6 +82,26 @@ export function Gallery() {
       image: substation4,
       color: 'bg-[#06d6a0]',
     },
+    {
+      id: 'substation-5',
+      title: '33kV Rural Substation',
+      category: 'Rural Electrification',
+      description: '33kV substation project aimed at rural electrification. Included civil works, equipment installation, and commissioning to enhance power reliability in remote areas.',
+      location: 'Tamil Nadu',
+      year: '2021',
+      image: substation5,
+      color: 'bg-[#06d6a0]',
+    },
+    {
+      id: 'substation-6',
+      title: '22kV Substation Upgrade',
+      category: 'Substation Modernization',
+      description: 'Upgrade of existing 22kV substation to improve capacity and reliability. Scope included replacement of switchgear, transformers, and implementation of advanced protection schemes.',
+      location: 'Tamil Nadu',
+      year: '2022',
+      image: substation6,
+      color: 'bg-[#10B981]',
+    },
   ]
 
   const transmissionProjects = [
@@ -89,6 +114,7 @@ export function Gallery() {
       year: '2022',
       image: transmission1,
       color: 'bg-[#154D71]',
+
     },
     {
       id: 'transmission-2',
@@ -119,6 +145,26 @@ export function Gallery() {
       year: '2020',
       image: transmission4,
       color: 'bg-[#06d6a0]',
+    },
+    {
+      id: 'transmission-5',
+      title: '33kV Rural Transmission Line',
+      category: 'Rural Electrification',
+      description: '30 km 33kV line for rural electrification project. Included tower erection, conductor stringing, and commissioning to enhance power supply reliability in remote areas.',
+      location: 'Tamil Nadu',
+      year: '2021',
+      image: transmission5,
+      color: 'bg-[#06d6a0]',
+    },
+    {
+      id: 'transmission-6',
+      title: '22kV Line Upgrade',
+      category: 'Line Modernization',
+      description: 'Upgrade of existing 22kV transmission line to improve capacity and reduce losses. Scope included conductor replacement, tower strengthening, and implementation of advanced protection schemes.',
+      location: 'Tamil Nadu',
+      year: '2022',
+      image: transmission6,
+      color: 'bg-[#10B981]',
     },
   ]
 

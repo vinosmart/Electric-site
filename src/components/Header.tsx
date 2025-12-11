@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { List as ListIcon, X as XIcon, Phone as PhoneIcon } from '@phosphor-icons/react'
-import Logo from '@/assets/logo.png'
+import Logo from '@/assets/logo2.png'
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -40,10 +40,10 @@ export function Header() {
         }`}
       >
         <div className="px-4 mx-auto max-w-[1440px] sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-18">
+          <div className="flex items-center justify-between h-16 bg-white lg:h-28">
             <div className="flex items-center gap-3">
               <div>
-                <img src={Logo} alt="Logo" className="w-auto h-10" />
+                <img src={Logo} alt="Logo" className="w-auto h-16 lg:h-28" />
               </div>
             </div>
 

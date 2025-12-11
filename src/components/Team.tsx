@@ -1,5 +1,5 @@
-import founderImage from '@/assets/founder_bright.png'
-import ceoImage from '@/assets/ceo.jpg'
+import founderImage from '@/assets/founder.png'
+import ceoImage from '@/assets/founder2.jpg'
 
 export function Team() {
   const stats = [
@@ -25,10 +25,11 @@ export function Team() {
             </div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#03045e]">Founder</p>
             <h2 className="text-2xl sm:text-2xl font-bold text-[#03045e] leading-tight">
-              A. Ayyappan — Building Excellence in Power Infrastructure
+           S.Ayyappan (late)
+Founder | Chairman
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
-              With over 14 years of EPC excellence, Ayyappan leads Mass Power Infra with a focus on reliability,
+              With over 14 years of EPC excellence, Ayyappan leads Ayyappan & Cowith a focus on reliability,
               safety, and precision-engineered solutions across transmission line and substation projects.
             </p>
           </div>
@@ -45,7 +46,8 @@ export function Team() {
             </div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#03045e]">CEO</p>
             <h2 className="text-2xl sm:text-2xl font-bold text-[#03045e] leading-tight">
-              A. Ayyappan — Driving Growth with Precision
+         Mariappan Ayyappan
+Managing Director | CEO
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
               As CEO, Ayyappan ensures every project meets rigorous safety and quality standards while guiding

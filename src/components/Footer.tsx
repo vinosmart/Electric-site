@@ -43,7 +43,7 @@ export function Footer() {
                 <span className="text-lg font-bold">MPI</span>
               </div>
               <div>
-                <h3 className="text-base font-bold leading-tight">Mass Power Infra</h3>
+                <h3 className="text-base font-bold leading-tight">Ayappan & Co</h3>
                 <p className="text-xs text-white/60">Power Infrastructure Experts Since 2009</p>
                 <p className="text-xs text-white/60">Ayappan & Co</p>
 
@@ -51,7 +51,7 @@ export function Footer() {
             </div>
             <p className="mb-4 text-sm leading-relaxed text-white/70">
               Trusted EHV substation and transmission line contractor. TNEB Class I certified. 
-              Founded by <strong className="text-white">Ayyapan</strong>.
+              Founded by <strong className="text-white">Late.S. Ayyappan</strong>.
             </p>
           </div>
 
@@ -117,8 +117,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Envelope size={18} weight="duotone" className="flex-shrink-0 text-white" />
-                <a href="mailto:info@masstechnopower.com" className="break-all transition-colors text-white/80 hover:text-white">
-                  info@masstechnopower.com
+                <a href="mailto:info@masspowerinfra.com" className="break-all transition-colors text-white/80 hover:text-white">
+                  info@masspowerinfra.com
                 </a>
               </div>
             </div>
@@ -166,7 +166,7 @@ export function Footer() {
         {/* Footer Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-white/50">
-            © {currentYear} Mass Power Infra. All rights reserved.
+            © {currentYear} Ayappan & Co. All rights reserved.
           </p>
           <div className="flex gap-6">
             <button className="text-sm transition-colors text-white/50 hover:text-white">

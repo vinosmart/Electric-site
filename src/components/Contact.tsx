@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
 import { MapPin, Phone, Envelope, Clock } from '@phosphor-icons/react'
 import { toast } from 'sonner'
+import certificationImage from '@/assets/iso9001.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -140,7 +141,7 @@ const contactInfo = [
     icon: Envelope,
     title: 'Email Us',
     details: [
-      'info@masstechnopower.com',
+      'info@masspowerinfra.com',
     ],
     color: 'bg-[#03045e]',
   },
@@ -298,6 +299,7 @@ const contactInfo = [
             </div>
           </Card>
         </div>
+      
       </div>
     </section>
   )

@@ -23,21 +23,21 @@ export function Products() {
       description: 'Extra High Voltage substations for bulk power transmission and distribution networks',
       specs: ['Complete EPC services', 'GIS/AIS configurations', 'Bay extensions', 'Protection & control systems'],
       image: heroBgImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       name: '230kV Substations',
       description: 'High voltage substations for regional power distribution and industrial power systems',
       specs: ['Turnkey execution', 'Civil & electrical works', 'Automation systems', 'Grid interconnection'],
       image: teamImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       name: '110kV & 66kV Substations',
       description: 'Medium voltage substations for local power distribution and industrial applications',
       specs: ['Compact designs', 'Quick deployment', 'Urban/rural configurations', 'Smart grid ready'],
       image: installationImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
   ]
 
@@ -47,21 +47,21 @@ export function Products() {
       description: 'Extra high voltage transmission lines for long-distance power transfer across regions',
       specs: ['ACSR/AAAC conductors', 'Lattice tower structures', 'ROW management', 'Environment clearance support'],
       image: solarPanelImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       name: '230kV Transmission Lines',
       description: 'High voltage lines connecting substations and power plants to transmission grids',
       specs: ['Single/double circuit', 'Foundation engineering', 'Stringing works', 'Testing & energization'],
       image: powerLinesImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
     {
       name: '110kV & 66kV Lines',
       description: 'Medium voltage transmission and distribution lines for regional power networks',
       specs: ['Overhead/underground', 'Tower erection', 'Cable laying', 'Protection systems'],
       image: towerImage,
-      color: 'bg-[#154D71]',
+      color: 'bg-[#03045e]',
     },
   ]
 
@@ -131,11 +131,11 @@ export function Products() {
           <div className="p-5">
             <p className="text-[#64748B] mb-4 leading-relaxed text-sm">{product.description}</p>
             <div className="space-y-2">
-              <h4 className="text-sm font-semibold text-[#154D71] mb-2">Key Features:</h4>
+              <h4 className="text-sm font-semibold text-[#03045e] mb-2">Key Features:</h4>
               {product.specs.map((spec, idx) => (
                 <div key={spec} className="flex items-center gap-2">
                   <div className={`w-1.5 h-1.5 rounded-full ${product.color} flex-shrink-0`}></div>
-                  <span className="text-sm text-[#154D71]">{spec}</span>
+                  <span className="text-sm text-[#03045e]">{spec}</span>
                 </div>
               ))}
             </div>
@@ -156,7 +156,7 @@ export function Products() {
         
         Our Expertise</span>
      
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#154D71]">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#03045e]">
                        Project 
  <span className="text-[#03045e] ml-2">
             Capabilities
@@ -169,11 +169,11 @@ export function Products() {
         </div>
 
         <Tabs defaultValue="substations" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-10 bg-[#154D71]/10 p-1.5 rounded-xl h-14">
-            <TabsTrigger value="substations" className="text-base font-semibold text-white data-[state=active]:bg-[#03045e] data-[state=active]:border-[#154D71] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border-2 rounded-lg transition-all">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-10 bg-[#03045e]/10 p-1.5 rounded-xl h-14">
+            <TabsTrigger value="substations" className="text-base font-semibold text-white data-[state=active]:bg-[#03045e] data-[state=active]:border-[#03045e] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border-2 rounded-lg transition-all">
               EHV Substations
             </TabsTrigger>
-            <TabsTrigger value="transmission" className="text-base font-semibold text-white data-[state=active]:bg-[#33A1E0] py-2 data-[state=active]:border-[#154D71] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border rounded-lg transition-all"
+            <TabsTrigger value="transmission" className="text-base font-semibold text-white data-[state=active]:bg-[#33A1E0] py-2 data-[state=active]:border-[#03045e] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border rounded-lg transition-all"
             >
               Transmission Lines
             </TabsTrigger>
@@ -233,7 +233,7 @@ export function Products() {
                   alt="Power infrastructure project"
                   className="object-cover w-full h-64"
                 />
-                <div className="absolute inset-0 bg-[#154D71]/70"></div>
+                <div className="absolute inset-0 bg-[#03045e]/70"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-lg font-semibold text-white">Delivering Power. Powering Progress.</p>
                 </div>

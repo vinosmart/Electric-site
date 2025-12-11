@@ -43,7 +43,7 @@ export function Certifications() {
       icon: ShieldCheck,
       title: 'CMWSSB Contractor',
       number: 'Class A & B',
-      description: 'Certified contractor for Chennai Metropolitan Water Supply and Sewerage Board infrastructure projects',
+      description: 'Certified contractor for PWD projects',
       year: 'Active',
            color: 'bg-[#03045e]',
       iconBg: 'bg-[#03045e]',
@@ -143,14 +143,13 @@ export function Certifications() {
 
       {/* Certification Cards Carousel */}
       <div className="grid items-center gap-8 mb-12 lg:grid-cols-2 lg:gap-12">
-        <div ref={slideRef} className="relative">
-        <Card className="relative overflow-hidden shadow-2xl rounded-2xl group">
+        <div ref={slideRef} className="relative ">
+        <Card className="relative overflow-hidden shadow-2xl  lg:h-[450px]   rounded-2xl group">
           <img 
           src={activeCert.image} 
           alt={activeCert.title}
-          className="absolute inset-0 object-cover w-full h-full"
+          className="absolute inset-0 object-contain w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/50"></div>
           <div className="relative z-10 p-8">
           <div className={`w-16 h-16 ${activeCert.iconBg} rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
           <activeCert.icon size={32} className="text-white" weight="duotone" />
@@ -180,7 +179,7 @@ export function Certifications() {
         <div>
           <h3 className="text-2xl font-semibold text-[#03045e] mb-4">Licensed & Certified</h3>
           <p className="text-[#1E3A5A] leading-relaxed mb-6">
-          Mass Power Infra holds all necessary certifications and licenses required for 
+          Ayyappan & Coholds all necessary certifications and licenses required for 
           executing EHV substation and transmission line projects. Our credentials reflect our 
           commitment to maintaining the highest standards of quality and regulatory compliance.
           </p>

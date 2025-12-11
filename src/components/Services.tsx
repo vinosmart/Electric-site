@@ -192,7 +192,7 @@ export function Services() {
 
         <div ref={bottomCardsRef} className="grid gap-8 md:grid-cols-2">
           <Card className="p-10 bg-white/70 border border-[#E2E8F0] hover:shadow-lg transition-all">
-            <h3 className="text-2xl font-bold mb-6 text-[#03045e]">Why Choose Mass Power Infra?</h3>
+            <h3 className="text-2xl font-bold mb-6 text-[#03045e]">Why Choose Ayappan & Co?</h3>
             <ul className="space-y-5">
               <li className="flex items-start gap-4">
                 <div className="w-7 h-7 rounded-full bg-[#03045e] flex items-center justify-center flex-shrink-0 mt-0.5">
