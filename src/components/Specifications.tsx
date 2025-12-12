@@ -240,7 +240,7 @@ export function Specifications() {
             ESA:530 License
           </span>
           <span className="px-4 py-2 text-sm font-semibold text-white bg-[#03045e] rounded-full shadow">
-            CMWSSB Class A&B
+            PWD High Ways Class A&B
           </span>
               </div>
             </div>

@@ -10,12 +10,15 @@ export function Clients() {
   const clientsRef = useRef<HTMLDivElement>(null)
 
   const clients = [
-    { name: 'Mahabala', icon: Buildings, color: 'bg-[#03045e]' },
     { name: 'TNEB', icon: Lightning, color: 'bg-[#03045e]' },
     { name: 'NLC India', icon: SunHorizon, color: 'bg-[#03045e]' },
     { name: 'Green Sparrow', icon: Broadcast, color: 'bg-[#03045e]' },
-    { name: 'Kalpa-Taru', icon: Gear, color: 'bg-[#03045e]' },
-    { name: 'TNSB', icon: Factory, color: 'bg-[#03045e]' },
+    { name: 'KalpaTaru', icon: Gear, color: 'bg-[#03045e]' },
+    { name: 'L&T Construction', icon: Factory, color: 'bg-[#03045e]' },
+    { name: 'Shah Infra Towers Pvt Ltd', icon: Factory, color: 'bg-[#03045e]' },
+    { name: 'BHEL', icon: Factory, color: 'bg-[#03045e]' },
+    { name: 'NLC Indian Limited', icon: Factory, color: 'bg-[#03045e]' },
+    { name: 'KEC International Limited', icon: Factory, color: 'bg-[#03045e]' },
   ]
 
   // Updated revenue data based on screenshot

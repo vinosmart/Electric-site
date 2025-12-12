@@ -97,10 +97,10 @@ export function Hero() {
                 </h1>
                 
                 <p className="text-base sm:text-lg text-[#64748B] leading-relaxed max-w-xl">
-                  Ayyappan & Co. Your trusted partner for complete EPC solutions 
+                  S. Ayyappan & Co. Your trusted partner for complete EPC solutions 
                   including Design, Engineering, Procurement, Construction, Testing & Commissioning 
                   of EHV substations and transmission lines. Founded by 
-                  <strong className="text-[#03045e]"> Ayyapan</strong>, TNEB Class I certified contractor 
+                  <strong className="text-[#03045e]"> S.Ayyapan</strong>, TNEB Class I certified contractor 
                   with ESA Grade License (ESA:530).
                 </p>
 

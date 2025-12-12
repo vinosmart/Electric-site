@@ -41,9 +41,9 @@ export function Certifications() {
     },
     {
       icon: ShieldCheck,
-      title: 'CMWSSB Contractor',
+      title: 'PWD High Ways Contractor',
       number: 'Class A & B',
-      description: 'Certified contractor for PWD projects',
+      description: 'Certified contractor for PWD High Ways projects',
       year: 'Active',
            color: 'bg-[#03045e]',
       iconBg: 'bg-[#03045e]',
@@ -179,7 +179,7 @@ export function Certifications() {
         <div>
           <h3 className="text-2xl font-semibold text-[#03045e] mb-4">Licensed & Certified</h3>
           <p className="text-[#1E3A5A] leading-relaxed mb-6">
-          Ayyappan & Coholds all necessary certifications and licenses required for 
+          S. Ayyappan & Coholds all necessary certifications and licenses required for 
           executing EHV substation and transmission line projects. Our credentials reflect our 
           commitment to maintaining the highest standards of quality and regulatory compliance.
           </p>
@@ -245,7 +245,7 @@ export function Certifications() {
           </div>
           <div className="p-5 transition-colors border bg-white/10 backdrop-blur-sm rounded-xl border-white/10 hover:bg-white/15 group">
           <div className="mb-2 text-3xl font-bold text-white transition-transform group-hover:scale-110">A & B</div>
-          <div className="text-sm text-white/70">CMWSSB Class</div>
+          <div className="text-sm text-white/70">PWD High Ways Class</div>
           </div>
           <div className="p-5 transition-colors border bg-white/10 backdrop-blur-sm rounded-xl border-white/10 hover:bg-white/15 group">
           <div className="mb-2 text-3xl font-bold text-white transition-transform group-hover:scale-110">ISO</div>

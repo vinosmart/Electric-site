@@ -40,8 +40,13 @@ export function Footer() {
           {/* Company Info */}
           <div>
              <div className="flex items-center gap-3 mb-3">
-              <div>
-                <img src={Logo} alt="Logo" className="w-auto h-16 lg:h-28" />
+               <div className='flex flex-col items-center justify-center'>
+                <img src={Logo} alt="Logo" className="w-auto h-16 lg:h-20" />
+                <h1>
+                  <span className="text-2xl font-semibold text-white">
+                    S. Ayyappan & Co.
+                  </span>
+                </h1>
               </div>
             </div>
             <p className="mb-4 text-sm leading-relaxed text-white/70">
@@ -90,7 +95,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-sm text-white/60">TNEB Class I Contractor</li>
               <li className="text-sm text-white/60">ESA Grade License (ESA:530)</li>
-              <li className="text-sm text-white/60">CMWSSB Class A&B</li>
+              <li className="text-sm text-white/60">PWD High Ways Class A&B</li>
               <li className="text-sm text-white/60">ISO 9001:2015 Certified</li>
             </ul>
           </div>
@@ -134,7 +139,7 @@ export function Footer() {
             <div className="flex items-start gap-3">
               <MapPin size={18} weight="duotone" className="text-white flex-shrink-0 mt-0.5" />
               <div>
-                <h5 className="mb-1 text-sm font-semibold text-white">Chennai Office</h5>
+                <h5 className="mb-1 text-sm font-semibold text-white">Chennai Branch Office</h5>
                 <p className="text-sm leading-relaxed text-white/80">
                   Old No.45, New No.95, Poes Main Road,<br />
                   Teynampet, Chennai - 600018
@@ -162,13 +167,24 @@ Al Khobar 34448,  Saudi Arabia
         {/* Footer Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-white/50">
-            © {currentYear} Ayappan & Co. All rights reserved.
+            © {currentYear} S.Ayyappan & Co. All rights reserved.
+          </p>
+          <p className="text-sm text-white/50">
+            Developed by{' '}
+            <a 
+              href="http://www.nxdigita.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-white"
+            >
+              www.nxdigita.com
+            </a>
           </p>
           <div className="flex gap-6">
-            <button className="text-sm transition-colors text-white/50 hover:text-white">
+            <button type="button" className="text-sm transition-colors text-white/50 hover:text-white">
               Privacy Policy
             </button>
-            <button className="text-sm transition-colors text-white/50 hover:text-white">
+            <button type="button" className="text-sm transition-colors text-white/50 hover:text-white">
               Terms of Service
             </button>
           </div>

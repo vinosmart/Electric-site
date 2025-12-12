@@ -306,7 +306,7 @@ Technology & Equipment</span>
             <div>
               <h3 className="text-xl font-semibold text-[#03045e] mb-3">Equipment Expertise</h3>
               <p className="text-[#64748B] leading-relaxed mb-5 text-sm">
-                Ayyappan & Cohas extensive experience in handling and installing diverse 
+                S. Ayyappan & Cohas extensive experience in handling and installing diverse 
                 power infrastructure equipment across all voltage levels. Our technical team is 
                 proficient in the latest technologies and international standards.
               </p>

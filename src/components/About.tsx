@@ -49,7 +49,7 @@ export function About() {
     'Turnkey Project Execution',
     'TNEB Class I Certified',
     'ESA Grade License Holder',
-    'CMWSSB Class A&B Contractor',
+    'PWD High Ways Class A&B Contractor',
     'TNEB/CEIG Liaison',
     'Power Utility Projects',
     'Independent Power Producers',
@@ -156,7 +156,7 @@ export function About() {
             <div>
               <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-[#03045e]">Our Heritage</h3>
               <p className="text-[#64748B] leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                With <strong className="text-[#03045e]">30 years of proven expertise</strong>,  Ayyappan &  COS has 
+                With <strong className="text-[#03045e]">30 years of proven expertise</strong>,  Ayyappan &  CO 
                 established itself as a leading contractor for EHV substation and transmission line works. 
                 We specialize in complete turnkey solutions covering Design, Engineering, Procurement, 
                 Construction, Testing & Commissioning, and Operation & Maintenance services.
@@ -168,7 +168,7 @@ export function About() {
                 power producers across Tamil Nadu and neighboring states.
               </p>
               <p className="text-[#64748B] leading-relaxed text-sm sm:text-base">
-                Our Class A&B CMWSSB contractor certification further demonstrates our commitment to delivering 
+                Our Class A&B PWD High Ways contractor certification further demonstrates our commitment to delivering 
                 infrastructure projects of the highest standards.
               </p>
             </div>
@@ -221,7 +221,7 @@ export function About() {
           <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-white/10 blur-3xl"></div>
           <div className="relative z-10">
             <h3 className="mb-3 text-xl font-bold sm:text-2xl lg:text-3xl">
-              Value of Association with  Ayyappan &  COS
+              Value of Association with S.Ayyappan &  CO
             </h3>
             <p className="max-w-2xl mx-auto mb-5 text-sm text-white/80 sm:mb-8 sm:text-base lg:text-lg">
               Partner with a contractor who understands the complexities of power infrastructure. Our proven track 

@@ -101,7 +101,7 @@ export function WhyChooseUs() {
             </span>
           </h2>
           <p className="text-sm sm:text-base text-[#64748B] max-w-3xl mx-auto">
-            Ayyappan & Codelivers excellence in every project with our experienced team, 
+            S. Ayyappan & Codelivers excellence in every project with our experienced team, 
             certified processes, and commitment to quality and safety.
           </p>
         </div>

@@ -165,7 +165,7 @@
 - Infosys
 - BMRCL (Bangalore Metro)
 - KPTCL
-- PWD Karnataka
+- PWD High Ways Karnataka
 - BBMP
 
 ### 3. Visual Enhancements

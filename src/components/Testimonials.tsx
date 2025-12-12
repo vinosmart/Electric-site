@@ -18,21 +18,21 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      text: "Ayyappan & Co delivered exceptional support for the RPTL 800KV HVDC Raigarh–Pugalur TL-1 works at Salem. Their execution during the 400KV–230KV MC Transmission Line at Puliyanthope and the 400KV Quad DC Ottapidaram TL package was precise, safe, and ahead of schedule.",
+      text: "S. Ayyappan & Co delivered exceptional support for the RPTL 800KV HVDC Raigarh–Pugalur TL-1 works at Salem. Their execution during the 400KV–230KV MC Transmission Line at Puliyanthope and the 400KV Quad DC Ottapidaram TL package was precise, safe, and ahead of schedule.",
       author: "Project Manager – L&T Construction",
       location: "Salem, Tamil Nadu",
       company: "L&T Construction",
       image: Lt
     },
     {
-      text: "The LILO of the 400KV Karaikudi–Pugalur Transmission Line (Feeder II) required high accuracy and disciplined safety practices. Ayyappan & Co delivered flawlessly, keeping all technical parameters and schedule commitments on track.",
+      text: "The LILO of the 400KV Karaikudi–Pugalur Transmission Line (Feeder II) required high accuracy and disciplined safety practices. S. Ayyappan & Co delivered flawlessly, keeping all technical parameters and schedule commitments on track.",
       author: "Senior Engineer – KEC International",
       location: "Tamil Nadu",
       company: "KEC International",
       image: Kec
     },
     {
-      text: "Ayyappan & Co executed piling and civil foundation works for the TLSP K-3 220/110KV line with excellent workmanship. Their coordination with KSEB and multi-agency teams ensured a smooth execution process.",
+      text: "S. Ayyappan & Co executed piling and civil foundation works for the TLSP K-3 220/110KV line with excellent workmanship. Their coordination with KSEB and multi-agency teams ensured a smooth execution process.",
       author: "Project Lead – Sterlite Power Transmission Ltd.",
       location: "Kerala & Tamil Nadu",
       company: "Sterlite Power",
@@ -46,14 +46,14 @@ export function Testimonials() {
       image: Tneb
     },
     {
-      text: "Ayyappan & Co executed the 110/33KV 50MVA power transformer foundation civil works with outstanding precision and engineering discipline. Their quality, safety adherence, and project coordination ensured a seamless readiness for electrical erection and commissioning.",
+      text: "S. Ayyappan & Co executed the 110/33KV 50MVA power transformer foundation civil works with outstanding precision and engineering discipline. Their quality, safety adherence, and project coordination ensured a seamless readiness for electrical erection and commissioning.",
       author: "Project Director – Green Sparrow Solar Nest Pvt",
       location: "Tamil Nadu",
       company: "Green Sparrow Solar Nest",
       image: Green
     },
     {
-      text: "Ayyappan & Co professionally carried out the shifting of existing 11KV HT/LT overhead lines and conversion to RMU systems for the ECR road-widening project. Their execution minimized disruptions, maintained safety, and ensured timely completion despite the complex working conditions.",
+      text: "S. Ayyappan & Co professionally carried out the shifting of existing 11KV HT/LT overhead lines and conversion to RMU systems for the ECR road-widening project. Their execution minimized disruptions, maintained safety, and ensured timely completion despite the complex working conditions.",
       author: "Divisional Engineer – Highway Department",
       location: "East Coast Road, Tamil Nadu",
       company: "Highway Department",
