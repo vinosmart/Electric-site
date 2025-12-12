@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle } from '@phosphor-icons/react'
-import substationImage from '@/assets/substation1.jpg'
+import substationImage from '@/assets/substation/1.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -54,7 +54,7 @@ export function FeaturedProject() {
                 className="object-cover w-full h-full transition-transform duration-700 transform hover:scale-105"
               />
               <div className="absolute bottom-6 left-6">
-                 <div className="bg-[#03045e] text-[#03045e] px-4 py-2 rounded-lg font-bold shadow-lg">
+                 <div className="bg-[#03045e] text-white px-4 py-2 rounded-lg font-bold shadow-lg">
                     Turnkey Solutions
                  </div>
               </div>

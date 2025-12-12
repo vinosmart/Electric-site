@@ -1,5 +1,6 @@
 import { Separator } from '@/components/ui/separator'
 import { MapPin, Phone, Envelope } from '@phosphor-icons/react'
+import Logo from '@/assets/logo2.png'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -38,15 +39,9 @@ export function Footer() {
         <div className="grid gap-8 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/70 text-[#03045e] rounded-lg flex items-center justify-center">
-                <span className="text-lg font-bold">MPI</span>
-              </div>
+             <div className="flex items-center gap-3 mb-3">
               <div>
-                <h3 className="text-base font-bold leading-tight">Ayappan & Co</h3>
-                <p className="text-xs text-white/60">Power Infrastructure Experts Since 2009</p>
-                <p className="text-xs text-white/60">Ayappan & Co</p>
-
+                <img src={Logo} alt="Logo" className="w-auto h-16 lg:h-28" />
               </div>
             </div>
             <p className="mb-4 text-sm leading-relaxed text-white/70">
@@ -117,8 +112,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Envelope size={18} weight="duotone" className="flex-shrink-0 text-white" />
-                <a href="mailto:info@masspowerinfra.com" className="break-all transition-colors text-white/80 hover:text-white">
-                  info@masspowerinfra.com
+                <a href="mailto:info@ayyappanco.com " className="break-all transition-colors text-white/80 hover:text-white">
+                  info@ayyappanco.com 
                 </a>
               </div>
             </div>
@@ -153,8 +148,9 @@ export function Footer() {
               <div>
                 <h5 className="mb-1 text-sm font-semibold text-white">Saudi Arabia Office</h5>
                 <p className="text-sm leading-relaxed text-white/80">
-                  Noor Plaza, 3rd Floor,<br />
-                  Al Khobar - 34448, Saudi Arabia
+                 Venus Energy, Noor Plaza  <br />
+(3rd Floor), 2770 Custodian of  <br />Two Holy Mosques Rd,  <br />
+Al Khobar 34448,  Saudi Arabia
                 </p>
               </div>
             </div>
